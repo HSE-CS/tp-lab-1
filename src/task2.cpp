@@ -4,7 +4,7 @@ bool checkPrime(unsigned int value)
   bool flag = true;
   for(int i = 2; i * i <= value; i++)
   {
-    if (value % i != 0)
+    if (value % i == 0)
       flag = false;
   }
   return flag;
@@ -36,6 +36,8 @@ unsigned long long nPrime(unsigned n)
 
 unsigned long long nextPrime(unsigned long long value)
 {
-  while (!checkPrime(++value)){}
-  return value - 1;
+  value++;
+  while (!checkPrime(value))
+    value++;
+  return value;
 }
