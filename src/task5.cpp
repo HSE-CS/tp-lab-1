@@ -16,16 +16,25 @@ void split(char ***result, int *N, char *buf, char ch){
         test[i] = new char[3];
     }
 
+    /*char **test = (char**) malloc(10/ sizeof(char));
+    for (int i = 0; i < 10; ++i) {
+        test[i] = (char*) malloc(10);
+    }*/
 
 
-    test[0][0] = '0';
+
+
+
+    //test[0][0] = '0';
     (*result) = test;
 
     int letterCounter = 0;
     for (int i = 0; i < strlen(buf); i++) {
         if (buf[i] == ch){
             (*N)++;
+            test[(*N)][letterCounter] = '\0';
             letterCounter = 0;
+
             continue;
         }
         test[(*N)][letterCounter] = buf[i];

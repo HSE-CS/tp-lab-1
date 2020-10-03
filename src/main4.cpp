@@ -11,7 +11,13 @@ int main(){
     char *x="123456789";
     char *y="000000001";
     char *expected="123456790";
-    cout << sum(x, y) << endl;
+    char *z = sum(x, y);
+    cout << z << endl;
+    z[8] = '\0';
+    for (int i = 0; i < sizeof(z); ++i) {
+        cout << z[i] << endl;
+    }
+    cout << "size -- " << sizeof(z) << endl;
     cout << expected << endl;
     cout << "size -- " << sizeof(sum(x, y)) << endl;
 
