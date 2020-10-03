@@ -37,6 +37,9 @@ void split(char ***result, int *N, char *buf, char ch){
 
             continue;
         }
+        if (i == strlen(buf) - 1){
+            test[(*N)][letterCounter + 1] = '\0';
+        }
         test[(*N)][letterCounter] = buf[i];
         letterCounter++;
 

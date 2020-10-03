@@ -51,10 +51,10 @@ char * sum(char *x, char *y){
                     buf[i] = buf[i-1];
                 }
                 buf[0] = '1';
-            } else if (i == 0 && overflow <= 0){
-                buf[maxLength] = '\0';
             }
-
+        }
+        if (i == 0 && overflow == 0) {
+            buf[maxLength] = '\0';
         }
 
     }
