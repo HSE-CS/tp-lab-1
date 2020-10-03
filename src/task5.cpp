@@ -16,6 +16,8 @@ void split(char ***result, int *N, char *buf, char ch){
         test[i] = new char[3];
     }
 
+
+
     test[0][0] = '0';
     (*result) = test;
 

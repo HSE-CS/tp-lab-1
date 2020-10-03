@@ -13,6 +13,7 @@ int main(){
     char *expected="123456790";
     cout << sum(x, y) << endl;
     cout << expected << endl;
+    cout << "size -- " << sizeof(sum(x, y)) << endl;
 
     if ((*sum(x, y)) == (*expected)){
         cout << "yes" << endl;
