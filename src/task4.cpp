@@ -59,7 +59,7 @@ char * sum(char *x, char *y){
 
     delete [] t;
 
-    return (*buf);
+    return buf;
 
 }
 
