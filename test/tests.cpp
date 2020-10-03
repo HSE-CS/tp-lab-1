@@ -77,7 +77,7 @@ TEST(lab1,task4_1)
    char *y="000000001";
    char *expected="123456790";
    char *z=sum(x,y);
-   EXPECT_STREQ(expected,z);
+   EXPECT_STREQ(expected,(*z));
 }
 TEST(lab1,task4_2)
 {
@@ -85,7 +85,7 @@ TEST(lab1,task4_2)
    char *y="1";
    char *expected="100000000000000000000";
    char *z=sum(x,y);
-   EXPECT_STREQ(expected,z);
+   EXPECT_STREQ(expected,(*z));
 }
 
 //task5

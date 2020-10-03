@@ -10,7 +10,15 @@ using namespace std;
 int main(){
     char *x="123456789";
     char *y="000000001";
+    char *expected="123456790";
     cout << sum(x, y) << endl;
+    cout << expected << endl;
+
+    if ((*sum(x, y)) == (*expected)){
+        cout << "yes" << endl;
+    }
+
+
 
 }
 

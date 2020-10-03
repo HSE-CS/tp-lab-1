@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include "cstring"
 #include "task5.h"
 
 using namespace std;
@@ -18,10 +19,17 @@ int main(){
     cout << result[2] << endl;
     cout << N << endl;
 
+    if (strcmp(result[0], "123") == 0){
+        cout << "yes" << endl;
+    }
+
+
     for (int i = 0; i < 10; i++)
     {
         delete[] result[i];
     }
     delete[] result;
+
+
 
 }
