@@ -29,5 +29,6 @@ void split(char ***result, int *N, char *buf, char ch) {
     }
     result1[(*N)] = (char *) realloc(result1[(*N)], (1 + nlet) * sizeof(char));
     result1[(*N)][nlet] = '\0';
+    (*N)+=1;
     (*result) = result1;
 }
