@@ -6,7 +6,11 @@ using namespace std;
 char *sum(char *x, char *y) {
     int lx = strlen(x);
     int ly = strlen(y);
-    int DM = fmax(lx, ly);
+    int DM;
+    if (lx >= ly)
+        DM = lx;
+    else
+        DM = ly;
     char *ans = new char[DM + 2];
     char *temp = new char[DM];
     int dop = 0;
