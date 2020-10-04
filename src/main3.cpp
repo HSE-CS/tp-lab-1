@@ -1,0 +1,12 @@
+#include <iostream>
+#include "task3.h"
+
+using namespace std;
+
+int main() {
+    cout << checkPrime(10);
+    cout << nPrime(10) << endl;
+    cout << nextPrime(8471284);
+    cout << sumPrime(20);
+    return 0;
+}
