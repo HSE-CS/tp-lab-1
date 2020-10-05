@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/task4.h
+iostream
+-
+
+C:/Disk_D/My projects/C++/tp-Lab-1/src/main4.cpp
+task4.h
+C:/Disk_D/My projects/C++/tp-Lab-1/src/task4.h
+

@@ -1,0 +1,4 @@
+"C:\Disk_D\Programs\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "C:\Disk_D\My projects\C++\tp-Lab-1"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Disk_D/My projects/C++/tp-Lab-1/cmake-build-debug
