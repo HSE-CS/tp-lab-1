@@ -2,11 +2,12 @@
 #include "task2.h"
 
 int main() {
-    unsigned long n = {10};
+    unsigned long n = {1};
     if (checkPrime(n)){
-        std::cout << nPrime(n);
+        std::cout << nPrime(n) << "\n";
     } else {
-        std::cout << nextPrime(n);
+        std::cout << nextPrime(n) << "\n";
     }
+    std::cout << nextPrime(2);
     return 0;
 }

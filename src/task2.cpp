@@ -35,6 +35,7 @@ unsigned long long nPrime(unsigned n) {
 }
 
 unsigned long long nextPrime(unsigned long long value) {
+    value++;
     while(true) {
         int divisor = {0};
         for (int i = 2; i < value; i++) if (0 == value % i) divisor++;
