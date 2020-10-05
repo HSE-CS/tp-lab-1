@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+#include <cstring>
 
 void split(char ***result, int *N, char *buf, char ch);
 int maxWordLength(char *s, int len, char sep);

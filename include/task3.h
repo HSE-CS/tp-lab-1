@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+#include <cstring>
 
 unsigned long long sumPrime(unsigned int hbound);
 

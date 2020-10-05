@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 #include <cmath>
+#include <cstring>
 
 bool checkPrime(unsigned int value);
 unsigned long long nPrime(unsigned n);

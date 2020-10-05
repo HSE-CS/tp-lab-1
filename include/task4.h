@@ -3,6 +3,7 @@
 
 #include <iostream>
 using namespace std;
+#include <cstring>
 
 bool isNum(char *num);
 char *reverseString(char *s, int len);
