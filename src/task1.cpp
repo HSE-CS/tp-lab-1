@@ -2,7 +2,7 @@
 
 unsigned long findValue(unsigned int min, unsigned max)
 {
-	int number = 1;
+	unsigned long number = 1;
 	int i;
 	while (1)
 	{
