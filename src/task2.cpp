@@ -6,7 +6,7 @@
 bool checkPrime(unsigned int value){
     if (value < 2)
         return false;
-    for (int i = 2; i < sqrt(value); ++i)
+    for (int i = 2; i < value; ++i)
         if (value % i == 0)
             return false;
     return true;
@@ -28,14 +28,6 @@ unsigned long long nextPrime(unsigned long long value){
     while (!checkPrime(value))
         ++value;
     return value;
-}
-
-unsigned long long nextPrime2(unsigned long long value) {
-    long long k = value;
-    do {
-        k++;
-    } while (!checkPrime(k));
-    return k;
 }
 
 #endif // TASK2_CPP
