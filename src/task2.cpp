@@ -14,7 +14,7 @@ bool checkPrime(unsigned int value){
 
 unsigned long long nPrime(unsigned n){
     int counter = 0;
-    unsigned int num = 1;
+    long long num = 0;
     while (counter != n){
         ++num;
         if (checkPrime(num))
@@ -24,9 +24,18 @@ unsigned long long nPrime(unsigned n){
 }
 
 unsigned long long nextPrime(unsigned long long value){
+    ++value;
     while (!checkPrime(value))
         ++value;
     return value;
+}
+
+unsigned long long nextPrime2(unsigned long long value) {
+    long long k = value;
+    do {
+        k++;
+    } while (!checkPrime(k));
+    return k;
 }
 
 #endif // TASK2_CPP

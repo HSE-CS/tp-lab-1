@@ -36,8 +36,19 @@ char * sum(char *x, char *y){
         new_str[i] = result % 10 + 48;
         tmp = result / 10;
     }
+    for (unsigned int i = max_len-1; i >= 0; --i) {
+        if (new_str[i] == '0'){
+            --max_len;
+            new_str[i] = '\0';
+        } else
+            break;
+    }
     reverseString(new_str, max_len);
     new_str[max_len] = '\0';
+    if (max_len == 0){
+        new_str[0] = '0';
+        new_str[1] = '\0';
+    }
     return new_str;
 }
 

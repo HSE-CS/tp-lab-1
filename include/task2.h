@@ -9,5 +9,6 @@ using namespace std;
 bool checkPrime(unsigned int value);
 unsigned long long nPrime(unsigned n);
 unsigned long long nextPrime(unsigned long long value);
+unsigned long long nextPrime2(unsigned long long value);
 
 #endif //TASK1_TASK2_H
