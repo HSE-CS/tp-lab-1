@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-#include <math.h>
+#include <cmath>
 
 bool checkPrime(unsigned int value);
 unsigned long long nPrime(unsigned n);
