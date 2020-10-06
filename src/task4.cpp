@@ -21,7 +21,8 @@ char* sum(char* x, char* y)
 	}
 
 	const char* mas_answer = new char [amount];
-	sprintf(mas_answer,"%lld", answer);
+
+	_itoa(answer, mas_answer, 10);
 
 	return mas_answer;
 };
