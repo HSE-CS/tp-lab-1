@@ -10,5 +10,5 @@ int main(){
     int N=0;
     char **result=nullptr;
     split(&result, &N, buf, '!');
-    cout<<result[2];
+    cout<<result[0];
 }
