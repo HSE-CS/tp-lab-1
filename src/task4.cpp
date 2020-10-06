@@ -21,7 +21,7 @@ char* sum(char* x, char* y)
 	}
 
 	char* mas_answer = new char [amount];
-	itoa(answer, mas_answer, 10);
+	sprintf(mas_answer,'%lld', answer);
 
 	return mas_answer;
 };
