@@ -2,28 +2,22 @@
 
 unsigned long findValue(unsigned int min, unsigned max)
 {
-	unsigned long number = 1;
+	unsigned long long number = 1;
 	int i;
 	while (1)
 	{
-		for (i = min; i <= max; i++)
+		i = min;
+		while (i <= max)
 		{
 			if (number % i == 0)
 			{
 				if (i == max)
-				{
 					return number;
-				}
-				else
-				{
-					number = number + 1;
-				}
+				i = i + 1;
 			}
 			else
-			{
-				number = number + 1;
 				break;
-			}
 		}
+		number = number + 1;
 	}
 }
