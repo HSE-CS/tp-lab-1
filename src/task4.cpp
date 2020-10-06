@@ -1,5 +1,6 @@
 #include "task4.h"
 #include <stdlib.h>
+#include <cstring>
 
 using namespace std;
 
@@ -24,7 +25,7 @@ char* sum(char* x, char* y)
 
 	std::string str = std::to_string(answer);
 
-	strcpy(mass_answer, str.c_str());
+	std::strcpy(mass_answer, str.c_str());
 
-	return mas_answer;
+	return mass_answer;
 };
