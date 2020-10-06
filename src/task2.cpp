@@ -9,7 +9,7 @@ bool checkPrime(unsigned int value) {
     if (value % 2 == 0) {
         return value == 2;
     }
-    auto div{ 3 };
+    int div =  3 ;
     while (((div * div) <= value) &&( (value % div )!= 0)) {
         div += 2;
     }
