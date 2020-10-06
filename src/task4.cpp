@@ -26,23 +26,21 @@ char * sum(char *x, char *y){
 
     char upper = 0, lower = 0, tmp = 0, result = 0;
     int len_x = strlen(x), len_y = strlen(y);
-    int max_len = len_x > len_y ? len_x: len_y;
-    char *new_str = (char *)malloc(max_len+1);
-
-    for (int i = 0; i < max_len; ++i) {
+    int max_len = len_x > len_y ? len_x+1: len_y+1;
+    char *new_str = (char *)malloc(max_len);
+    int i;
+    for (i = 0; i < max_len; ++i) {
         upper = len_x - i > 0? x[len_x-i-1] - 48 : 0;
         lower = len_y - i > 0? y[len_y-i-1] - 48 : 0;
-        result =upper + lower + tmp;
+        result = upper + lower + tmp;
         new_str[i] = result % 10 + 48;
         tmp = result / 10;
+        //cout << new_str << endl <<
+        //"upper: " << (int)upper << " lower: " << (int)lower << " result: " << (int)result << " tmp: " << (int)tmp << endl << endl;
     }
-    for (unsigned int i = max_len-1; i >= 0; --i) {
-        if (new_str[i] == '0'){
-            --max_len;
-            new_str[i] = '\0';
-        } else
-            break;
-    }
+    if (new_str[max_len-1] == '0')
+        --max_len;
+    //cout << new_str << endl;
     reverseString(new_str, max_len);
     new_str[max_len] = '\0';
     if (max_len == 0){
