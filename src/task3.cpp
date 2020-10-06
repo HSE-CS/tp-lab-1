@@ -13,8 +13,8 @@ unsigned long long sumPrime(unsigned int hbound){
     while (challenger < hbound){
         if (checkPrime(challenger)){
             sum += challenger;
-            challenger++;
         }
+        challenger++;
     }
     return sum;
 }
