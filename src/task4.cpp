@@ -20,7 +20,7 @@ char* sum(char* x, char* y)
 			break;
 	}
 
-	char* mas_answer = new char [amount];
+	const char* mas_answer = new char [amount];
 	sprintf(mas_answer,"%lld", answer);
 
 	return mas_answer;
