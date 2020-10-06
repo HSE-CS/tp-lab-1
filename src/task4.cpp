@@ -35,8 +35,8 @@ char* sum(char* x, char* y)
 
 	// Main algorithm
 	int excess = 0;
-	char* answer{ new char[maxLen + 1] };
-	memset(answer, '0', maxLen + 1);
+	char* answer{ new char[maxLen + 2] };
+	memset(answer, '0', maxLen + 2);
 
 	for (int i = maxLen - 1; i >= 0; i--)
 	{
@@ -55,8 +55,12 @@ char* sum(char* x, char* y)
 				answer[j] = answer[j - 1];
 			answer[0] = '1';
 		}	
+
+		if (i == 0 && !excess)
+			answer[maxLen] = 0;
+		else if (i == 0 && excess)
+			answer[maxLen + 1] = 0;
 	}
-	answer[maxLen] = 0;
 
 	delete[] x; delete[] y;
 	return answer;
