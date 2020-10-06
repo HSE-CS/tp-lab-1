@@ -17,7 +17,7 @@ int return_dijit (char* x, int i) {
 
 char* sum( char* x,  char* y){
 
-    int max_len = max(strlen(x), strlen(y));
+    int max_len = max(strlen(x), strlen(y)) + 1;
     char* res = (char*)calloc(max_len, sizeof(char));
     int next_d = 0;
 
