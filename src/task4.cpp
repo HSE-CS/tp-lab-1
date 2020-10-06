@@ -19,7 +19,6 @@ char* sum(char* x, char* y)
 		if (number == 0)
 			break;
 	}
-
 	char* mas_answer = new char[amount];
 
 	std::string str = std::to_string(answer);
