@@ -20,7 +20,7 @@ char* sum(char* x, char* y)
 			break;
 	}
 
-	const char* mas_answer = new char [amount];
+	const char* mas_answer = new const char [amount];
 
 	std::sprintf(mas_answer, "%lld", answer);
 
