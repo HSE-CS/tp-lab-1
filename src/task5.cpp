@@ -21,7 +21,9 @@ void split(char*** result, int* N, char* buf, char ch){
     const char* sep = s.c_str();
     tmp_char = strtok(buf, sep);    // âûçîâåì ôóíêöèþ strtok äëÿ ðàçäåëåíèÿ ñòðîêè â buff ïî ïðîáåëàì
     while (tmp_char != NULL) {  ///âûâîäèì ÷àñòè ïîêà îíè ñóùåñòâóþò
-        strcpy((*result)[(*N)++], tmp_char);
-        tmp_char = strtok(NULL, sep);    ///ïîëó÷èì ñëåäóþùóþ ÷àñòü
+        strcpy((*result)[(*N)], tmp_char);
+        (*result)[(*N)][strlen(tmp_char)] = '\0';
+        tmp_char = strtok(NULL, sep);    ///получим следующую часть
+        (*N)++;
     }
 }
