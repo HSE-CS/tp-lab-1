@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 
 int nod(int first, int second);
 

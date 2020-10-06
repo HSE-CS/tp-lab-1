@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <string.h>
 
 bool checkPrime(unsigned int value) {
 	for (int i = 2; i <= int(sqrt(value)); i++) {
