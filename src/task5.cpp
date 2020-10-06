@@ -1,6 +1,5 @@
 #include "task5.h"
 #include <iostream>
-#include<string>
 #include <cstring>
 #include <cstdio>
 #include <cstdlib>
@@ -16,7 +15,9 @@ void split(char*** result, int* N, char* buf, char ch){
         (*result)[i] = new char [len]();
     }
     char* tmp_char;
-    string s (1, ch);
+    string s;
+    s += ch;
+    s += '\0';
     const char* sep = s.c_str();
     tmp_char = strtok(buf, sep);    // âûçîâåì ôóíêöèþ strtok äëÿ ðàçäåëåíèÿ ñòðîêè â buff ïî ïðîáåëàì
     while (tmp_char != NULL) {  ///âûâîäèì ÷àñòè ïîêà îíè ñóùåñòâóþò
