@@ -1,6 +1,7 @@
 #include "task4.H"
 #include <stdlib.h>
 #include <iostream>
+#include <cstring> 
 #define _CRT_SECURE_NO_WARNINGS
 
 using namespace std;
