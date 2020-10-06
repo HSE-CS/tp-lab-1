@@ -48,11 +48,11 @@ char *sum(char *x, char *y) {
     }
     if (sum[length - 1] == 0)
         length--;
-    char *finalSum = new char[length+1];
+    char *finalSum = new char[length];
     for (int i = length - 1; i >= 0; i--) {
         finalSum[currentNumber] = (char) (sum[i] + '0');
         currentNumber++;
     }
-    finalSum[length] = 0;
+    finalSum[length] = '\0';
     return finalSum;
 }
