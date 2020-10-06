@@ -16,3 +16,9 @@ unsigned long long nPrime(unsigned int n)
 		else if (flag && pos != n) pos++;
 	}
 }
+
+unsigned long long nextPrime(unsigned long long value)
+{
+	for (unsigned long long answer{ value+1 };; answer++)
+		if (checkPrime(answer)) return answer;
+}
