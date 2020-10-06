@@ -20,9 +20,11 @@ char* sum(char* x, char* y)
 			break;
 	}
 
-//const char* mas_answer = new char [amount];
+	char* mas_answer = new char[amount];
 
-	std::string mas_answer = std::to_string(answer);
+	std::string str = std::to_string(answer);
+
+	strcpy(mass_answer, str.c_str());
 
 	return mas_answer;
 };
