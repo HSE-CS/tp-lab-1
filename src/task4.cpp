@@ -23,8 +23,6 @@ char* sum( char* x,  char* y){
 	vector <int> dijit2 = convert(y);
 	const int base{ 10 };
 	int carry{ 0 };
-	char* res = new char[dijit1.size()]();
-
 	for (size_t i = 0; i < max(dijit1.size(), dijit2.size()) || carry; ++i) {
 		if (i == dijit1.size()) {
 			dijit1.push_back(0);
@@ -35,7 +33,7 @@ char* sum( char* x,  char* y){
 			dijit1[i] -= base;
 		}
 	}
-	int pointer{ 0 };
+	char* res = new char[dijit1.size() + 1]();
 	for (int i = dijit1.size(); i > 0; i--) {
 		
 		res[dijit1.size() - i] = dijit1[i - 1] + '0';
