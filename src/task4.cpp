@@ -5,12 +5,12 @@ using namespace std;
 
 char* sum(char* x, char* y)
 {
-	size_t len_x = strlen(x);
-	size_t len_y = strlen(y);
+	int len_x = strlen(x);
+	int len_y = strlen(y);
 
 	char* temp = x;
-	size_t min = (len_x >= len_y) ? len_y : len_x;
-	size_t max;
+	int min = (len_x >= len_y) ? len_y : len_x;
+	int max;
 	if (len_x < len_y)
 	{
 		max = len_y;

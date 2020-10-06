@@ -6,18 +6,18 @@ using namespace std;
 void split(char*** result, int* N, char* buf, char ch)
 {
 	*N = 1;
-	size_t len = strlen(buf);
-	for (size_t i = 0; i < len; i++)
+	int len = strlen(buf);
+	for (int i = 0; i < len; i++)
 		if (buf[i] == ch)
 			(*N)++;
 
 	char** res = new char* [(*N)];
-	for (size_t i = 0; i < (*N); i++)
+	for (int i = 0; i < (*N); i++)
 		res[i] = new char[MAX];
 
-	size_t k = 0;
-	size_t c = 0;
-	for (size_t i = 0; i < (*N); i++)
+	int k = 0;
+	int c = 0;
+	for (int i = 0; i < (*N); i++)
 	{
 		c = 0;
 		while (buf[k] != ch && k != len)

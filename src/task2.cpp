@@ -16,7 +16,7 @@ bool checkPrime(unsigned value)
 unsigned long long nPrime(unsigned n)
 {
 	unsigned long long res = 1;
-	size_t order = 0;
+	unsigned long long order = 0;
 	while (order != n)
 	{
 		res++;
