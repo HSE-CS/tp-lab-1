@@ -6,38 +6,33 @@
 #include <vector>
 using namespace std;
 
-vector <int> convert(char* x) {
-	vector <int> dijit;
-    for (int i = (int)strlen(x); i > 0; i--) {
-		x[i] = 0;
-		dijit.push_back(atoi(i >= 1 ? x + i - 1 : x));
-	}
-    while (dijit.size() > 1 && dijit.back() == 0)
-		dijit.pop_back();
-	return dijit;
+int return_dijit (char* x, int i) {
+    if (i > strlen(x)) {
+        return 0;
+    }
+    else {
+        return x[strlen(x) - i] - '0';
+    }
 }
 
 char* sum( char* x,  char* y){
-	vector <int> dijit1 = convert(x);
-	vector <int> dijit2 = convert(y);
-	const int base{ 10 };
-	int carry{ 0 };
-	for (size_t i = 0; i < max(dijit1.size(), dijit2.size()) || carry; ++i) {
-		if (i == dijit1.size()) {
-			dijit1.push_back(0);
-		}
-		dijit1[i] += carry + (i < dijit2.size() ? dijit2[i] : 0);
-		carry = dijit1[i] >= base;
-		if (carry) {
-			dijit1[i] -= base;
-		}
-	}
-	char* res = (char*)calloc(dijit1.size() + 1, sizeof(char ));
-	for (int i = dijit1.size(); i > 0; i--) {
-		
-		res[dijit1.size() - i] = dijit1[i - 1] + '0';
-	}
-	res[dijit1.size()] = '\0';
 
+    int max_len = max(strlen(x), strlen(y));
+    char* res = (char*)calloc(max_len, sizeof(char));
+    int next_d = 0;
+
+    for (int i = 1; i <= max_len; i++) {
+        int sum = return_dijit(x,i) + return_dijit(y, i) + next_d;
+        res[max_len - i] = '0' + sum % 10;
+        next_d = sum / 10;
+    }
+
+    if (res[0] == '0' && res[1] != '0') {
+        for (int i = 0; i < max_len - 1; i++) {
+            res[i] = res[i + 1];
+        }
+        res[max_len - 1] = '\0';
+    }
+    res[max_len] = '\0';
     return res;
 }
