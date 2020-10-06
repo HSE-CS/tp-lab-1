@@ -5,8 +5,9 @@
 #include "task4.h"
 using namespace std;
 int main(){
-    char* finalSum = sum("1", "99");
+    char* finalSum = sum("99999999999999999999", "1");
     for (int i = 0; i < strlen(finalSum); i++) {
         cout << finalSum[i];
     }
+    cout<<"\n100000000000000000000";
 }

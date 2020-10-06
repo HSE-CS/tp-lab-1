@@ -6,9 +6,9 @@
 #include "task5.h"
 using namespace std;
 int main(){
-    char *buf="12dfdsfsdfdsf3!df6!78231232329";
+    char *buf="123,456,789";
     int N=0;
     char **result=nullptr;
-    split(&result, &N, buf, '!');
-    cout<<result[0];
+    split(&result, &N, buf, ',');
+    cout<<result[1]<<"\n"<<N;
 }
