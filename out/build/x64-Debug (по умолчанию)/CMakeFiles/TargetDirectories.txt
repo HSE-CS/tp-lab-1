@@ -1,0 +1,12 @@
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task1_lib.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task1.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task2_lib.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task3.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task3_lib.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task4_lib.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task5_lib.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task2.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/edit_cache.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task4.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/task5.dir
+D:/ProgectC++/tp-Lab-1/out/build/x64-Debug (по умолчанию)/CMakeFiles/rebuild_cache.dir

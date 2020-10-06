@@ -1,0 +1,23 @@
+# ninja log v5
+0	935	623689207	CMakeFiles/task1.dir/src/main1.cpp.obj	465bac5dde088e37
+13	994	623689207	CMakeFiles/task2_lib.dir/src/task2.cpp.obj	c88f7d0351dd64b6
+111	1030	623689207	CMakeFiles/task4.dir/src/main4.cpp.obj	5ae28c6617212097
+66	1073	623689207	CMakeFiles/task3_lib.dir/src/task3.cpp.obj	324731834116c126
+26	1130	623689207	CMakeFiles/task1_lib.dir/src/task1.cpp.obj	5f29339aacb0024
+98	1171	623689207	CMakeFiles/task2.dir/src/main2.cpp.obj	3a55dfbb750ada6
+89	1210	623689207	CMakeFiles/task5_lib.dir/src/task5.cpp.obj	b6311e0b8481fb2a
+42	1259	623689207	CMakeFiles/task3_lib.dir/src/task2.cpp.obj	b879f8e7efdf3ffd
+53	1295	623689207	CMakeFiles/task3.dir/src/main3.cpp.obj	f3e7adb6beaac416
+122	1380	623689207	CMakeFiles/task5.dir/src/main5.cpp.obj	cf1026ada10b9a28
+0	75	623689244	task1_lib.lib	e77b477424f43506
+13	140	623689244	task2_lib.lib	9753ff00ac37cc83
+24	169	623689244	task3_lib.lib	11f377068b87368c
+58	439	623689244	CMakeFiles/task5_lib.dir/src/task5.cpp.obj	b6311e0b8481fb2a
+76	1061	623689245	task1.exe	c8261260a16f2365
+140	1275	623689245	task2.exe	72202452dc123f44
+169	1283	623689245	task3.exe	994045869b0ac869
+1	542	623689339	CMakeFiles/task4_lib.dir/src/task4.cpp.obj	38189bb6b2a862ee
+11	596	623689338	task5_lib.lib	521685cbff395e25
+585	821	623689339	task4_lib.lib	98fc25f89bae8669
+596	1441	623689340	task5.exe	98aa81f694d3229c
+821	1534	623689340	task4.exe	39c86c90194739db

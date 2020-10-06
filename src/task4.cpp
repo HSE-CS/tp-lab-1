@@ -1,6 +1,12 @@
 #include <iostream>
 #include <cmath>
 
+void swap(char& c1, char& c2) {
+	char c3 = c1;
+	c1 = c2;
+	c2 = c3;
+}
+
 void reverse(char* s) {
 
 	for (int i = 0; i < strlen(s) / 2; i++) {
