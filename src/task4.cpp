@@ -21,7 +21,7 @@ char* sum(char* x, char* y)
 	}
 
 	char* mas_answer = new char [amount];
-	sprintf(mas_answer,'%lld', answer);
+	sprintf(mas_answer,"%lld", answer);
 
 	return mas_answer;
 };
