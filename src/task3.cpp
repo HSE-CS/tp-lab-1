@@ -30,7 +30,7 @@ unsigned long long sumPrime(unsigned int hbound)
 {
 	unsigned long long sum = 0;
 	unsigned int* num_array = getAllPrimeNumbers();
-	for (int i = 0; i < MAX; i++)
+	for (int i = 0; i < hbound; i++)
 		if (num_array[i])
 			sum += i;
 
