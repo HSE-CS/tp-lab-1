@@ -6,10 +6,10 @@
 using namespace std;
 char *sum(char *x, char *y) {
     int length, sizeX = strlen(x), sizeY = strlen(y);
-    length = sizeY + 2;
+    length = sizeY + 1;
     int tempSize = sizeY;
     if (sizeX >= sizeY) {
-        length = sizeX + 2;
+        length = sizeX + 1;
         tempSize = sizeX;
     }
     int currentNumber = 0;
@@ -48,11 +48,11 @@ char *sum(char *x, char *y) {
     }
     if (sum[length - 1] == 0)
         length--;
-    char *finalSum = new char[length];
+    char *finalSum = new char[length+1];
     for (int i = length - 1; i >= 0; i--) {
         finalSum[currentNumber] = (char) (sum[i] + '0');
         currentNumber++;
     }
-    finalSum[length+1] = '\0';
+    finalSum[length] = '\0';
     return finalSum;
 }
