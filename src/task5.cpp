@@ -7,9 +7,10 @@
 
 using namespace std;
 
-const int len{ 1000 };
 
 void split(char*** result, int* N, char* buf, char ch){
+    const int len{ 1000 };
+
     (*result) = new char* [len]();
     for (int i = 0; i < len; i++) {
         (*result)[i] = new char [len]();
