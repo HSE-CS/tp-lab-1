@@ -1,4 +1,4 @@
-#include "task4.H"
+#include "task4.h"
 #include <stdlib.h>
 #include <iostream>
 #include <cstring> 
