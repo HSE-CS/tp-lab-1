@@ -7,22 +7,23 @@
 #include "task4.h"
 
 char * sum(char *x, char *y){
-    int size_x, size_y, length;
-    size_x = strlen(x);
-    size_y = strlen(y);
+    int size_x = strlen(x), size_y = strlen(y), length;
+
     if (size_x > size_y)
         length = size_x + 1;
     else
         length = size_y + 1;
 
-    int a[size_x] = {0};
+    int a[size_x];
+    memset(a, 0, size_x*sizeof(int));
     int c = 0;
     for(int i = size_x-1; i >= 0; i --){
         a[i] = x[c] - '0';
         c++;
     }
 
-    int b[length] = {0};
+    int b[length];
+    memset(b, 0, length*sizeof(int));
     c = 0;
     for(int i = size_y-1; i >= 0; i --){
         b[i] = y[c] - '0';
