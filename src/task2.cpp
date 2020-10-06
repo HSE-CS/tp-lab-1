@@ -36,19 +36,10 @@ unsigned long long nPrime(unsigned n)
 
 unsigned long long nextPrime(unsigned long long value)
 {
-    long long i, j;
+    long long i, f = value + 1;
     int a = 0;
-    for (i = value;; i++) {
 
-        for (j = 2; j * j <= i; j++)
-            if ((i % j) == 0) break;
-
-        if (j * j > i) {
-            a++;
-            if (a == 1) {
-                return i;
-                break;
-            }
-        }
-    }
+    for (i = 1; checkPrime(f) == false; i++)
+      f = f + 1;
+    return f;
 };
