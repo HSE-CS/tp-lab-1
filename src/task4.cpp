@@ -1,8 +1,9 @@
 #include "task4.h"
+#include <stdlib.h>
+
 
 char* sum(char* x, char* y)
 {
-	char* mas_answer;
 	long long int number;
 	int amount = 0;
 	long long int first = atoll(x);
