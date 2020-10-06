@@ -1,4 +1,6 @@
 #include "task4.h"
+#include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -6,7 +8,7 @@ char *sum(char *x, char *y)
 {
     int count_x = strlen(x);
     int count_y = strlen(y);
-	
+
     int max_length;
     if (count_x >= count_y)
         max_length = count_x;
