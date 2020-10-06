@@ -1,11 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include "task5.h"
 #include <iostream>
 #include<string>
 #include <cstring>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstdlib>
 
 using namespace std;
 
@@ -19,9 +17,9 @@ void split(char*** result, int* N, char* buf, char ch){
     char* tmp_char;
     string s (1, ch);
     const char* sep = s.c_str();
-    tmp_char = strtok(buf, sep);    // вызовем функцию strtok для разделения строки в buff по пробелам
-    while (tmp_char != NULL) {  ///выводим части пока они существуют
-        (*result)[(*N)++] = tmp_char;   
-        tmp_char = strtok(NULL, sep);    ///получим следующую часть
+    tmp_char = strtok(buf, sep);    // ГўГ»Г§Г®ГўГҐГ¬ ГґГіГ­ГЄГ¶ГЁГѕ strtok Г¤Г«Гї Г°Г Г§Г¤ГҐГ«ГҐГ­ГЁГї Г±ГІГ°Г®ГЄГЁ Гў buff ГЇГ® ГЇГ°Г®ГЎГҐГ«Г Г¬
+    while (tmp_char != NULL) {  ///ГўГ»ГўГ®Г¤ГЁГ¬ Г·Г Г±ГІГЁ ГЇГ®ГЄГ  Г®Г­ГЁ Г±ГіГ№ГҐГ±ГІГўГіГѕГІ
+        strcpy((*result)[(*N)++], tmp_char);
+        tmp_char = strtok(NULL, sep);    ///ГЇГ®Г«ГіГ·ГЁГ¬ Г±Г«ГҐГ¤ГіГѕГ№ГіГѕ Г·Г Г±ГІГј
     }
 }
