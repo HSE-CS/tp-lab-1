@@ -4,5 +4,6 @@
 #include <cstdlib>
 #include <ctime>
 #include <string>
+#include <cstdlib>
 
 char* sum(char* x, char* y);
