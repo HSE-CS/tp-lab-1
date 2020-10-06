@@ -6,8 +6,8 @@ char* sum(char* x, char* y)
 {
 	long long int number;
 	int amount = 0;
-	long long int first = atoll(*x);
-	long long int second = atoll(*y);
+	long long int first = atoll(x);
+	long long int second = atoll(y);
 	long long int answer = first + second;
 
 	number = answer;
