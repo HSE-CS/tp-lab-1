@@ -8,6 +8,7 @@
 #include <string.h>
 
 using namespace std;
+
 const int len{ 1000 };
 
 void split(char*** result, int* N, char* buf, char ch){
@@ -23,6 +24,4 @@ void split(char*** result, int* N, char* buf, char ch){
         (*result)[(*N)++] = tmp_char;   
         tmp_char = strtok(NULL, sep);    ///получим следующую часть
     }
-    //(*N)++;
-   
 }

@@ -36,12 +36,6 @@ char* sum( char* x,  char* y){
 		}
 	}
 	int pointer{ 0 };
-	/*printf("%d", dijit1.empty() ? 0 : dijit1.back());
-	for (int i = (int)dijit1.size() - 2; i >= 0; --i) {
-		res[i] = dijit1[i];
-		printf("%09d", dijit1[i]);
-	}
-	res[dijit1.size()] = '\0'; */
 	for (int i = dijit1.size(); i > 0; i--) {
 		
 		res[dijit1.size() - i] = dijit1[i - 1] + '0';
