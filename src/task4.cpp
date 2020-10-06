@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdlib>
 #include <cstring>
-#include <cstdlib>
 #include<algorithm>
 #include <string>
 #include <vector>
@@ -33,7 +32,7 @@ char* sum( char* x,  char* y){
 			dijit1[i] -= base;
 		}
 	}
-	char* res = new char[dijit1.size() + 1]();
+	char* res = (char*)calloc(dijit1.size() + 1, sizeof(char ));
 	for (int i = dijit1.size(); i > 0; i--) {
 		
 		res[dijit1.size() - i] = dijit1[i - 1] + '0';
