@@ -13,8 +13,8 @@ char *sum(char *x, char *y) {
         tempSize = sizeX;
     }
     int currentNumber = 0;
-    int *sum = new int[length];
-    int *temp = new int[tempSize];
+    int *sum = new int[length]{0};
+    int *temp = new int[tempSize]{0};
     if (sizeX >= sizeY) {
 
         for (int i = sizeX - 1; i >= 0; i--) {
@@ -48,7 +48,7 @@ char *sum(char *x, char *y) {
     }
     if (sum[length - 1] == 0)
         length--;
-    char *finalSum = new char[length];
+    char *finalSum = new char[length]{0};
     for (int i = length - 1; i >= 0; i--) {
         finalSum[currentNumber] = (char) (sum[i] + '0');
         currentNumber++;
