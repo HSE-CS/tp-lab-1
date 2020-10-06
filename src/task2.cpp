@@ -36,7 +36,7 @@ unsigned long long nPrime(unsigned n)
 
 unsigned long long nextPrime(unsigned long long value)
 {
-    int i, j;
+    long long i, j;
     int a = 0;
     for (i = value;; i++) {
 
@@ -46,7 +46,7 @@ unsigned long long nextPrime(unsigned long long value)
         if (j * j > i) {
             a++;
             if (a == 1) {
-                return i - value;
+                return i;
                 break;
             }
         }
