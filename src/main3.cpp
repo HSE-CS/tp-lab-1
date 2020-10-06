@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    cout << sumPrime(2000000);
+    cout << sumPrime(10);
     return 0;
 }
 

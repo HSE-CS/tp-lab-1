@@ -52,5 +52,6 @@ char * sum(char *x, char *y){
         res[c] = (char) (b[i] + '0');
         c++;
     }
+    res[length] = '\0';
     return res;
 }

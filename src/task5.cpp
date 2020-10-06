@@ -18,6 +18,7 @@ void split(char ***result, int *N, char *buf, char ch){
                 c++;
 //                std::cout << (*result)[n][j];
             }
+            (*result)[n][c] = '\0';
             last_i=i;
             n++;
             c=0;
