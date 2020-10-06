@@ -53,6 +53,6 @@ char *sum(char *x, char *y) {
         finalSum[currentNumber] = (char) (sum[i] + '0');
         currentNumber++;
     }
-    finalSum[length] = '\0';
+    finalSum[length] = 0;
     return finalSum;
 }

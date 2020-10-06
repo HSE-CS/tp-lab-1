@@ -34,7 +34,7 @@ void split(char ***result, int *N, char *buf, char ch) {
     //char* temp=new char[strlen(buf)];
     for (int iter = 0; iter < strlen(buf); iter++) {
         if (buf[iter] == ch) {
-            (*result)[count][tempChar + 1] = '\0';
+            (*result)[count][tempChar + 1] = 0;
             count++;
             tempChar = 0;
         } else {
