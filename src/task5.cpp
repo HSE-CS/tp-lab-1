@@ -1,33 +1,31 @@
-#include "task5.h"
+#include <iostream>
+#include <cmath>
+#include <string.h>
 
-void split(char ***result, int *N, char *buf, char ch)
+void split(char*** result, int* N, char* buf, char ch)
 {
-    char **answer = (char **) malloc(sizeof(char *));
-    answer[(*N)] = (char *) malloc(1 * sizeof(char));
+    char** answer = new char* [10];
+    for (int i = 0; i < 10; i++)
+        answer[i] = new char[10];
 
     int num = 0;
+    int id = 0;
     for (int i = 0; i < strlen(buf); i++)
-    {
+	{
         if (buf[i] == ch)
-        {
-            if (i == 0 || i == strlen(buf) - 1)
-                continue;
-            if (i < strlen(buf) - 1 && buf[i + 1] == ch)
-                continue;
-            answer[(*N)] = (char *) realloc(answer[(*N)], (1 + num) * sizeof(char));
-            answer[(*N)][num] = '\0';
-            num = 0;
-            (*N)++;
-            answer = (char **) realloc(answer, sizeof(char *) * ((*N) + 1));
-            answer[(*N)] = (char *) malloc(1 * sizeof(char));
+		{
+            answer[num][id] = '\0';
+            ++num;
+            id = 0;
             continue;
         }
-        num++;
-        answer[(*N)] = (char *) realloc(answer[(*N)], num * sizeof(char));
-        answer[(*N)][num - 1] = buf[i];
+        else
+		{
+            answer[num][id] = buf[i];
+        }
+        ++id;
     }
-    answer[(*N)] = (char *) realloc(answer[(*N)], (1 + num) * sizeof(char));
-    answer[(*N)][num] = '\0';
-    (*N)+=1;
-    (*result) = answer;
+    answer[num][id] = '\0';
+    *N = id;
+    *result = answer;
 }
