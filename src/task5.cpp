@@ -1,8 +1,7 @@
 #include "task5.h"
 #include <iostream>
 #include <cstring>
-#include <cstdio>
-#include <cstdlib>
+
 
 using namespace std;
 
