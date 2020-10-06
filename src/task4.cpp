@@ -22,7 +22,7 @@ char* sum(char* x, char* y)
 
 	const char* mas_answer = new char [amount];
 
-	_itoa(answer, mas_answer, 10);
+	std::sprintf(mas_answer, "%lld", answer);
 
 	return mas_answer;
 };
