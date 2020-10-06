@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/task2.h
+iostream
+-
+cmath
+-
+cstring
+-
+
+C:/Disk_D/My projects/C++/tp-Lab-1/src/task2.cpp
+task2.h
+C:/Disk_D/My projects/C++/tp-Lab-1/src/task2.h
+
