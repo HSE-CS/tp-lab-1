@@ -49,5 +49,5 @@ void split(char ***result, int *N, char *buf, char ch)
         i++;
     }
     *result = res;
-    *N = del;
+    *N = del + 1;
 }

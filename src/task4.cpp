@@ -69,7 +69,7 @@ char * sum(char *x, char *y)
     if(maxint[res_size - 1] == 0)
         res_size--;
 
-    char *result = new char [res_size];
+    char *result = new char [res_size + 1];
 
     for(int i = 0; i < res_size; i++)
     {
@@ -77,7 +77,13 @@ char * sum(char *x, char *y)
     }
 
     result = rev(result);
-
+    result[res_size] = '\0';
+    for(int i = 0; i< strlen(result); i++)
+    {
+        cout<<result[i];
+    }
+    cout<<endl;
+    cout<<strlen(result);
     return result;
 
 }
