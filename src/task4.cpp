@@ -78,10 +78,7 @@ char * sum(char *x, char *y)
 
     result = rev(result);
     result[res_size] = '\0';
-    for(int i = 0; i< strlen(result); i++)
-    {
-        cout<<result[i];
-    }
+  
     return result;
 
 }
