@@ -2,10 +2,10 @@
 #include <iostream>
 int main()
 {
-    char ** result = new char * [1000];
-    char *buf = "lol kek char";
+    char ** result = nullptr;
+    char *buf = "123,456,789";
     int N;
-    split(&result, &N, buf, ' ');
+    split(&result, &N, buf, ',');
     printf("%d %s", N, result[2]);
     delete result;
 }

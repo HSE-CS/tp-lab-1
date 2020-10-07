@@ -31,6 +31,8 @@ char * sum(char *x, char *y)
             tmpRez[i] = (ost + tmpY[i]) % 10;
             ost = (ost + tmpY[i]) / 10;
         }
+    if(ost != 0)
+        tmpRez[i] = ost;
     unsigned len;
     if(tmpRez[std::max(strlen(x), strlen(y))] == 0)
         len = std::max(strlen(x), strlen(y));

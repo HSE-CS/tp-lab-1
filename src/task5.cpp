@@ -4,6 +4,7 @@
 
 void split(char ***result, int *N, char *buf, char ch)
 {
+    *result = new char *[1000];
     unsigned len = strlen(buf);
     int lastSumb = 0, count = 0, str = 0;
     char * myBuf = new char[len+1];

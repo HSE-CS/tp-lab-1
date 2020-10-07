@@ -3,6 +3,6 @@
 
 int main()
 {
-    char * str = sum("123", "321");
+    char * str = sum("9999999999999999", "1");
     printf("%s", str);
 }
