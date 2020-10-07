@@ -23,12 +23,13 @@ char* sum(char* x, char* y)
     unsigned long int size_y = strlen(y);
     unsigned long int res_size;
     int ost = 0;
-    char* maxS = new char[max(strlen(x), strlen(y))]{0};
-    char* minS = new char[min(strlen(x), strlen(y))]{0};
+    
+    char* maxS = new char[max(strlen(x), strlen(y)) + 1]{0};
+    char* minS = new char[min(strlen(x), strlen(y)) + 1]{0};
 
 
     int* maxint = new int[max(strlen(x), strlen(y)) + 1]{ 0 };
-    int* minint = new int[strlen(minS)]{ 0 };
+    
     if (size_x > size_y) {
         res_size = size_x + 1;
         maxS = x;
@@ -40,13 +41,13 @@ char* sum(char* x, char* y)
         minS = x;
     }
 
-    
+    int* minint = new int[strlen(minS)]{0};
 
     maxS = rev(maxS);
     minS = rev(minS);
 
 
-    for (int i = 0; i < strlen(maxS); i++)
+    for (int i = 0; i < strlen(maxS) ; i++)
         maxint[i] = maxS[i] - '0';
     for (int i = 0; i < strlen(minS); i++)
         minint[i] = minS[i] - '0';
@@ -75,10 +76,7 @@ char* sum(char* x, char* y)
         k++;
     }
 
-    delete[] maxint;
-    delete[] minint;
-    delete[] minS;
-    delete[] maxS;
+    
 
     return result;
 
