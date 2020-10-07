@@ -25,7 +25,7 @@ char* sum(char* x, char* y)
     int ost = 0;
     
     char* maxS = new char[max(strlen(x), strlen(y)) + 1]{0};
-    char* minS = new char[min(strlen(x), strlen(y)) + 1]{0};
+    char* minS = new char[min(strlen(x), strlen(y))]{0};
 
 
     int* maxint = new int[max(strlen(x), strlen(y)) + 1]{ 0 };
@@ -55,7 +55,7 @@ char* sum(char* x, char* y)
 
     for (int i = 0; i < res_size - 1; i++)
     {
-        if (i > strlen(minS))
+        if (i > strlen(minS) - 1)
             ost = 0;
         else
             ost = minint[i];
