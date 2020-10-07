@@ -54,7 +54,7 @@ char* sum(char* x, char* y)
 
     for (int i = 0; i < res_size - 1; i++)
     {
-        if (i > strlen(minS)-1)
+        if (i > strlen(minS))
             ost = 0;
         else
             ost = minint[i];
@@ -75,7 +75,10 @@ char* sum(char* x, char* y)
         k++;
     }
 
-
+    delete[] maxint;
+    delete[] minint;
+    delete[] minS;
+    delete[] maxS;
 
     return result;
 
