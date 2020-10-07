@@ -6,20 +6,6 @@
 
 using namespace std;
 
-char* swap(char* str)
-{
-	unsigned int j = 0;
-
-	for (unsigned int i = strlen(str) - 1; i > (strlen(str) - 1) / 2; i--)
-	{
-		char symbol = str[j];
-		str[j++] = str[i];
-		str[i] = symbol;
-	}
-
-	return str;
-}
-
 
 char* sum(char* x, char* y)
 {
