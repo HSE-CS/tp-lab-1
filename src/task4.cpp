@@ -69,13 +69,8 @@ char * sum(char *x, char *y)
     if(maxint[res_size - 1] == 0)
         res_size--;
 
-    char *result = new char [res_size + 1];
+    char *result = new char [res_size + 1]{0};
     
-    for (int i = 0; i <= res_size; i++)
-    {
-      result[i] = '\0';
-    }
-
     for(int i = 0; i < res_size; i++)
     {
         result[i] = maxint[i] + '0';
