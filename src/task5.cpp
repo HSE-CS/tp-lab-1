@@ -20,5 +20,6 @@ void split(char ***result, int *N, char *buf, char ch)
         }
     (*result)[str] = new char[256];
     sprintf((*result)[str++], "%s", myBuf+lastSumb);
+    count++;
     *N =count;
 }

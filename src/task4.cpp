@@ -6,6 +6,7 @@
 char * sum(char *x, char *y)
 {
     char * rez = new char[std::max(strlen(x), strlen(y)) +1];
+    memset(rez, 0, std::max(strlen(x), strlen(y)) +1);
     int * tmpRez = new int[std::max(strlen(x), strlen(y)) +1];
     int * tmpX = new int[strlen(x)];
     int * tmpY = new int[strlen(y)];
