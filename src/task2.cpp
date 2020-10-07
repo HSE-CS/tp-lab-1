@@ -3,10 +3,10 @@
 //
 
 #include "task2.h"
-
+#include <cmath>
 bool checkPrime(unsigned int value)
 {
-    for (int i = 2; i < value; i++) {
+    for (int i = 2; i <= int (sqrt(value)); i++) {
         if (value % i == 0 && value != 2)
             return false;
     }
