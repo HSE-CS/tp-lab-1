@@ -70,14 +70,13 @@ char * sum(char *x, char *y)
         res_size--;
 
     char *result = new char [res_size + 1]{0};
-    
-    for(int i = 0; i < res_size; i++)
+    int k = 0;
+    for(int i = res_size-1; i >= 0; i--)
     {
-        result[i] = maxint[i] + '0';
+        result[k] = maxint[i] + '0';
+        k++;
     }
 
-    result = rev(result);
-  
     return result;
 
 }
