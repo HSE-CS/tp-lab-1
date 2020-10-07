@@ -70,6 +70,11 @@ char * sum(char *x, char *y)
         res_size--;
 
     char *result = new char [res_size + 1];
+    
+    for (int i = 0; i <= res_size; i++)
+    {
+      result[i] = '\0';
+    }
 
     for(int i = 0; i < res_size; i++)
     {
@@ -77,7 +82,6 @@ char * sum(char *x, char *y)
     }
 
     result = rev(result);
-    result[res_size] = '\0';
   
     return result;
 
