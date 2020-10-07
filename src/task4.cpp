@@ -27,7 +27,7 @@ char* sum(char* x, char* y)
 
 	for (i = 0; i < size_b; i++)
 	{
-		b[i] = x[i] - 48;
+		b[i] = x[size_b - 1 - i] - 48;
 	}
 
 	while (i < length)
@@ -38,7 +38,7 @@ char* sum(char* x, char* y)
 
 	for (i = 0; i < size_a; i++)
 	{
-		a[i] = y[i] - 48;
+		a[i] = y[size_a - 1 - i] - 48;
 	}
 
 	while (i < length)
@@ -52,9 +52,10 @@ char* sum(char* x, char* y)
 		b[ix] += a[ix];
 		b[ix + 1] += (b[ix] / 10);
 		b[ix] %= 10;
+
 	}
 
-	if (b[length + 1] == 0)
+	if (b[length - 1] == 0)
 		length--;
 
 	int z;
