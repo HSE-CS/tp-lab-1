@@ -82,8 +82,6 @@ char * sum(char *x, char *y)
     {
         cout<<result[i];
     }
-    cout<<endl;
-    cout<<strlen(result);
     return result;
 
 }
