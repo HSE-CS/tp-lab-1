@@ -1,11 +1,5 @@
-#include "../include/task3.h"
-
-bool checkPrime(unsigned int value){
-    for(unsigned int i = 2; i <= value/2; i++)
-        if((value%i) == 0)
-            return false;
-    return true;
-}
+#include "task3.h"
+#include "task2.h"
 
 unsigned long long sumPrime(unsigned int hbound){
     unsigned int challenger = 2;

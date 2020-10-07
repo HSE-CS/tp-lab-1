@@ -1,6 +1,6 @@
-#include "../include/task3.h"
+#include "task3.h"
 
 int main(){
-    cout << sumPrime(30);
+    cout << sumPrime(14);
     return 0;
 }
