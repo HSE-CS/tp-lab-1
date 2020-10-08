@@ -1,5 +1,5 @@
-#include "../include/task1.h"
-#include"../include/task2.h"
+#include "task1.h"
+#include"task2.h"
 
 unsigned long  findValue(unsigned min, unsigned max) {
 	unsigned long  ans = 1;

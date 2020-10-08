@@ -1,5 +1,5 @@
-#include "../include/task2.h"
- 
+#include "task2.h"
+
 
 bool checkPrime(unsigned long long value) {
 	for (unsigned int i = 2; i <= sqrt(value); i++) {

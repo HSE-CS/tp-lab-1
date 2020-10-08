@@ -1,4 +1,4 @@
-#include "../include/task5.h"
+#include "task5.h"
 
 using namespace std;
 
