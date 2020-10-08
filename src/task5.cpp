@@ -20,7 +20,7 @@ void split(char*** result, int* N, char* buf, char ch)
     for (int i = 0; i < string_len; i++)
         if (buf[i] == ch)
             counter++;
-    *N = counter + 1;
+    *N = counter;
     counter = 0;
 
     (*result) = new char* [*N];

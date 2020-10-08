@@ -18,8 +18,9 @@ using namespace std;
 
 
 int main() {
-    char *x= "99999999999999999999";
-    char *y= "1";
+
+    char *x="99999999999999999999";
+    char *y="1";
     char * a = sum(x, y);
     cout << "Сумма: " << a << "\n";
 }

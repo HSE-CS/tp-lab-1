@@ -42,7 +42,7 @@ char * sum(char *x, char *y){
     int end_size = (temp_sum[sizeBigger-1] == 0) ? sizeBigger - 1 : sizeBigger;
     char * end_sum = new char [end_size];
     for (int i = 0; i < end_size; i++){
-        end_sum[i] = temp_sum[sizeBigger - 1 - i] + '0';
+        end_sum[i] = temp_sum[end_size - 1 - i] + '0';
     }
     
     return end_sum;
