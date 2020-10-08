@@ -4,6 +4,7 @@
 
 #include "task4.h"
 #include <cstring>
+#include <string.h>
 #include <algorithm>
 using namespace std;
 
@@ -33,7 +34,7 @@ char *sum(char *x, char *y){
             buf[i] = (char)(buf[i] - 10);
             overflow = true;
             if (0 == i){
-                char* buf1 = new char(maxLength);
+                char* buf1 = new char[maxLength/2];
                 buf1[0]='1';
                 buf = strcat(buf1,buf);
             }
@@ -42,3 +43,4 @@ char *sum(char *x, char *y){
     }
     return buf;
 }
+
