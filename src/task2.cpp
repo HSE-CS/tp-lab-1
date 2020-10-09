@@ -4,7 +4,7 @@
 #include <math.h>
 #include <vector>
 
-static void getPrimes (std::vector<unsigned int> &primes, unsigned int maxValue) {
+void getPrimes (std::vector<unsigned int> &primes, unsigned int maxValue, int exitComp(unsigned int, unsigned int)) {
     primes[0] = 2;
     unsigned int num = 2;
     bool isPrime;
@@ -16,11 +16,15 @@ static void getPrimes (std::vector<unsigned int> &primes, unsigned int maxValue)
                 break;
             }
         }
-        if (isPrime) {
+        if (isPrime)
             primes.push_back(num);
-        }
+
         num++;
-    } while (num <= sqrt(maxValue));
+    } while (exitComp(num, maxValue));
+}
+
+static int exitComp(unsigned int num, unsigned int maxValue) {
+    return (int)(sqrt(maxValue) - num + 1);
 }
 
 bool checkPrime(unsigned int value) {
@@ -28,7 +32,7 @@ bool checkPrime(unsigned int value) {
         return true;
 
     std::vector<unsigned int> primes(1);
-    getPrimes(primes, value);
+    getPrimes(primes, value, exitComp);
 
     for (unsigned int i : primes) {
         if (value % i == 0) {
