@@ -7,7 +7,7 @@ int main() {
 	
 	cout << "Test nPrime(7) = " << nPrime(7) << endl;
 
-	cout << "Test nextPrime(9) = " << nextPrime(9) << endl;
+	cout << "Test nextPrime(10) = " << nextPrime(10) << endl;
 
 	return 0;
 }
