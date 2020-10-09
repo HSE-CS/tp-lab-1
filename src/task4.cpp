@@ -26,9 +26,9 @@ char * sum(char* x, char* y) {
 
 		int ostatok = 0;
 		for (int i = 0; i < len_x; i++) {
-			
+
 			int sum_digits = 0;
-			
+
 			int digit_x = reverse_x[i] - '0';
 
 			sum_digits = digit_x + ostatok;
@@ -47,12 +47,14 @@ char * sum(char* x, char* y) {
 		if (ostatok) {
 			result[len_x] = '0' + ostatok;
 
-			char* reverse_result = new char[len_x + 1];
+			char* reverse_result = new char[len_x + 1 + 1];
 			for (int i = 0; i < len_x + 1; ++i)
 			{
 				reverse_result[i] = result[len_x + 1 - i - 1];
-				
+
 			}
+
+			reverse_result[len_x + 1] = '\0';
 			delete[] reverse_x;
 			delete[] reverse_y;
 			delete[] result;
@@ -61,14 +63,17 @@ char * sum(char* x, char* y) {
 			return reverse_result;
 		}
 		else {
-			
-			char* reverse_result = new char[len_x];
-			
+
+			char* reverse_result = new char[len_x + 1];
+
 			for (int i = 0; i < len_x; ++i)
 			{
 				reverse_result[i] = result[len_x - i - 1];
-				
+
 			}
+
+			reverse_result[len_x] = '\0';
+
 			delete[] reverse_x;
 			delete[] reverse_y;
 			delete[] result;
@@ -77,7 +82,7 @@ char * sum(char* x, char* y) {
 			return reverse_result;
 		}
 	}
-	
+
 	else if (len_y > len_x) {
 
 		char* result = new char[len_y + 1];
@@ -103,12 +108,14 @@ char * sum(char* x, char* y) {
 		if (ostatok) {
 			result[len_y] = '0' + ostatok;
 
-			char* reverse_result = new char[len_y + 1];
+			char* reverse_result = new char[len_y + 1 + 1];
 			for (int i = 0; i < len_y + 1; ++i)
 			{
 				reverse_result[i] = result[len_y + 1 - i - 1];
-				
+
 			}
+
+			reverse_result[len_y + 1] = '\0';
 			delete[] reverse_x;
 			delete[] reverse_y;
 			delete[] result;
@@ -118,14 +125,16 @@ char * sum(char* x, char* y) {
 		}
 		else {
 
-			char* reverse_result = new char[len_y];
+			char* reverse_result = new char[len_y + 1];
 
 			for (int i = 0; i < len_y; ++i)
 			{
 				reverse_result[i] = result[len_y - i - 1];
-				
+
 			}
-			
+
+			reverse_result[len_y] = '\0';
+
 			delete[] reverse_x;
 			delete[] reverse_y;
 			delete[] result;
