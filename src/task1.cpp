@@ -15,6 +15,7 @@ unsigned long findValue(unsigned int min,unsigned max)
 	unsigned int number = max;
 	while(!IsDel(min,max,number))
 		number++;
+	return number;
 
 
 }
