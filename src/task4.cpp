@@ -18,17 +18,15 @@ char *sum(char *x, char *y){
         for (unsigned int i = {0}; i < lenX - lenY; i++) buf[i] = '0';
         buf[lenX - lenY] = {0};
         y = strcat(buf, y);
-        delete [] buf;
     } else if (lenY > lenX){
         char *buf = new char[maxLength + 1];
         for (unsigned int i = {0}; i < lenY - lenX; i++) buf[i] = '0';
         buf[lenY - lenX] = {0};
         x = strcat(buf, x);
-        delete [] buf;
     }
     char *temp = new char[maxLength + 2];
-    temp[maxLength + 1] = {0};
-    for (unsigned int i = {0}; i <= maxLength; i++) {
+    temp[maxLength + 1] = '\0';
+    for (unsigned int i = 0; i <= maxLength; i++) {
         if (i == maxLength) {
             temp[0] = '0' + overflow;
             break;
