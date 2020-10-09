@@ -1,5 +1,5 @@
-#ifndef TASK1_H
-#define TASK1_H
+#ifndef TASK3_H
+#define TASK3_H
 
 #include <string>
 #include <iostream>
@@ -12,9 +12,6 @@
 #include <iterator>
 using namespace std;
 
-
-unsigned long findValue(unsigned int min, unsigned max);
-
-
+unsigned long long sumPrime(unsigned int hbound);
 
 #endif

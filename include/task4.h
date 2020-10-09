@@ -1,5 +1,5 @@
-#ifndef TASK1_H
-#define TASK1_H
+#ifndef TASK4_H
+#define TASK4_H
 
 #include <string>
 #include <iostream>
@@ -10,11 +10,9 @@
 #include <cstring>
 #include <string.h>
 #include <iterator>
+#include <stdlib.h>
 using namespace std;
 
-
-unsigned long findValue(unsigned int min, unsigned max);
-
-
+char* sum(char* x, char* y);
 
 #endif

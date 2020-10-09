@@ -11,8 +11,5 @@ using namespace std;
 
 int main()
 {
-	int min = 1;
-	int max = 10;
-	cout << findValue(min, max) << endl;
-
+	return 0;
 }

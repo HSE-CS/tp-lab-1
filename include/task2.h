@@ -1,5 +1,5 @@
-#ifndef TASK1_H
-#define TASK1_H
+#ifndef TASK2_H
+#define TASK2_H
 
 #include <string>
 #include <iostream>
@@ -12,9 +12,9 @@
 #include <iterator>
 using namespace std;
 
-
-unsigned long findValue(unsigned int min, unsigned max);
-
+bool checkPrime(unsigned int value);
+unsigned long long nPrime(unsigned n);
+unsigned long long nextPrime(unsigned long long value);
 
 
 #endif

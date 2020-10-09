@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
-#include "task1.h"
+#include "task3.h"
 #include <string>
 
 using namespace std;
@@ -11,8 +11,7 @@ using namespace std;
 
 int main()
 {
-	int min = 1;
-	int max = 10;
-	cout << findValue(min, max) << endl;
-
+	cout << sumPrime(10) << endl;
+	cout << sumPrime(2000000) << endl;
+	return 0;
 }
