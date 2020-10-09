@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-	char x[21]="99999999999999999999";
-	char y[20] = "1";
+	char x[25]="50000000090000000";
+	char y[25] = "10000000";
 	cout << sum(x, y);
 	return 0;
 } 

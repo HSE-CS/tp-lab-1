@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    char buf[] = "123,,,456,789,,,,,";
-    int N = 0;
+    char buffer[] = "123,,,456,789,,,,,";
+    int M = 0;
     char** result = nullptr;
-    split(&result, &N, buf, ',');
+    split(&result, &M, buffer, ',');
     cout << N << "\n";
     for (int i = 0; i < N; i++) {
         cout << result[i] << "\n";
