@@ -1,11 +1,4 @@
-unsigned long findValue(unsigned int min,unsigned max)
-{
-	unsigned int number = max;
-	while(!IsDel(min,max,numbrer))
-		number++;
-
-
-}
+#include"task1.h"
 
 bool IsDel(unsigned int min,unsigned max,unsigned int number)
 {
@@ -16,3 +9,13 @@ bool IsDel(unsigned int min,unsigned max,unsigned int number)
 	}
 	return true;
 }
+
+unsigned long findValue(unsigned int min,unsigned max)
+{
+	unsigned int number = max;
+	while(!IsDel(min,max,number))
+		number++;
+
+
+}
+
