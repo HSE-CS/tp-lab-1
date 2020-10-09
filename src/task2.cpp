@@ -16,7 +16,7 @@ unsigned long long nPrime(unsigned n)
 	int number = 2;
 	while (i < n) 
 	{
-		if (isPrime(number))
+		if (checkPrime(number))
 			i++;
 		number++;
 
