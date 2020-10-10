@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task4.h"
+#include <cstring>
 
 int main() {
 	char a[] = "123456789";
