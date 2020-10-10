@@ -5,7 +5,8 @@
 char* sum(char* x, char* y)
 {
 	if (strlen(y) > strlen(x)) {
-		char* buf = y;
+		char* buf =new char[strlen(y)];
+		buf = y;
 		y = x;
 		x = buf;
 	}
