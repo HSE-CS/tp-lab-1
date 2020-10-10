@@ -12,7 +12,7 @@ char * sum(char *x, char *y)
   int next_num = 0;
   for (int i = 0; i < max_len; i++)
   {
-    if (lex_x < i)
+    if (len_x < i)
 
       first_num = 0;
 
@@ -20,7 +20,7 @@ char * sum(char *x, char *y)
       first_num = x[max_len - i - 1] - '0';
 
 
-      if (lex_y < i)
+      if (len_y < i)
 
         second_num = 0;
 
@@ -37,7 +37,7 @@ char * sum(char *x, char *y)
 
   if (new_str[max_len-1] == '0')
        --max_len;
-   reverseString(new_str, max_len);
+   reverse(new_str, new_str + max_len);
    new_str[max_len] = '\0';
    if (max_len == 0){
        new_str[0] = '0';
