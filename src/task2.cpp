@@ -13,7 +13,7 @@ bool checkPrime(unsigned int value) {
 
 //Решето Эратосфена
 int* sieveOfEratosphenes(int size) {
-    int* simple_table = new int[size];
+    int* simple_table = new int[size] {0};
     int number = 0;
     for (int i = 2; i < size; i++)
     {
