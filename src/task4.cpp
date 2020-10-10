@@ -28,8 +28,9 @@ char * sum(char *x, char *y)
         second_num = y[max_len - i - 1] - '0';
 
     next_num = first_num + second_num + boofer;
-    boofer = next_num % 10;
-    next_num = next_num / 10;
+
+    boofer = next_num / 10;
+    next_num = next_num % 10;
 
     new_str[i] = next_num + '0';
 
@@ -37,7 +38,7 @@ char * sum(char *x, char *y)
 
   if (new_str[max_len-1] == '0')
        --max_len;
-       
+
    reverse(new_str, new_str + max_len);
 
    new_str[max_len] = '\0';
