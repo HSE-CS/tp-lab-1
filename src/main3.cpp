@@ -4,7 +4,4 @@
 using namespace std;
 
 int main() {
-
-	unsigned sum_bound(2000000);
-	cout << sumPrime(sum_bound) << endl;
 }
