@@ -1,0 +1,2 @@
+#include <bits/stdc++.h>
+void split(char*** result, int* N, char* buf, char ch);
