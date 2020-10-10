@@ -23,29 +23,28 @@ char* sum(char* x, char* y)
 	for (int i = 0; i < size; i++)
 	{
 		if (i<strlen(x))
-			elem1[size-i] = x[strlen(x)-i-1] - '0';
+			elem1[size-i-1] = x[strlen(x)-i-1] - '0';
 		else
-			elem1[size-i] = 0;
+			elem1[size-i-1] = 0;
 		if (i< strlen(y))
-			elem2[size-i] = y[strlen(y)-i-1] - '0';
+			elem2[size-i-1] = y[strlen(y)-i-1] - '0';
 		else
-			elem2[size-i] = 0;
+			elem2[size-i-1] = 0;
 	}
 	int ost = 0;
 	for (int i = 0; i < size;i++)
 	{
-		int summa = elem1[size-i] + elem2[size-i] + ost;
+		int summa = elem1[size-i-1] + elem2[size-i-1] + ost;
 		ost = summa / 10;
 		summa = summa % 10;
 		result[i] = summa + '0';
 	}
 	char* result2_0 = new char[size];
-	int i;
 	if (result[size - 2] == '0')
 		size -= 2;
 	if (result[size - 1] == '0')
 		size -= 1;
-	for (int i = 0;i <= size;i++)
+	for (int i = 0;i < size;i++)
 	{
 		result2_0[i] = '\0';
 	}
@@ -53,5 +52,6 @@ char* sum(char* x, char* y)
 	{
 		result2_0[i] = result[size - i - 1];
 	}
+	result2_0[i] = '\0';
 	return result2_0;
 }
