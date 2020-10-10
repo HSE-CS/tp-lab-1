@@ -14,13 +14,13 @@ char* sum(char* x, char* y)
 	else
 		size = strlen(y) + 2;
 	char* result = new char[size];
-	for (int i = 0;i <= size;i++)
+	for (int i = 0;i < size;i++)
 	{
 		result[i] = '\0';
 	}
 	int* elem1 = new int[size];
 	int* elem2 = new int[size];
-	for (int i = 0; i <= size; i++)
+	for (int i = 0; i < size; i++)
 	{
 		if (i<strlen(x))
 			elem1[size-i] = x[strlen(x)-i-1] - '0';
@@ -32,7 +32,7 @@ char* sum(char* x, char* y)
 			elem2[size-i] = 0;
 	}
 	int ost = 0;
-	for (int i = 0; i <= size;i++)
+	for (int i = 0; i < size;i++)
 	{
 		int summa = elem1[size-i] + elem2[size-i] + ost;
 		ost = summa / 10;
