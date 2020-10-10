@@ -7,5 +7,6 @@
 
 int main()
 {
-  
+    unsigned long long res = nPrime(6);
+    printf("%d", res);
 }
