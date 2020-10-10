@@ -26,6 +26,7 @@ char* sum(char* x, char* y)
 			resault[lenx + 1] = 1;
 		else
 			resault++;
+		free(fake_y);
 	}
 	else {
 		char* fake_x = (char*)calloc(leny+1, sizeof(char)); // fake_x = 000...00+x (length fake_x = length y)
@@ -49,7 +50,7 @@ char* sum(char* x, char* y)
 			resault[lenx + 1] = 1;
 		else
 			resault++;
-		// todo cycle
+		free(fake_x);
 	}
 	return resault;
 }

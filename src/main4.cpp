@@ -8,4 +8,5 @@ int main() {
 		cout << res[i];
 	}
 	cout << endl;
+	free(res);
 }
