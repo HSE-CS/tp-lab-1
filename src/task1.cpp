@@ -1,7 +1,7 @@
 #include "task1.h"
 #include <map>
 #include <iostream>
-
+#include <cmath>
 
 unsigned long findValue(unsigned int min, unsigned max)
 {
