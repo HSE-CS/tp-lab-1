@@ -1,5 +1,7 @@
 #include "task2.h"
 #include <iostream>
+#include <cmath>
+
 bool checkPrime(unsigned int value)
 {
 	bool result = true;
