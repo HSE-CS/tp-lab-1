@@ -37,9 +37,12 @@ char * sum(char *x, char *y)
 
   if (new_str[max_len-1] == '0')
        --max_len;
+       
    reverse(new_str, new_str + max_len);
+
    new_str[max_len] = '\0';
-   if (max_len == 0){
+   if (max_len == 0)
+   {
        new_str[0] = '0';
        new_str[1] = '\0';
    }
