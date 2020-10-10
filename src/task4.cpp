@@ -18,13 +18,13 @@ char* sum(char* x, char* y)
 	int div = 0, index_sum = 0;
 	int index_x = strlen(x) - 1, index_y = strlen(y) - 1;
 
-	while (y[index_y] >= 0) {
+	while (index_y >= 0) {
 		int sumRazryada = (x[index_x--] - '0') + (y[index_y--] - '0') + div;
 		sum[index_sum++] = '0' + sumRazryada % 10;
 		div = sumRazryada / 10;
 	}
 
-	while (x[index_x] >= 0)
+	while (index_x >= 0)
 	{
 		int sumRazryada = (x[index_x--] - '0') + div;
 		sum[index_sum++] = '0' + sumRazryada % 10;
