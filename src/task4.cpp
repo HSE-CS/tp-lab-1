@@ -10,9 +10,9 @@ char* sum(char* x, char* y)
 {
 	int size = 0;
 	if (strlen(x) > strlen(y))
-		size = strlen(x) + 1;
+		size = strlen(x) + 2;
 	else
-		size = strlen(y) + 1;
+		size = strlen(y) + 2;
 	char* result = new char[size];
 	for (int i = 0;i <= size;i++)
 	{
@@ -41,8 +41,8 @@ char* sum(char* x, char* y)
 	}
 	char* result2_0 = new char[size];
 	int i;
-	if (result[size - 1] == '0')
-		size -= 1;
+	if (result[size - 2] == '0')
+		size -= 2;
 	for (int i = 0;i <= size;i++)
 	{
 		result2_0[i] = '\0';
