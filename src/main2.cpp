@@ -7,7 +7,5 @@
 
 int main()
 {
-    printf("%d\n",nextPrime(1031));
-    printf("%d\n", nextPrime(3559));
-    printf("%d\n", nextPrime(2));
+  
 }

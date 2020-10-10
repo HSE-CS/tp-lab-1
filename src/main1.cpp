@@ -5,10 +5,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-/*int main()
+int main()
 {
 	unsigned int result = 0;
 	result = findValue(1, 10);
 	printf("%d", result);
 	return 0;
-}*/
+}
