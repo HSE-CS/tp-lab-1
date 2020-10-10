@@ -8,4 +8,4 @@
 char* sum(char* x, char* y)
 {
 	return 0;
-}s
+}
