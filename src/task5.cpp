@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <string.h>
 
 void split(char*** result, int* N, char* buf, char ch)
 {
