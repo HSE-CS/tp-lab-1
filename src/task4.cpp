@@ -11,7 +11,7 @@ char* sum(char* x, char* y)
 		x = buf;
 	}
 
-	char* sum = new char[strlen(x)];
+	char* sum = new char[strlen(x) + 2];
 	for (int i = 0; i <= strlen(x); i++)
 		sum[i] = '\0';
 
@@ -36,7 +36,7 @@ char* sum(char* x, char* y)
 
 	sum[index_sum] = '\0';
 
-	char* reverSum = new char[index_sum - 1];
+	char* reverSum = new char[strlen(sum)];
 
 	for (int i = strlen(sum) - 1; i >= 0; i--)
 		reverSum[index_sum - i - 1] = sum[i];
