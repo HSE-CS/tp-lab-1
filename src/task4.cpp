@@ -52,6 +52,6 @@ char* sum(char* x, char* y)
 	{
 		result2_0[i] = result[size - i - 1];
 	}
-	result2_0[i] = '\0';
+	result2_0[size] = '\0';
 	return result2_0;
 }
