@@ -43,6 +43,8 @@ char* sum(char* x, char* y)
 	int i;
 	if (result[size - 2] == '0')
 		size -= 2;
+	if (result[size - 1] == '0')
+		size -= 1;
 	for (int i = 0;i <= size;i++)
 	{
 		result2_0[i] = '\0';
