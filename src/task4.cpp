@@ -12,6 +12,8 @@ char* sum(char* x, char* y)
 	}
 
 	char* sum = new char[strlen(x)];
+	for (int i = 0; i <= strlen(x); i++)
+		sum[i] = '\0';
 
 	int div = 0, index_sum = 0;
 	int index_x = strlen(x) - 1, index_y = strlen(y) - 1;
