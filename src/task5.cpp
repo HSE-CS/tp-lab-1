@@ -6,9 +6,9 @@ void split(char*** result, int* N, char* buf, char ch)
 	for (int i = 0; i < strlen(buf); i++)
 		if (buf[i] == ch)
 			++*N;
-	*N++;
-	(*result) = new char* [*N + 1];
-	for (int i = 0; i <= *N; i++) {
+	++*N;
+	(*result) = new char* [*N ];
+	for (int i = 0; i < *N; i++) {
 		(*result)[i] = new char[strlen(buf)];
 		(*result)[i][0] = '\0';
 	}
