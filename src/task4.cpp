@@ -4,12 +4,12 @@
 
 char* sum(char* x, char* y)
 {
-	if (strlen(y) > strlen(x)) {
-		char* buf =new char[strlen(y)];
+	/*if (strlen(y) > strlen(x)) {
+		char* buf =new char[strlen(y) + 1];
 		buf = y;
 		y = x;
 		x = buf;
-	}
+	}*/
 
 	char* sum = new char[strlen(x) + 2];
 	for (int i = 0; i <= strlen(x); i++)
