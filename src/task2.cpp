@@ -37,6 +37,7 @@ unsigned long long nPrime(unsigned n)
     }
     return --k;
 }
+
 unsigned long long nextPrime(unsigned long long value)
 {
     unsigned long long k = value + 1;

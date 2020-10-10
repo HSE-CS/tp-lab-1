@@ -11,9 +11,9 @@ using namespace std;
 
 int main()
 {
-    char* y = "2";
-    char* x = "3";
-    char* expected = "100000000000000000000";
+    /*Creating a symmetric case. It is not difficult to write symmetry in the function itself.*/
+    char* x = "99999999999999999999";
+    char* y = "1";
     if(strlen(x) >= strlen(y))
         cout << sum(x, y) << endl;
     else
