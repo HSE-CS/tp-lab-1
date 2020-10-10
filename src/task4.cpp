@@ -50,6 +50,15 @@ char* sum(char* x, char* y)
     }
     else
     {
+
+        if (strlen(x) < strlen(y))
+        {
+            char* temp = new char[strlen(y)];
+            strcpy(temp, y);
+            y = x;
+            x = temp;
+        }
+            
         char* res = new char[max(strlen(x) + 1, (strlen(y) + 1))];
         int leny = strlen(y) - 1;
         char* newstr = new char[max(strlen(x), (strlen(y))) + 1];
