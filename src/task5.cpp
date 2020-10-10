@@ -1,6 +1,6 @@
 #include "task5.h"
 #include <iostream>
-
+#include <string>
 void split(char*** result, int* N, char* buf, char ch)
 {
 	for (int i = 0; i < strlen(buf); i++)
