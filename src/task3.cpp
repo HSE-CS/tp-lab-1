@@ -4,7 +4,7 @@
 #include <cstring>
 bool checkPrime(unsigned int value) {
 	for (unsigned int i = 2; i < value; i++) {
-		boll g = false;
+		bool g = false;
 		if (value% i = 0) {
 			break;
 		}
