@@ -6,8 +6,16 @@
 
 unsigned long findValue(unsigned int min, unsigned int max) {
     unsigned long result = 1;
-    for (unsigned int w = min; w <= max; w++) {
-        result *= w;
+    while (true) {
+        bool f = true;
+        for (unsigned int i = min; i <= max; ++i) {
+            if (result % i != 0) {
+                f = false;
+                break;
+            }
+        }
+        if (f) break;
+        result++;
     }
     return result;
 }

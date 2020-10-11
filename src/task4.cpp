@@ -13,8 +13,10 @@ char *sum(char *x, char *y) {
     while (i <= std::max(lx, ly)) {
         if (i < std::min(lx, ly)) {
             word[i] = (char) (((int)(x[lx-i-1]-48) + (int)(y[ly-i-1]-48) + remainder) % 10 + 48);
-            if ((int)(x[lx-i-1]-48) + (int)(y[ly-i-1]-48) >= 10) {
-                remainder = ((int)(x[lx-i-1]-48) + (int)(y[ly-i-1]-48) + remainder)/10;
+            if ((int)(x[lx-i-1]-48) + (int)(y[ly-i-1]-48) + remainder >= 10) {
+                remainder = ((int) (x[lx - i - 1] - 48) + (int) (y[ly - i - 1] - 48) + remainder) / 10;
+            } else {
+                remainder = 0;
             }
         } else if (i < std::max(lx, ly)){
             if (lx > ly) {
