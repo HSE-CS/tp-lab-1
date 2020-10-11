@@ -9,7 +9,7 @@ int main() {
 	cout << "Enter your string" << endl;
 	cin >> buf;
 	
-	split(result, N, buf, ch);
+	split(result, N, buf);
 
 	for (int i = 0; i < n; i++)
 	{

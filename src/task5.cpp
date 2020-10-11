@@ -1,34 +1,34 @@
 #include "task5.h"
 
-void split(char*** result, int* N, char* buf, char ch)
+void split(char*** result, int* N, char* buf)
 {
 	int length = strlen(buf);
-	*N = countStrings(length);													//result = (char***)malloc(sizeof(char**));
-	*result = (char**)malloc(*N * sizeof(char*));
-	for (int k = 0; k < *N;) { // sozdaem stroki
-		for (int i = 0; i < length; i++) { // start podstroki
-			for (int j = i; j < length; j++) {  //  end podstroki
-				if (j == i) {
-					(*result)[k] = (char*)calloc(1, sizeof(char));
-					const char temp = buf[i];
-					(*result)[k][0] = temp;
-					k++;
-					cout <<"length ==" << strlen((*result)[k - 1]) << endl;
-				}
-				
-				else {
+	*N = countStrings(length);	
+	char** res{ 0 };
+	res = new char* [*N];		
+	//result = (char***)malloc(sizeof(char**));
+	for (int i = 0; i < *N; i++) {
+		res[i] = 0;
+	}
+	if (res) {
+		//*result = (char**)malloc(*N * sizeof(char*));
+		for (int k = 0; k < *N;) { // sozdaem stroki
+			for (int i = 0; i < length; i++) { // start podstroki
+				for (int j = i; j < length; j++) {  //  end podstroki
 					int len = j - i + 1;  //dlina podstroki
-					(*result)[k]= (char*)calloc(len, sizeof(char));
-					for (int l = 0; l < len; l++) {
-						(*result)[k][l] = buf[i + l];
-					}
-					k++;
-
+					char* temp{ 0 };
+					temp = new char[len];
+						for (int l = 0; l < len; l++) {
+								temp[l] = buf[i + l];
+						}
+						res[k] = temp;
+						res[k][len] = 0;
+						k++;
 				}
 			}
 		}
 	}
-
+	(*result) = res;
 }
 
 int countStrings(int length) {
