@@ -18,7 +18,7 @@ unsigned long long nPrime(unsigned int n) {
 	unsigned int g = 0;
 	int chislo = 2;
 	while (g != n) {
-		if (checkPrime(chislo) = true) {
+		if (checkPrime(chislo) == true) {
 			g++;
 		}
 		chislo++;
