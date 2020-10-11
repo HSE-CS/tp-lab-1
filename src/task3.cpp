@@ -1,10 +1,9 @@
 //
 // Created by jmax on 05.10.2020.
 //
-#include <iostream>
 #include <vector>
 
-void getPrimes (std::vector<unsigned int> &primes, unsigned int maxValue, int exitComp(unsigned int, unsigned int)) {
+void getPrimesVector (std::vector<unsigned int> &primes, unsigned int maxValue, int exitComp(unsigned int, unsigned int)) {
     primes[0] = 2;
     unsigned int num = 2;
     bool isPrime;
@@ -29,7 +28,7 @@ static int exitComp(unsigned int num, unsigned int maxValue) {
 
 unsigned long long sumPrime(unsigned int hbound) {
     std::vector<unsigned int> primes(1);
-    getPrimes(primes, hbound, exitComp);
+    getPrimesVector(primes, hbound, exitComp);
     unsigned long long sum = 0;
     for (unsigned int i : primes)
         sum += i;
