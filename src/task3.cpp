@@ -6,13 +6,13 @@ bool checkPrime(unsigned int value) {
 	for (unsigned int i = 2; i < value; i++) {
 		boll g = false;
 		if (value% i = 0) {
-			break
+			break;
 		}
 		if (i = value - 1) {
 			g = true;
 		}
 	}
-	return g
+	return g;
 }
 unsigned long long sumPrime(unsigned int hbound) {
 	int F = 2;
@@ -21,5 +21,5 @@ unsigned long long sumPrime(unsigned int hbound) {
 			F = F + i;
 		}
 	}
-	return F
+	return F;
 }

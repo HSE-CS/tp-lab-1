@@ -11,7 +11,7 @@ unsigned long findValue(unsigned int min, unsigned int max) {
 		for (unsigned int j = min; j < max + 1; j++) {
 			ostatok = ostatok + i % j;
 		}
-		i++
+		i++;
 	}
-	return i--
+	return i--;
 }

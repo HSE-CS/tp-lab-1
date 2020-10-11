@@ -6,13 +6,13 @@ bool checkPrime(unsigned int value) {
 	for (unsigned int i = 2; i < value; i++) {
 		boll g = false;
 		if (value % i = 0) {
-				break
+			break;
 		}
 		if (i = value - 1) {
 			g=true;
 		}
 	}
-	return g
+	return g;
 }
 unsigned long long nPrime(unsigned int n) {
 	unsigned int g = 0;
@@ -23,12 +23,12 @@ unsigned long long nPrime(unsigned int n) {
 		}
 		chislo++;
 	}
-	return chislo--
+	return chislo--;
 }
 unsigned long long nextPrime(unsigned long long value) {
 	unsigned long long chislo = value++;
 	while (checkPrime(chislo) = false) {
 		chislo++;
 	}
-	return chislo
+	return chislo;
 }
