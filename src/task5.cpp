@@ -10,20 +10,19 @@
 #include "../include/task5.h"
 
 void split(char ***result, int *N, char *buf, char ch) {
-    int count = 1, i = 0;
-    while (i < strlen(buf)) if (buf[i] == ch) count++, i++;
-    (*N) = count, count = 0;
+    int stringLen = strlen(buf), k = 0, count = 1;
+    for (int i = 0; i < stringLen; i++) if (buf[i] == ch) count++;
+    *N = count, count = 0;
     (*result) = new char *[*N];
-
-    for (int k = 0; k < *N; k++) (*result)[k] = new char[strlen(buf)], (*result)[k][0] = '\0';
-
-    int len, start = 0;
-    for (int k = 0; k <= strlen(buf); k++) {
-        if (ch != buf[k] && strlen(buf) != k) continue;
-        len = k - start;
-        for (int j = 0; j < len; j++) (*result)[count][j] = buf[start], start++;
-        (*result)[count][len] = '\0';
-        count += 1;
-        start = k + 1;
+    for (auto i = 0; i < *N; i++) {
+        (*result)[i] = new char[stringLen];
+        (*result)[i][0] = '\0';
+    }
+    for (auto i = 0; i <= stringLen; i++) {
+        if (i != stringLen && buf[i] != ch) continue;
+        int word_length = i - k;
+        for (int j = 0; j < word_length; j++) (*result)[count][j] = buf[k++];
+        (*result)[count++][word_length] = '\0';
+        k = i + 1;
     }
 }
