@@ -8,6 +8,7 @@ char *sum(char *x, char *y) {
     int len_x = strlen(x);
     int len_y = strlen(y);
     char *result = new char[std::max(len_x, len_y)];
+    result[std::max(len_x, len_y)] = '\0';
     char *x_rev = new char[len_x];
     char *y_rev = new char[len_y];
     int i_x = len_x - 1;
