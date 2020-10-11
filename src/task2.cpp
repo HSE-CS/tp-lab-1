@@ -1,34 +1,25 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cstring>
-bool checkPrime(unsigned int value) {
-	bool g = false;
-	for (unsigned int i = 2; i < value; i++) {
-		if (value % i == 0) {
-			break;
-		}
-		if (i == value - 1) {
-			g=true;
-		}
-	}
-	return g;
+bool checkPrime(unsigned int n) {
+    for (int i = 2; i <= n / 2; i++)
+        if ((n % i) == 0) return false;
+    return true;
 }
+
 unsigned long long nPrime(unsigned int n) {
-	unsigned int g = 0;
-	int chislo = 2;
-	while (g != n) {
-		if (checkPrime(chislo) == true) {
-			g++;
-		}
-		chislo++;
-	}
-	return chislo--;
+    int k = 0;
+    for (int i = 2;; i++)
+        if (checkPrime(i)) {
+            k++;
+            if (k == n)
+                return i;
+        }
+    return 1;
 }
-unsigned long long nextPrime(unsigned long long value) {
-	unsigned long long chislo = value++;
-	while (checkPrime(chislo) == false) {
-		chislo++;
-	}
-	return chislo;
+
+unsigned long long nextPrime(unsigned long long n) {
+    n++;
+    for (;; n++)
+        if (checkPrime(n)) {
+            return n;
+        }
+    return 1;
 }

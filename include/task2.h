@@ -1,9 +1,3 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cstring>
-
-using namespace std;
-bool checkPrime(unsigned int value);
-unsigned long long nPrime(unsigned n);
-unsigned long long nextPrime(unsigned long long value);
+unsigned long long nextPrime(unsigned long long n);
+unsigned long long nPrime(unsigned int n);
+bool checkPrime(unsigned int n);

@@ -1,17 +1,17 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cstring>
-
 unsigned long findValue(unsigned int min, unsigned int max) {
-	unsigned int i = max+1;
-	int ostatok = 0;
-	while (ostatok != 0){
-		ostatok = 0;
-		for (unsigned int j = min; j < max + 1; j++) {
-			ostatok = ostatok + i % j;
-		}
-		i++;
-	}
-	return i--;
+    for (long long i = min; ; i++)
+    {
+        int t = 0;
+        for (unsigned int j = min; j < max; j++)
+        {
+            if (i % j != 0) {
+                t = 1;
+                break;
+            }
+        }
+        if (t == 0) {
+            return i;
+        }
+    }
+
 }

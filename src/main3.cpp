@@ -1,7 +1,7 @@
 #include "task3.h"
-
-using namespace std;
+#include <iostream>
 
 int main() {
-	cout << sumPrime(2000000);
+    std::cout << sumPrime(6) << "\n";
+    return 0;
 }

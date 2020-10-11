@@ -1,25 +1,10 @@
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cstring>
-bool checkPrime(unsigned int value) {
-	bool g = false;
-	for (unsigned int i = 2; i < value; i++) {
-		if (value% i == 0) {
-			break;
-		}
-		if (i == value - 1) {
-			g = true;
-		}
-	}
-	return g;
-}
+#include "task2.h"
+
 unsigned long long sumPrime(unsigned int hbound) {
-	int F = 2;
-	for (unsigned int i = 3; i < hbound; i++) {
-		if (checkPrime(i) == true) {
-			F = F + i;
-		}
-	}
-	return F;
+    unsigned long long sum = 0;
+    for (unsigned int i = 2; i < hbound; i++)
+    {
+        sum += checkPrime(i) ? i : 0;
+    }
+    return sum;
 }

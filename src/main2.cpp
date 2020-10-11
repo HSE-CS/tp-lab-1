@@ -1,9 +1,8 @@
 #include "task2.h"
-
-using namespace std;
+#include <iostream>
 
 int main() {
-	cout << checkPrime(503)<<'\n';
-	cout << nPrime(5) << '\n';
-	cout << nextPrime(203) << '\n';
+    std::cout << nPrime(500) << "\n";
+    std::cout << nextPrime(500) << "\n";
+    return 0;
 }
