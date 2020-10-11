@@ -5,10 +5,10 @@
 bool checkPrime(unsigned int value) {
 	for (unsigned int i = 2; i < value; i++) {
 		bool g = false;
-		if (value % i = 0) {
+		if (value % i == 0) {
 			break;
 		}
-		if (i = value - 1) {
+		if (i == value - 1) {
 			g=true;
 		}
 	}
@@ -27,7 +27,7 @@ unsigned long long nPrime(unsigned int n) {
 }
 unsigned long long nextPrime(unsigned long long value) {
 	unsigned long long chislo = value++;
-	while (checkPrime(chislo) = false) {
+	while (checkPrime(chislo) == false) {
 		chislo++;
 	}
 	return chislo;

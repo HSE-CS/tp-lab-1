@@ -5,10 +5,10 @@
 bool checkPrime(unsigned int value) {
 	for (unsigned int i = 2; i < value; i++) {
 		bool g = false;
-		if (value% i = 0) {
+		if (value% i == 0) {
 			break;
 		}
-		if (i = value - 1) {
+		if (i == value - 1) {
 			g = true;
 		}
 	}
@@ -17,7 +17,7 @@ bool checkPrime(unsigned int value) {
 unsigned long long sumPrime(unsigned int hbound) {
 	int F = 2;
 	for (unsigned int i = 3; i < hbound; i++) {
-		if (checkPrime(i) = true) {
+		if (checkPrime(i) == true) {
 			F = F + i;
 		}
 	}
