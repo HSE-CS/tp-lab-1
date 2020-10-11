@@ -4,6 +4,7 @@
 #include <cstring>
 #include <algorithm>
 
+
 char *sum(char *x, char *y) {
     int len_x = strlen(x);
     int len_y = strlen(y);
