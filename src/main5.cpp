@@ -15,8 +15,8 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < strlen(result[i]); j++)
-            std::cout << result[i][j];
-        std::cout << std::endl;
+            cout << result[i][j];
+        cout << std::endl;
     }
     cout << "" << endl;
     return 0;
