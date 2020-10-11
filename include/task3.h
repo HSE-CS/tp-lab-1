@@ -4,5 +4,3 @@
 unsigned long long sumPrime(unsigned int hbound);
 
 #endif // TASK3_H
-
-

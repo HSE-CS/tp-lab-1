@@ -36,4 +36,3 @@ unsigned long long nextPrime(unsigned long long value) {
     }
     return 1;
 }
-
