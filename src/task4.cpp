@@ -23,8 +23,8 @@ char *sum(char *x, char *y) {
         y_rev[i_y] = y[i];
         --i_y;
     }
-    unsigned i = 0;
-    unsigned memory = 0;
+    int i = 0;
+    int memory = 0;
     while (i < len_x && i < len_y){
         int a = x_rev[i] - '0';
         int b = y_rev[i] - '0';
