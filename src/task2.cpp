@@ -3,8 +3,8 @@
 #include <string>
 #include <cstring>
 bool checkPrime(unsigned int value) {
+	bool g = false;
 	for (unsigned int i = 2; i < value; i++) {
-		bool g = false;
 		if (value % i == 0) {
 			break;
 		}
