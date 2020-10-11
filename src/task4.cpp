@@ -10,7 +10,7 @@ char *sum(char *x, char *y) {
     char *ans = new char[max];
 
     int previousSymbol = 0, sum;
-    for (int i = strlen(x) - 1, j = strlen(y) - 1, k = max; i >= 0, j >= 0; i--, j--, k--) {
+    for (int i = strlen(x) - 1, j = strlen(y) - 1, k = max; k > 0 ; i--, j--, k--) {
         if (i < 0)
             sum = (y[j] - '0') + previousSymbol;
         else if (j < 0)

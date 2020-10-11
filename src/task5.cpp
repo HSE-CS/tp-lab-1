@@ -19,9 +19,10 @@ void split(char ***result, int *N, char *buf, char ch) {
     int prevPoint = 0;
     int counter = 0;
     for (int point : points) {
-        (*result)[counter] = new char[point - prevPoint]();
+        (*result)[counter] = new char[point - prevPoint + 1]();
         for (int i = prevPoint, j = 0; i < point; i++, j++) {
             (*result)[counter][j] = buf[i];
+            (*result)[counter][j + 1] = 0;
         }
         prevPoint = point + 1;
         counter++;
