@@ -18,12 +18,12 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/task1.cpp)
-set(SRC_FILES2 ${PROJECT_SOURCE_DIR}/src/task2.cpp)
+set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/task1.cpp src/task1.cpp include/task1.h src/main1.cpp)
+set(SRC_FILES2 ${PROJECT_SOURCE_DIR}/src/task2.cpp src/task2.cpp include/task2.h src/main2.cpp)
 set(SRC_FILES3 ${PROJECT_SOURCE_DIR}/src/task2.cpp
-               ${PROJECT_SOURCE_DIR}/src/task3.cpp)              
-set(SRC_FILES4 ${PROJECT_SOURCE_DIR}/src/task4.cpp)
-set(SRC_FILES5 ${PROJECT_SOURCE_DIR}/src/task5.cpp)
+               ${PROJECT_SOURCE_DIR}/src/task3.cpp src/task3.cpp include/task3.h src/main3.cpp)
+set(SRC_FILES4 ${PROJECT_SOURCE_DIR}/src/task4.cpp src/task4.cpp include/task4.h src/main4.cpp)
+set(SRC_FILES5 ${PROJECT_SOURCE_DIR}/src/task5.cpp src/task5.cpp include/task5.h src/main5.cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 

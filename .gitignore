@@ -1,0 +1,94 @@
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+### C template
+# Prerequisites
+
+# Object files
+*.ko
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+
+# Libraries
+
+# Shared objects (inc. Windows DLLs)
+*.so.*
+
+# Executables
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+.idea/.gitignore
+.idea/.name
+.idea/misc.xml
+.idea/modules.xml
+.idea/tp-Lab-1.iml
+.idea/vcs.xml
+cmake-build-debug/CMakeCache.txt
+cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake
+cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake
+cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin
+cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin
+cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake
+cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c
+cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/tmp/
+cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/tmp/
+cmake-build-debug/CMakeFiles/CMakeOutput.log
+cmake-build-debug/CMakeFiles/CMakeTmp/
+cmake-build-debug/CMakeFiles/clion-environment.txt
+cmake-build-debug/CMakeFiles/clion-log.txt
+cmake-build-debug/CMakeFiles/cmake.check_cache
+/cmake-build-debug/
