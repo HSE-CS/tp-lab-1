@@ -9,13 +9,10 @@ char *sum(char *x, char *y) {
     int len_x = strlen(x);
     int len_y = strlen(y);
     char *result = new char[std::max(len_x, len_y)];
-    result[std::max(len_x, len_y)] = '\0';
     char *x_rev = new char[len_x];
     char *y_rev = new char[len_y];
     int i_x = len_x - 1;
     int i_y = len_y - 1;
-    x_rev[len_x] = '\0';
-    y_rev[len_y] = '\0';
     for (int i = 0; i < len_x; ++i) {
         x_rev[i_x] = x[i];
         --i_x;
@@ -47,7 +44,6 @@ char *sum(char *x, char *y) {
     }
     if (memory){
         char* ans = new char[std::max(len_x, len_y) + 1];
-        ans[std::max(len_x, len_y) + 1] = '\0';
         ans[0] = memory + '0';
         int j = std::max(len_x, len_y) - 1;
         for (int i = 1; i < strlen(ans); ++i){
@@ -57,7 +53,6 @@ char *sum(char *x, char *y) {
         return ans;
     }else{
         char* ans = new char[std::max(len_x, len_y)];
-        ans[std::max(len_x, len_y)] = '\0';
         int j = std::max(len_x, len_y) - 1;
         for (int i = 0; i < std::max(len_x, len_y); ++i){
             ans[i] = result[j];
