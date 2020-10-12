@@ -9,11 +9,12 @@
 unsigned long long sumPrime(unsigned int hbound)
 {
 	unsigned long long sum = 0;
-	unsigned long long int i = 1;
+	unsigned long long int i = 2;
 	while (i < hbound)
 	{
-		i= nextPrime(i);
 		sum+=i;
+		i= nextPrime(i);
+		
 	}
 	return sum;
 }
