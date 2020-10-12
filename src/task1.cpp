@@ -13,7 +13,7 @@ unsigned long findValue(unsigned int min,unsigned max)
                 temp++;
             }
         }
-        if(temp == 20)
+        if(temp == max)
         {
             return i;
         }

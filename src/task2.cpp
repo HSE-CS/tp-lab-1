@@ -7,7 +7,7 @@ bool checkPrime(unsigned int value) {
     if (value == 0 || value == 1 || value % 2 == 0)
         return false;
     for (i = 3; i * i <= value && value % i; i += 2);
-    return i * i > value;
+    return (i * i > value);
 }
 unsigned long long nPrime(unsigned n)
 {
