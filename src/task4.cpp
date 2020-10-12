@@ -1,4 +1,4 @@
-#include <string>
+#include <string.h>
 
 char * reverse(char *str) {
     int SIZE = strlen(str) - 1;

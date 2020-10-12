@@ -1,5 +1,4 @@
 #include "task2.h"
-#include <iostream>
 
 unsigned long long sumPrime(unsigned int hbound) {
     unsigned long long sum = 0;

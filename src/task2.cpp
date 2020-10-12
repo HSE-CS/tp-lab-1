@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath>
 
 bool checkPrime(unsigned int value) {
