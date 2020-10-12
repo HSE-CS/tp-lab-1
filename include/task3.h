@@ -1,5 +1,5 @@
-#ifndef TASK1_H
-#define TASK1_H
+#ifndef TASK3_H
+#define TASK3_H
 
 #include <algorithm>
 #include <iostream>
@@ -9,4 +9,4 @@
 
 unsigned long long sumPrime(unsigned int hbound);
 
-#endif TASK1_H
+#endif TASK3_H
