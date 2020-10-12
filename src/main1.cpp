@@ -5,6 +5,6 @@ using namespace std;
 
 int main() 
 {
-    cout << search(1, 10) << endl;
-    cout << search(1, 20) << endl;
+    cout << findValue(1, 10) << endl;
+    cout << findValue(1, 20) << endl;
 }

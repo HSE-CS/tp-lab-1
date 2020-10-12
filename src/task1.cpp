@@ -19,7 +19,7 @@ bool cycle(unsigned int min, unsigned max, unsigned int number)
 }
 
 
-unsigned long search(unsigned int min, unsigned max) 
+unsigned long findValue(unsigned int min, unsigned max)
 {
     unsigned int number = max;
     while (!cycle(min, max, number)) 
