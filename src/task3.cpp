@@ -1,6 +1,6 @@
 #include "task3.h"
 
-static bool checkPrime(unsigned long long value)
+static bool checkPrimeNew(unsigned long long value)
 {
     if (value == 1)
         return false;
@@ -19,7 +19,7 @@ unsigned long long sumPrime(unsigned long long hbound)
     unsigned long long ans = 0;
     for (auto i = 1; i < hbound; i++)
     {
-        if (checkPrime(i))
+        if (checkPrimeNew(i))
             ans += i;
     }
     return ans;
