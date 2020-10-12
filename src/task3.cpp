@@ -4,7 +4,8 @@
 unsigned long long sumPrime(unsigned int hbound)
 {
 	bool aPrime;
-	unsigned int index = 1, sent = 3, sum = 0;
+	unsigned int index = 1, sent = 3;
+	unsigned long long int sum = 0;
 	unsigned int *primeNumbers;
 
 	primeNumbers = new unsigned int[hbound];
