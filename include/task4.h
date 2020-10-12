@@ -1,5 +1,5 @@
-#ifndef TASK1_H
-#define TASK1_H
+#ifndef TASK4_H
+#define TASK4_H
 
 #include <algorithm>
 #include <iostream>
@@ -9,4 +9,4 @@
 
 char* sum(char* x, char* y);
 
-#endif TASK1_H
+#endif TASK4_H
