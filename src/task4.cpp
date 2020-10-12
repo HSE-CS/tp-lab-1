@@ -12,10 +12,11 @@ char * sum(char *x, char *y)
     if (len_x > len_y)
     {
         swap (len_x, len_y);
-        char * temp = new char [len_y + 2];
         //swap (x, y);
+        char * temp = new char [len_y + 2];
+
         strcpy(temp, x);
-        strcpy(x, y);
+        strcpy(y, temp);
 
     }
     unsigned long long len_res = len_y;
@@ -30,7 +31,10 @@ char * sum(char *x, char *y)
         {
             result[i + 1] += 1;
             result[i] -= 10;
+            if (i + 1 == len_y)
+                len_res = len_y + 1;
         }
+        //cout << result[i] << result[i + 1] << "\n";
     }
     for (unsigned long long i = len_x; i < len_y; i++)
     {
@@ -42,7 +46,9 @@ char * sum(char *x, char *y)
             if (i + 1 == len_y)
                 len_res = len_y + 1;
         }
+        //cout << result[i] << result[i + 1] << "\n";
     }
+    //printf("%s\n", result);
     reverse(result, result + len_res);
     result[len_res] = 0;
     return result;
