@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <string>
 #include <cstring>
+#include <math.h>
 
  bool checkPrime(unsigned int value);
  unsigned long long nPrime(unsigned n);
