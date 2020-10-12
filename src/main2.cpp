@@ -1,6 +1,4 @@
 // current.cpp : main project file.
-
-#include "stdafx.h"
 #include <iostream>
 #include "task2.h"
 

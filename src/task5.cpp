@@ -1,6 +1,7 @@
 
 #include "task5.h"
 #include <cstring>
+#include <iostream>
 #include <stdlib.h> 
 
 void split(char ***result, int *N, char *buf, char ch)
