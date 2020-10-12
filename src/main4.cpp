@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 #include "task4.h"
 
 int main() {
