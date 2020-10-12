@@ -1,5 +1,6 @@
 #include "../include/task4.h"
 #include <string>
+#include <cstring>
 
 void DelFirst(char* str)
 {
