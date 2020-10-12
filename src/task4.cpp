@@ -8,7 +8,8 @@ char * sum(char *x, char *y)
         y++;
     unsigned long long len_x = strlen(x);
     unsigned long long len_y = strlen(y);
-
+    //auto x_to_string = string(x, x + len_x);
+    //cout << x_to_string << "\n";
     if (len_x > len_y)
     {
         swap (len_x, len_y);
@@ -23,7 +24,9 @@ char * sum(char *x, char *y)
     reverse(x, x + len_x);
     reverse(y, y + len_y);
     char * result = new char [len_y + 2];
-    memset(result, '0', len_y + 1);
+    //memset(result, '0', len_y + 1);
+    for (unsigned long long i = 0; i < len_y + 2; i++)
+        result[i] = '0';
     for (unsigned long long i = 0; i < len_x; i++)
     {
         result[i] += x[i] + y[i] - 2 * '0';
