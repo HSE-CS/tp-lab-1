@@ -6,7 +6,7 @@ using namespace std;
 
 void split(char ***result, int *N, char *buf, char ch){
     unsigned int sizeOfStr = strlen(buf);
-     int cnt = 1;
+    int cnt = 1;
     for (int i = 0; i < sizeOfStr; i++)
         if (buf[i] == ch)
             cnt++;
