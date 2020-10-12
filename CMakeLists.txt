@@ -18,7 +18,7 @@ include_directories(${COMMON_INCLUDES})
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
 
-set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/task1.cpp)
+set(SRC_FILES1 ${PROJECT_SOURCE_DIR}/src/task1.cpp include/task1.h src/task1.cpp src/main1.cpp include/task2.h src/main2.cpp src/task2.cpp)
 set(SRC_FILES2 ${PROJECT_SOURCE_DIR}/src/task2.cpp)
 set(SRC_FILES3 ${PROJECT_SOURCE_DIR}/src/task2.cpp
                ${PROJECT_SOURCE_DIR}/src/task3.cpp)              
