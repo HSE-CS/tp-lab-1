@@ -1,5 +1,5 @@
 #include "../include/task5.h"
-#include <string>
+#include <cstring>
 
 #define bufSz 100
 
