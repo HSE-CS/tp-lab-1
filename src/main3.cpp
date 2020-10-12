@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-    cout << sumPrime(20) << endl;
+    cout << sumPrime(1) << endl;
     return 0;
 }
 
