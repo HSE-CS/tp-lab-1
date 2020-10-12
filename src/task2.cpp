@@ -2,10 +2,9 @@
 
 bool checkPrime(unsigned int value){
     for (int del = 2; del < value; del++){
-        if (value % del == 0)
-            return false;
+        if (value % del != 0) return true;
     }
-    return true;
+    return false;
 }
 
 unsigned long long nPrime(unsigned n){
@@ -20,8 +19,6 @@ unsigned long long nPrime(unsigned n){
 
 
 unsigned long long nextPrime(unsigned long long value){
-    while(!checkPrime(value)){
-        value++;
-    }
+    while(checkPrime(value) == false) ++value;
     return value;
 }

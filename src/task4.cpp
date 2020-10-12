@@ -12,21 +12,21 @@ char * sum(char *x, char *y){
     char *arr = new char[maxSize+1];
     char *tmp = new char[maxSize];
 
-
-      if (sizeOfY > sizeOfX){
-        for (int i = 0; i < sizeOfY - sizeOfX; ++i) 
-            tmp[i] = '0';
-        for (int j = 0; j < sizeOfX; ++j) 
-            tmp[sizeOfY - sizeOfX + j] = x[j];
-        x = tmp;
-    }
-
     if (sizeOfX > sizeOfY){
         for (int i = 0; i < sizeOfX - sizeOfY; ++i) 
             tmp[i] = '0';
         for (int j = 0; j < sizeOfY; ++j) 
             tmp[sizeOfX - sizeOfY + j] = y[j];
         y = tmp;
+    }
+
+
+    if (sizeOfY > sizeOfX){
+        for (int i = 0; i < sizeOfY - sizeOfX; ++i) 
+            tmp[i] = '0';
+        for (int j = 0; j < sizeOfX; ++j) 
+            tmp[sizeOfY - sizeOfX + j] = x[j];
+        x = tmp;
     }
 
 
