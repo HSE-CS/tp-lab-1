@@ -1,3 +1,4 @@
+#include "task2.h"
 #include "task3.h"
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -7,5 +8,5 @@
 
 int main()
 {
-	return 0;
+	sumPrime(2000000);
 }
