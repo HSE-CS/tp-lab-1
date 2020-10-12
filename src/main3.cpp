@@ -1,7 +1,7 @@
 #include <iostream>
 #include "task3.h"
 
-using namespase std;
+using namespace std;
 
 int main(){
     
