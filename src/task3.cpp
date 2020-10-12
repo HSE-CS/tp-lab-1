@@ -4,10 +4,10 @@
 #include <iostream>
 
 unsigned long long sumPrime(unsigned int hbound) {
-    unsigned long sum = 0;
-    for (unsigned int i = 1; i < hbound; i++) {
+    unsigned long long sum = 0;
+    for (unsigned long long i = 1; i < hbound; i++) {
         if (checkPrime(i)) {
-            sum += i; 
+            sum += i;
         }
     }
     return sum;
