@@ -3,7 +3,7 @@
 #include"task5.h"
 using namespace std; 
 
-void split(char*** result, int* N, char* buf, char ch) {
+void split(char*** result, int* N, const char* buf, char ch) {
 	*N = 0;
 	unsigned int len = 0;
 	for (int i = 0; i < strlen(buf); i++) {

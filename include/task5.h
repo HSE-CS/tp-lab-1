@@ -3,4 +3,4 @@
 #include <string>
 #include <cstring>
 using namespace std;
-void split(char*** result, int* N, char* buf, char ch);
+void split(char*** result, int* N, const char* buf, char ch);

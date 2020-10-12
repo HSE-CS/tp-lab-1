@@ -19,7 +19,7 @@ char to_char(int x) {
 	return res;
 }
 
-char* sum_pro(char* min, char* max, int dif, int len) {
+char* sum_pro(const char* min, const char* max, int dif, int len) {
 	int one_sum = 0, i = len - 3;
 	char* res = new char[len];
 	res[len - 1] = '\0', res[len - 2] = '0', res[0] = '0';
@@ -44,7 +44,7 @@ char* sum_pro(char* min, char* max, int dif, int len) {
 	return res;
 }
 
-char* sum(char* x, char* y) {
+char* sum( const char* x, const char* y) {
 	if (strlen(x) > strlen(y)) {
 		return sum_pro(y, x, strlen(x) - strlen(y), strlen(x) + 2);
 	}

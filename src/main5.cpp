@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
 	int N;
-	char buf[] = { 'b', 'a', 'c', 'b', 'f', 'b', '\0'};
-	char ch = 'b';
+	char buf[] = "123,456,789";
+	char ch = ',';
 	char** str = new char*[1];
 	split(&str, &N, buf, ch);
 
