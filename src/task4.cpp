@@ -4,64 +4,57 @@
 
 using namespace std;
 
-char* sum(char* x, char* y) 
-{
-    int maxlen = max(strlen(x), strlen(y));
-    int coutX = strlen(x);
-    int coutY = strlen(y);
-    char* buf = new char[maxlen + 1];
-    char* t = new char[maxlen];
+char* sum(char* x, char* y) {
+    int maxLength = max(strlen(x), strlen(y));
+    int counterX = strlen(x);
+    int counterY = strlen(y);
+    char* buf = new char[maxLength + 1];
+    char* t = new char[maxLength];
 
-    int oflow = 0;
+    int overflow = 0;
 
-    if (coutX > coutY) 
-    {
-        for (int i = 0; i < coutX - coutY; ++i) 
-        {
+    if (counterX > counterY) {
+        for (int i = 0; i < counterX - counterY; ++i) {
             t[i] = '0';
         }
-        for (int j = 0; j < coutY; ++j) 
-        {
-            t[coutX - coutY + j] = y[j];
+        for (int j = 0; j < counterY; ++j) {
+            t[counterX - counterY + j] = y[j];
         }
         y = t;
     }
-    if (coutY > coutX) 
-    {
-        for (int i = 0; i < coutY - coutX; ++i) 
-        {
+    if (counterY > counterX) {
+        for (int i = 0; i < counterY - counterX; ++i) {
             t[i] = '0';
         }
-        for (int j = 0; j < coutX; ++j) 
-        {
-            t[coutY - coutX + j] = x[j];
+        for (int j = 0; j < counterX; ++j) {
+            t[counterY - counterX + j] = x[j];
         }
         x = t;
     }
 
-    for (int i = maxlen - 1; i > -1; --i) 
-    {
-        buf[i] = x[i] + y[i] + oflow - '0';
-        oflow = 0;
-        if (buf[i] > 57) 
-        {
-            buf[i] = buf[i] - 10;
-            oflow++;
 
-            if (i == 0 && oflow > 0) 
-            {
-                for (int i = maxlen; i > -1; --i) 
-                {
+    for (int i = maxLength - 1; i > -1; --i) {
+        buf[i] = x[i] + y[i] + overflow - '0';
+        overflow = 0;
+        if (buf[i] > 57) {
+            buf[i] = buf[i] - 10;
+            overflow++;
+
+            if (i == 0 && overflow > 0) {
+                for (int i = maxLength; i > -1; --i) {
                     buf[i] = buf[i - 1];
                 }
                 buf[0] = '1';
             }
         }
-        if (i == 0 && oflow == 0) 
-        {
-            buf[maxlen] = '\0';
+        if (i == 0 && overflow == 0) {
+            buf[maxLength] = '\0';
         }
+
     }
+
     delete[] t;
+
     return buf;
+
 }

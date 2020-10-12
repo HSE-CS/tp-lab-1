@@ -3,43 +3,21 @@
 
 using namespace std;
 
-int main() 
-{
+int main() {
     char* x = "123456789";
     char* y = "000000001";
     char* expected = "123456790";
     char* z = sum(x, y);
     cout << z << endl;
     z[8] = '\0';
-    for (int i = 0; i < sizeof(z); ++i) 
-    {
+    for (int i = 0; i < sizeof(z); ++i) {
         cout << z[i] << endl;
     }
     cout << "size -- " << sizeof(z) << endl;
     cout << expected << endl;
     cout << "size -- " << sizeof(sum(x, y)) << endl;
 
-    if ((*sum(x, y)) == (*expected)) 
-    {
-        cout << "yes" << endl;
-    }
-
-    x = "99999999999999999999";
-    y = "1";
-    expected = "100000000000000000000";
-    z = sum(x, y);
-    cout << z << endl;
-    z[8] = '\0';
-    for (int i = 0; i < sizeof(z); ++i)
-    {
-        cout << z[i] << endl;
-    }
-    cout << "size -- " << sizeof(z) << endl;
-    cout << expected << endl;
-    cout << "size -- " << sizeof(sum(x, y)) << endl;
-
-    if ((*sum(x, y)) == (*expected))
-    {
+    if ((*sum(x, y)) == (*expected)) {
         cout << "yes" << endl;
     }
 }
