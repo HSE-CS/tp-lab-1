@@ -8,35 +8,16 @@ bool checkPrime(unsigned int value){
 }
 
 
-unsigned long long nPrime(unsigned n)
-{
-    int curr = 2;
-    int primeNum = 0;
-    bool isPrime = checkPrime(n);
-
-    if (isPrime){
-        while (primeNum != n) {
-            isPrime = true;
-
-            for (int i = 2; i <curr/2+1; i++) {
-
-                if (curr % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime) {
-                curr++;
-                primeNum++;
-            } else {
-                curr++;
-            }
-
-        }
-        return curr-1;
+unsigned long long nPrime(unsigned n){
+    int num = 1;
+    int cnt = 0;
+    while(cnt < n)
+    {
+        num++;
+        if (checkPrime(num))
+            cnt++;
     }
-
-    else return 0;
+    return num;
 }
 
 

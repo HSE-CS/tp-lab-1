@@ -9,11 +9,19 @@ bool checkPrime(unsigned int value){
 }
 
 
+unsigned long long nextPrime(unsigned long long value){
+    if (checkPrime(value+1)) return value+1;
+    else nextPrime(value+1);
+}
+
 unsigned long long sumPrime(unsigned int hbound){
-    unsigned int summ=0;
-    for(int i=2;i<hbound;i++){
-        if (checkPrime(i)){}
-        summ+=i;
+
+    unsigned long long summ=0;
+
+    int n = 1;
+    while (nextPrime(n)<hbound){
+        n=nextPrime(n);
+        summ+=n;
     }
 
     return summ;
