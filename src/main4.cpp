@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
-    char *result = sum("19389756", "2869503");
+    char *result = sum("9999999999999999999999", "1");
     for (int i = 0; i < strlen(result); i++)
     {
         cout << result[i];
