@@ -7,11 +7,10 @@ int main() {
     int M = 0;
     char** result = nullptr;
     split(&result, &M, buffer, ',');
-    cout << M << "\n";
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < M; i++) {
         cout << result[i] << "\n";
     }
     return 0;
-    for (int i = 0; i < N; i++) delete[] result[i];
+    for (int i = 0; i < M; i++) delete[] result[i];
     delete result;
 } 
