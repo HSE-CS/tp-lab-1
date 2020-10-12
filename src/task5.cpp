@@ -6,7 +6,7 @@ void split(char ***result, int *N, char *buf, char ch) {
             (*N)++;
     }
     (*N)++;
-    int* sizes= new int[*N];
+    int* sizes= new int[*N]{0};
     int counter=0, long_counter=0;
     for(int i=0;i<strlen(buf-1);i++){
         long_counter++;
