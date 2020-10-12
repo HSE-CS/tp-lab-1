@@ -1,7 +1,5 @@
 #include <iostream>
-#include <cmath>
 #include <cstring>
-#include <cstdlib>
 
 
 using namespace std;
@@ -17,8 +15,10 @@ char *sum(char *x, char *y) {
 
     for (int i = 0; i < n+1; i++) {
 
-        int xi = (x[strlen(x) - i - 1] - '0');
-        int yi = (y[strlen(y) - i - 1] - '0');
+        int xi,yi;
+
+        if (i<=strlen(x)) xi = (x[strlen(x) - i - 1] - '0');
+        if (i<=strlen(y)) yi = (y[strlen(y) - i - 1] - '0');
 
         if (xi > 9 || xi < 1) xi = 0;
         if (yi > 9 || yi < 1) yi = 0;
@@ -26,7 +26,7 @@ char *sum(char *x, char *y) {
         char currnum = (((xi + yi + plus) % 10)) + '0';
         cansw[n - i] = currnum;
 
-        //cout << xi << ' ' << yi << ' ' << plus << " - " << currnum  << ' ' << xi + yi + plus << '\n';
+        cout << xi << ' ' << yi << ' ' << plus << " - " << currnum  << ' ' << xi + yi + plus << '\n';
 
         if ((xi+yi+plus) > 9) plus = 1;
         else plus = 0;
