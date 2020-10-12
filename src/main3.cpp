@@ -1,10 +1,8 @@
-#include <iostream>
-#include "task2.h"
 #include "task3.h"
+#include <iostream>
 using namespace std;
 int main()
 {
-    cout << sumPrime(1) << endl;
+    cout << sumPrime(6) << endl;
     return 0;
 }
-
