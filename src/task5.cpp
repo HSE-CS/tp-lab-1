@@ -12,23 +12,23 @@ void split(char*** result, int* N, char* buf, char ch) {
 
     (*result) = test;
 
-    int let = 0;
+    int letterCounter = 0;
     for (int i = 0; i < strlen(buf); i++) 
     {
         if (buf[i] == ch) 
         {
-            test[(*N)][let] = '\0';
+            test[(*N)][letterCounter] = '\0';
             (*N)++;
-            let = 0;
+            letterCounter = 0;
 
             continue;
         }
         if (i == strlen(buf) - 1) 
         {
-            test[(*N)][let + 1] = '\0';
+            test[(*N)][letterCounter + 1] = '\0';
         }
-        test[(*N)][let] = buf[i];
-        let++;
+        test[(*N)][letterCounter] = buf[i];
+        letterCounter++;
     }
     (*N)++;
 }
