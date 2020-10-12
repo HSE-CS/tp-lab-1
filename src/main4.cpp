@@ -1,6 +1,7 @@
 // current.cpp : main project file.
 //Реализовать функцию сложения двух сверхдлинных чисел, заданных в виде строк.
 #define _CRT_SECURE_NO_WARNINGS
+#include <cstring>
 #include <iostream>
 #include "task4.h"
 using namespace std;
