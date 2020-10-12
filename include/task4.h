@@ -3,4 +3,4 @@
 #include<cstring>
 #include<cstdlib>
 #include<string>
-char* sum(char* x, char* y);
+char* sum(const char* x, const char* y);

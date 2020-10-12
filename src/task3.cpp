@@ -11,11 +11,4 @@ unsigned long long sumPrime(unsigned int hbound) {
 		}
 	}
 
-	if (sum < 2000000) {
-		return sum;
-	}
-	else {
-		return 0;
-	}
-
 }
