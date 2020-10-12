@@ -12,6 +12,7 @@ int main() {
         cout << result[i] << "\n";
     }
 	return 0;
-    for (int i = 0; i < N; i++) delete[] result[i];
+    for (int i = 0; i < N; i++) 
+        delete[] result[i];
     delete result;
 }
