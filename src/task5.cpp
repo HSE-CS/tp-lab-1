@@ -18,17 +18,16 @@ void split(char*** result, int* N, char* buf, char ch)
     else
     {
       (*result)[*N] = new char[len+1];
-      // for (int j = buf + i - len; j < len)
-      //   std:: cout << buf[j] << " ";
-      //
-      // cout << endl;
       strncpy((*result)[*N], buf + i - len, len);
       (*result)[*N][len] = '\0';
       len = 0;
-    }
-    if (strcmp((*result)[*N], "") == 0)
-    {
-      delete[](*result)[*N];
+
+      if (strcmp((*result)[*N], "") == 0)
+      {
+        delete[](*result)[*N];
+        (*N)--;
+      }
+      (*N)++;
     }
   }
 }
