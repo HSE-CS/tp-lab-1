@@ -32,21 +32,26 @@ char* sum(char* x, char* y) {
         x = t;
     }
 
-    for (int i = maxLen - 1; i > -1; --i) {
+    for (int i = maxLen - 1; i > -1; --i) 
+    {
         buf[i] = x[i] + y[i] + a - '0';
         a = 0;
-        if (buf[i] > 57) {
+        if (buf[i] > 57) 
+        {
             buf[i] = buf[i] - 10;
             a++;
 
-            if (i == 0 && a > 0) {
-                for (int i = a; i > -1; --i) {
+            if (i == 0 && a > 0) 
+            {
+                for (int i = maxLen; i > -1; --i) 
+                {
                     buf[i] = buf[i - 1];
                 }
                 buf[0] = '1';
             }
         }
-        if (i == 0 && a == 0) {
+        if (i == 0 && a == 0) 
+        {
             buf[maxLen] = '\0';
         }
 
