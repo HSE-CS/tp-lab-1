@@ -4,11 +4,9 @@ bool checkPrime(unsigned int value) {
     int r = 0;
     for (int j = 2; j < value; j++) {
         if (value % j == 0)
-            r++;
+            return false;
     }
-    if (r == 0)
-        return true;
-    return false;
+    return true;
 }
 
 unsigned long long nPrime(unsigned n) {
