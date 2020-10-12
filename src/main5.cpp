@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task5.h"
+#include <cstring>
 
 
 int main() {
