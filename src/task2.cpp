@@ -1,4 +1,4 @@
-#include "task2.h"
+#include "include/task2.h"
 bool checkPrime(unsigned int x) {
 	for (int i = 2; i * i <= x; i++) {
 		if (!(x % i)) {
