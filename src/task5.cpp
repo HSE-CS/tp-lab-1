@@ -1,5 +1,4 @@
 #include "task5.h"
-
 void split(char ***result, int *N, char *buf, char ch) {
     *N = 0;
     for (int i = 0; i < strlen(buf); i++) {
