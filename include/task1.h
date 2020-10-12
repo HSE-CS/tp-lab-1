@@ -13,5 +13,4 @@ static unsigned long GCD(unsigned long a, unsigned long b);
 static unsigned long LCM(unsigned long a, unsigned long b);
 
 
-
 #endif // TASK1_H_INCLUDED
