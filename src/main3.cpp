@@ -3,8 +3,8 @@
 #include <iostream>
 using namespace std;
 
-//int main()
-//{
-//	cout << sumPrime(19) << endl;
-//	return 0;
-//}
+int main()
+{
+	cout << sumPrime(19) << endl;
+	return 0;
+}
