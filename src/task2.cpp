@@ -28,7 +28,7 @@ unsigned long long nPrime(unsigned n) {
 }
 
 unsigned long long nextPrime(unsigned long long value) {
-    unsigned int diff = 0;
+    unsigned int diff = 1;
     while (checkPrime(value + diff) == 0)
         diff++;
     return value + diff;
