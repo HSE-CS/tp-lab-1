@@ -1,6 +1,7 @@
 // current.cpp : main project file.
 //Реализовать функцию разбиения строки на подстроки с использованием символа - разделителя.
 #define _CRT_SECURE_NO_WARNINGS
+#include <cstring>
 #include <iostream>
 #include "task5.h" 
 
