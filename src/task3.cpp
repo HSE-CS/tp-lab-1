@@ -4,7 +4,7 @@ unsigned long long sumPrime(unsigned int hbound){
     long long sum = 0;
     int i=1;
     while(nPrime(i) < hbound){
-        sum += getPrime(i);
+        sum +=  nPrime(i);
         i++;
     }
     return sum;
