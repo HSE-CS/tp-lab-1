@@ -35,13 +35,23 @@ char* sum(char* x, char* y)
 		}
 		else if (len_x >= 0)
 		{
-			result[i] = x[len_x] + buff;
-			buff = 0;
+			if (x[len_x] + buff == 48 + 10)
+				result[i] = '0';
+			else
+			{
+				result[i] = x[len_x] + buff;
+				buff = 0;
+			}
 		}
 		else if (len_y >= 0)
 		{
-			result[i] = y[len_y] + buff;
-			buff = 0;
+			if (y[len_y] + buff == 48 + 10)
+				result[i] = '0';
+			else
+			{
+				result[i] = y[len_y] + buff;
+				buff = 0;
+			}
 		}
 		len_x--;
 		len_y--;
