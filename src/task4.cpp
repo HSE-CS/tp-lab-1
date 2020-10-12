@@ -12,7 +12,7 @@ char * sum(char *x, char *y)
     unsigned long long len_res = len_y;
     reverse(x, x + len_x);
     reverse(y, y + len_y);
-    auto result = new char [len_y + 2];
+    char * result = new char [len_y + 2];
     memset(result, '0', len_y + 1);
     for (unsigned long long i = 0; i < len_x; i++)
     {
