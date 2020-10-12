@@ -2,6 +2,7 @@
 #include "task4.h"
 #include <cstring>
 #include <stdlib.h>
+#include "string.h"
 
 char * sum(char *x, char *y)
 {
