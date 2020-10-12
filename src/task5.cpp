@@ -20,17 +20,15 @@ char * substr(char * str, int s, int f){
 
 void split(char ***result, int *N, char *buf, char ch){
 
-    int len = strlen(buf)+1;
-    buf[len-1]= ch;
-    buf[len] = '\0';
+    int len =0;
+    while (buf[len]) len++;
 
     (*result) = new char* [len]();
     for (int i = 0; i < len; i++) (*result)[i] = new char[len]();
 
-
     int ws = 0;
-    for (int i=0; i<len;i++){
-        if (buf[i]==ch){
+    for (int i=0; i<len+1;i++){
+        if (buf[i]==ch || i==len){
 
             char * word = substr(buf,ws,i);
             (*result)[*N] = word;
