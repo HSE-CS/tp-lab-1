@@ -25,7 +25,7 @@ unsigned long findValue(unsigned int min, unsigned max)
     while (!cycle(min, max, number)) 
     {
         ++number;
-    };
+    }
     return number;
 
 

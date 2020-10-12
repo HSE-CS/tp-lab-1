@@ -14,19 +14,23 @@ char* sum(char* x, char* y) {
     int a = 0;
 
     if (cX > cY) {
-        for (int i = 0; i < cX - cY; ++i) {
+        for (int i = 0; i < cX - cY; ++i) 
+        {
             t[i] = '0';
         }
-        for (int j = 0; j < cY; ++j) {
+        for (int j = 0; j < cY; ++j) 
+        {
             t[cX - cY + j] = y[j];
         }
         y = t;
     }
     if (cY > cX) {
-        for (int i = 0; i < cY - cX; ++i) {
+        for (int i = 0; i < cY - cX; ++i) 
+        {
             t[i] = '0';
         }
-        for (int j = 0; j < cX; ++j) {
+        for (int j = 0; j < cX; ++j) 
+        {
             t[cY - cX + j] = x[j];
         }
         x = t;
