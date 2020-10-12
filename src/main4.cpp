@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-    char* x = "4685123";
-    char* y = "4845122";
-    char* expected = "9530245";
+    char* x = "987654321";
+    char* y = "000000005";
+    char* expected = "987654326";
     char* z = sum(x, y);
     cout << z << endl;
     z[8] = '\0';
