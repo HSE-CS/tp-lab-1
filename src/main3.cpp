@@ -5,6 +5,6 @@
 
 int main()
 {
-	std::cout << "sum(1 500 000) = " << sumPrime(1500000) << std::endl;
+	std::cout << "sum(150 000) = " << sumPrime(150000) << std::endl;
 	return 0;
 }

@@ -25,4 +25,6 @@ void split(char*** result, int* N, char* buf, char ch)
 		(*result)[j][wordIter] = buf[i];
 		++wordIter;
 	}
+	(*result)[j][wordIter] = '\0';
+	(*N)++;
 }

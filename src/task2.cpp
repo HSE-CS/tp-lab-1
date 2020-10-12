@@ -3,8 +3,8 @@
 #include <cstdlib>
 
 bool ferma(long long x) {
-	if (x == 2)
-		return true;
+	//if (x == 2)
+	//	return true;
 	srand(time(NULL));
 	for (int i = 0; i < 100; i++) {
 		long long a = (rand() % (x - 2)) + 2;
@@ -45,7 +45,12 @@ long long pows(long long a, long long b, long long m) {
 
 bool checkPrime(unsigned long long value)
 {
-	return ferma(value);
+	if (value > 1000)
+		return ferma(value);
+	if (value <= 1) return false;
+	for (unsigned int i = 2; i < value; ++i)
+		if (value % i == 0) return false;
+	return true;
 }
 
 unsigned long long nPrime(unsigned int n)

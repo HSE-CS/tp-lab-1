@@ -6,9 +6,9 @@ using namespace std;
 int main()
 {
 	char** res;
-	char* buf = (char*)"Hello1world1lorem1ipsum1test";
+	char* buf = (char*)"123,456,789";
 	int N;
-	char spacer = '1';
+	char spacer = ',';
 
 	split(&res, &N, buf, spacer);
 	for (int i = 0; i < N; ++i)
