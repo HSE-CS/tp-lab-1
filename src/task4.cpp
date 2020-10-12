@@ -8,10 +8,15 @@ char * sum(char *x, char *y)
         y++;
     unsigned long long len_x = strlen(x);
     unsigned long long len_y = strlen(y);
+
     if (len_x > len_y)
     {
-        swap (x, y);
         swap (len_x, len_y);
+        char * temp = new char [len_y + 2];
+        //swap (x, y);
+        strcpy(temp, x);
+        strcpy(x, y);
+
     }
     unsigned long long len_res = len_y;
     reverse(x, x + len_x);
