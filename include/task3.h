@@ -8,9 +8,9 @@
 
 using namespace std;
 
-unsigned long long sumPrime(unsigned int hbound);
+unsigned long long sumPrime(unsigned long long hbound);
 static bool checkPrimeNew(unsigned long long value);
 
 
 
-#endif // TASK1_H_INCLUDED
+#endif // TASK3_H_INCLUDED
