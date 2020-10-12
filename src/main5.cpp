@@ -4,12 +4,11 @@
 
 using namespace std;
 
-int main() {
-    char* buf = "123,456,789";
+int main() 
+{
+    char* buf = '123,456,789';
     int N = 0;
     char** result = nullptr;
-
-
 
     split(&result, &N, buf, ',');
 
@@ -27,6 +26,7 @@ int main() {
     {
         cout << "yes" << endl;
     }
+
     for (int i = 0; i < 3; i++)
     {
         delete[] result[i];

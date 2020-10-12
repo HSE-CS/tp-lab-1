@@ -1,20 +1,19 @@
 #include <iostream>
 #include "task2.h"
 #include "task3.h"
-#include "task2.cpp"
 
 using namespace std;
 
 
 unsigned long long sumPrime(unsigned int hbound) 
 {
-    long s = 0;
+    long sum = 0;
     for (int i = 2; i < hbound; i++) 
     {
         if (checkPrime(i)) 
         {
-            s += i;
+            sum += i;
         }
     }
-    return s;
+    return sum;
 }

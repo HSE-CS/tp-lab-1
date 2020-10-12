@@ -3,10 +3,11 @@
 
 using namespace std;
 
-int main() {
-    char* x = "123456789";
-    char* y = "000000001";
-    char* expected = "123456790";
+int main() 
+{
+    char* x = '123456789';
+    char* y = '000000001';
+    char* expected = '123456790';
     char* z = sum(x, y);
     cout << z << endl;
     z[8] = '\0';
@@ -22,5 +23,4 @@ int main() {
     {
         cout << "yes" << endl;
     }
-
 }

@@ -4,65 +4,64 @@
 
 using namespace std;
 
-char* sum(char* x, char* y) {
-    int maxLen = max(strlen(x), strlen(y));
-    int cX = strlen(x);
-    int cY = strlen(y);
-    char* buf = new char[maxLen + 1];
-    char* t = new char[maxLen];
+char* sum(char* x, char* y) 
+{
+    int maxlen = max(strlen(x), strlen(y));
+    int coutX = strlen(x);
+    int coutY = strlen(y);
+    char* buf = new char[maxlen + 1];
+    char* t = new char[maxlen];
 
-    int a = 0;
+    int oflow = 0;
 
-    if (cX > cY) {
-        for (int i = 0; i < cX - cY; ++i) 
+    if (coutX > coutY) 
+    {
+        for (int i = 0; i < coutX - coutY; ++i) 
         {
             t[i] = '0';
         }
-        for (int j = 0; j < cY; ++j) 
+        for (int j = 0; j < coutY; ++j) 
         {
-            t[cX - cY + j] = y[j];
+            t[coutX - coutY + j] = y[j];
         }
         y = t;
     }
-    if (cY > cX) {
-        for (int i = 0; i < cY - cX; ++i) 
+    if (coutY > coutX) 
+    {
+        for (int i = 0; i < coutY - coutX; ++i) 
         {
             t[i] = '0';
         }
-        for (int j = 0; j < cX; ++j) 
+        for (int j = 0; j < coutX; ++j) 
         {
-            t[cY - cX + j] = x[j];
+            t[coutY - coutX + j] = x[j];
         }
         x = t;
     }
 
-    for (int i = maxLen - 1; i > -1; --i) 
+    for (int i = maxlen - 1; i > -1; --i) 
     {
-        buf[i] = x[i] + y[i] + a - '0';
-        a = 0;
+        buf[i] = x[i] + y[i] + oflow - '0';
+        oflow = 0;
         if (buf[i] > 57) 
         {
             buf[i] = buf[i] - 10;
-            a++;
+            oflow++;
 
-            if (i == 0 && a > 0) 
+            if (i == 0 && oflow > 0) 
             {
-                for (int i = maxLen; i > -1; --i) 
+                for (int i = maxlen; i > -1; --i) 
                 {
                     buf[i] = buf[i - 1];
                 }
                 buf[0] = '1';
             }
         }
-        if (i == 0 && a == 0) 
+        if (i == 0 && oflow == 0) 
         {
-            buf[maxLen] = '\0';
+            buf[maxlen] = '\0';
         }
-
     }
-
     delete[] t;
-
     return buf;
-
 }

@@ -4,19 +4,20 @@
 
 using namespace std;
 
+
+
 void split(char*** result, int* N, char* buf, char ch) 
 {
     char** test = new char* [3];
-    for (int i = 0; i < 3; ++i) 
-    {
+    for (int i = 0; i < 3; ++i) {
         test[i] = new char[3];
     }
 
     (*result) = test;
 
     int let = 0;
-    for (int i = 0; i < strlen(buf); i++) 
-    {
+    for (int i = 0; i < strlen(buf); i++) {
+
         if (buf[i] == ch) 
         {
             test[(*N)][let] = '\0';
@@ -31,6 +32,7 @@ void split(char*** result, int* N, char* buf, char ch)
         }
         test[(*N)][let] = buf[i];
         let++;
+
     }
     (*N)++;
 }

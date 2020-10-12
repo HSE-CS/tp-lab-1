@@ -14,23 +14,26 @@ bool checkPrime(unsigned int value)
 
 unsigned long long nPrime(unsigned n) 
 {
-    unsigned a = 0;
-    for (unsigned int i = 2; a != n; ++i) 
+    unsigned counter = 0;
+    for (unsigned int i = 2; counter != n; ++i) 
     {
         if (checkPrime(i)) 
         {
-            a++;
+            counter++;
         }
-        if (a == n) 
+        if (counter == n) 
         {
             return i;
         }
     }
 }
 
-unsigned long long nextPrime(unsigned long long value) {
-    for (++value; true; ++value) {
-        if (checkPrime(value)) {
+unsigned long long nextPrime(unsigned long long value) 
+{
+    for (++value; true; ++value) 
+    {
+        if (checkPrime(value)) 
+        {
             return value;
         }
     }
