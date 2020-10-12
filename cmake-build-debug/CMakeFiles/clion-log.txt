@@ -1,0 +1,81 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/aleksandrgrachev/CLionProjects/tp-Lab-1
+-- Configuring done
+CMake Error at CMakeLists.txt:39 (add_executable):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main4.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:34 (add_library):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task5.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:38 (add_executable):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main3.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:40 (add_executable):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main5.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:33 (add_library):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task4.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:32 (add_library):
+  Cannot find source file:
+
+    /Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task3.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+  .hpp .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:39 (add_executable):
+  No SOURCES given to target: task4
+
+
+CMake Error at CMakeLists.txt:34 (add_library):
+  No SOURCES given to target: task5_lib
+
+
+CMake Error at CMakeLists.txt:38 (add_executable):
+  No SOURCES given to target: task3
+
+
+CMake Error at CMakeLists.txt:40 (add_executable):
+  No SOURCES given to target: task5
+
+
+CMake Error at CMakeLists.txt:33 (add_library):
+  No SOURCES given to target: task4_lib
+
+
+CMake Error at CMakeLists.txt:32 (add_library):
+  No SOURCES given to target: task3_lib
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
