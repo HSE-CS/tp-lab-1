@@ -6,9 +6,9 @@ using namespace std;
 unsigned long long sumPrime(unsigned int hbound)
 {
     unsigned int sum = 0;
-    for(unsigned int i=1; i<hbound; i++)
+    for(unsigned int i = 1; i < hbound; i++)
     {
-        sum+=nPrime(i);
+        sum += nPrime(i) ? i : 0;
     }
     return sum;
 }
