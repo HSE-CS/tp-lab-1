@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="task1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task4/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5_lib">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask5_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task5_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5_lib/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask5_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task5_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task5"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task5/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/task5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task5/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2_lib">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask2_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task2_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task2_lib/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask2_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task2_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4_lib">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask4_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task4_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task4_lib/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask4_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task4_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_lib">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask3_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task3_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task3_lib/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask3_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task3_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1_lib">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask1_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task1_lib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task1_lib/fast">
+				<Option output="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/libtask1_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 task1_lib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include/task1.h">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include/task2.h">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include/task3.h">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include/task4.h">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/include/task5.h">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main1.cpp">
+			<Option target="task1"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main2.cpp">
+			<Option target="task2"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main3.cpp">
+			<Option target="task3"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main4.cpp">
+			<Option target="task4"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/main5.cpp">
+			<Option target="task5"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task1.cpp">
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task2.cpp">
+			<Option target="task2_lib"/>
+			<Option target="task3_lib"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task3.cpp">
+			<Option target="task3_lib"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task4.cpp">
+			<Option target="task4_lib"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/src/task5.cpp">
+			<Option target="task5_lib"/>
+			<Option target="task1_lib"/>
+		</Unit>
+		<Unit filename="/Users/aleksandrgrachev/CLionProjects/tp-Lab-1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
