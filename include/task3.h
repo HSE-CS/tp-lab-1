@@ -9,7 +9,7 @@
 using namespace std;
 
 unsigned long long sumPrime(unsigned int hbound);
-static bool checkPrime(unsigned long long value);
+static bool checkPrimeNew(unsigned long long value);
 
 
 
