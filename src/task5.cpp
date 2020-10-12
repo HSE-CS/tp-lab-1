@@ -30,4 +30,16 @@ void split(char*** result, int* N, char* buf, char ch)
       (*N)++;
     }
   }
+
+  (*result)[*N] = new char[len+1];
+  strncpy((*result)[*N], buf + strlen(buf) - len, len);
+  (*result)[*N][len] = '\0';
+  len = 0;
+
+  if (strcmp((*result)[*N], "") == 0)
+  {
+    delete[](*result)[*N];
+    (*N)--;
+  }
+  (*N)++;
 }

@@ -11,4 +11,12 @@ int main()
   char **result=nullptr;
   split(&result, &N, buf, ',');
 
+  for (int i = 0; i < N; i++)
+  {
+    for (int j = 0; result[i][j] != '\0'; j++)
+      cout << result[i][j];
+    cout << endl;
+  }
+
+
 }
