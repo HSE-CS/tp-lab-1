@@ -7,7 +7,7 @@ void split(char*** result, int* N, char* buf, char ch)
 		if (buf[i] == ch) cnt++;
 	}
 
-	(*result) = new char*[cnt + 2];
+	(*result) = new char*[cnt + 1];
 	unsigned len = 0;
 	for (unsigned i = 0; i < strlen(buf); i++)
   {
