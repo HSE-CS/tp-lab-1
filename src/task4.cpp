@@ -2,6 +2,10 @@
 
 char * sum(char *x, char *y)
 {
+    while (*x == '0')
+        x++;
+    while (*y == '0')
+        y++;
     unsigned long long len_x = strlen(x);
     unsigned long long len_y = strlen(y);
     if (len_x > len_y)
