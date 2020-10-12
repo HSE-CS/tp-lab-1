@@ -1,12 +1,11 @@
 #include "task4.h"
-#include "math.h"
 #include "string.h"
 
 char * sum(char *x, char *y)
 {
 	char *bigSum, *newBigSum, *newx, *newy;
 	int xlen = strlen(x), ylen = strlen(y), finLen = xlen > ylen ? xlen + 1 : ylen + 1;
-	int minLen = abs(finLen - xlen - ylen - 1), index = 0, remaining = 0, current = 0;
+	int minLen = xlen < ylen ? xlen : ylen, index = 0, remaining = 0, current = 0;
 
 	newBigSum = new char[finLen];
 	newx = new char[xlen];
