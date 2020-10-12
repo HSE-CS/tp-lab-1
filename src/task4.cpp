@@ -26,7 +26,7 @@ char *sum(char *x, char *y) {
         char currnum = (((xi + yi + plus) % 10)) + '0';
         cansw[n - i] = currnum;
 
-        cout << xi << ' ' << yi << ' ' << plus << " - " << currnum  << ' ' << xi + yi + plus << '\n';
+        //cout << xi << ' ' << yi << ' ' << plus << " - " << currnum  << ' ' << xi + yi + plus << '\n';
 
         if ((xi+yi+plus) > 9) plus = 1;
         else plus = 0;
