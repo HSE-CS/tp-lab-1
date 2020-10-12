@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    char* buf = "486,234,894";
+    char* buf = "123,456,789";
     int N = 0;
     char** result = nullptr;
 
@@ -18,21 +18,18 @@ int main() {
     cout << result[2] << endl;
     cout << N << endl;
 
-    for (int i = 0; i < sizeof(result) / sizeof(int); ++i) {
+    for (int i = 0; i < sizeof(result) / sizeof(int); ++i) 
+    {
         cout << result[i] << endl;
-
     }
 
-    if (strcmp(result[0], "486") == 0) {
+    if (strcmp(result[0], "123") == 0) 
+    {
         cout << "yes" << endl;
     }
-
-
     for (int i = 0; i < 3; i++)
     {
         delete[] result[i];
     }
     delete[] result;
-
-
 }
