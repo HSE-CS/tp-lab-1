@@ -31,5 +31,4 @@ void split(char*** result, int* N, char* buf, char ch)
       delete[](*result)[*N];
     }
   }
-  return ***result;
 }
