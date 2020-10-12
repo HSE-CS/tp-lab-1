@@ -25,6 +25,9 @@ bool checkPrime(unsigned int value)
 	if (value < 2) {
 		return false;
 	}
+	else if (value == 2) {
+		return true;
+	}
 
 	bool aPrime;
 	unsigned int index = 1, sent = 3;
@@ -38,7 +41,7 @@ bool checkPrime(unsigned int value)
 		if (aPrime) {
 			index++;
 		}
-		sent += 2;
+		sent++;
 	}
 
 	delete[] primeNumbers;
@@ -56,7 +59,7 @@ unsigned long long nPrime(unsigned n)
 	unsigned int index = 1, searchedNumber = 0, sent = 3;
 	unsigned int *primeNumbers;
 
-	primeNumbers = new unsigned int[n]; //ñäåëàòü âåêòîðîì?
+	primeNumbers = new unsigned int[n]; //Ã±Ã¤Ã¥Ã«Ã Ã²Ã¼ Ã¢Ã¥ÃªÃ²Ã®Ã°Ã®Ã¬?
 	primeNumbers[0] = 2;
 	
 	while (index < n) {
@@ -84,7 +87,7 @@ unsigned long long nextPrime(unsigned long long value)
 	unsigned int sent = 3, index = 0, searchedNumber = 0;
 	unsigned int *primeNumbers;
 
-	primeNumbers = new unsigned int[value]; //ñäåëàòü âåêòîðîì?
+	primeNumbers = new unsigned int[value]; //Ã±Ã¤Ã¥Ã«Ã Ã²Ã¼ Ã¢Ã¥ÃªÃ²Ã®Ã°Ã®Ã¬?
 	primeNumbers[0] = 2;
 
 	while (true) {
