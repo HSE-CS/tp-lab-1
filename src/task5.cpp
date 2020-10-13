@@ -6,11 +6,10 @@ using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) 
 {
-	unsigned int k = 3;
-	char** test = new char* [k];
-	for (int i = 0; i < k; i++) 
+	char** test = new char* [3];
+	for (int i = 0; i < 3; i++) 
 	{
-		test[i] = new char[k];
+		test[i] = new char[3];
 	}
 	(*result) = test;
 	int numoflet = 0;

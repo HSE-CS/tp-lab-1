@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cmath>
 #include "task2.h"
+#include <cmath>
 
 using namespace std;
 

@@ -1,5 +1,5 @@
-#ifndef TASK4_H
-#define TASK4_H
+#ifndef l1_TASK4_H
+#define l1_TASK4_H
 
 char* sum(char* x, char* y);
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "task3.h"
+#include <cmath>
 
 using namespace std;
 
@@ -13,13 +14,13 @@ bool checkPrime(unsigned int value)
 
 unsigned long long sumPrime(unsigned int hbound) 
 {
-	long sumprime = 0;
+	long summa = 0;
 	for (int i = 2; i < hbound; i++) 
 	{
 		if (checkPrime(i)==true) 
 		{
-			sumprime =sumprime+i;
+			summa =summa+i;
 		}
 	}
-	return sumprime;
+	return summa;
 }
