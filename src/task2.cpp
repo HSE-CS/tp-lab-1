@@ -1,6 +1,6 @@
-#include "task2.h"
 #include <iostream>
 #include <cmath>
+#include "task2.h"
 
 using namespace std;
 
@@ -15,8 +15,7 @@ bool checkPrime(unsigned int value)
 unsigned long long nPrime(unsigned n) 
 {
 	unsigned counter = 0;
-	int i = 2;
-	while (counter <= n)
+	for (unsigned int i = 2; counter != n; ++i) 
 	{
 		if (checkPrime(i)) 
 		{
@@ -26,7 +25,6 @@ unsigned long long nPrime(unsigned n)
 		{
 			return i;
 		}
-		i++;
 	}
 }
 

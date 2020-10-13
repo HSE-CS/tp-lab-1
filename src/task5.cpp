@@ -1,15 +1,16 @@
-#include "task5.h"
 #include <iostream>
 #include <cstring>
+#include "task5.h"
 
 using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) 
 {
-	char** test = new char* [3];
-	for (int i = 0; i < 3; ++i) 
+	unsigned int k = 3;
+	char** test = new char* [k];
+	for (int i = 0; i < k; i++) 
 	{
-		test[i] = new char[3];
+		test[i] = new char[k];
 	}
 	(*result) = test;
 	int numoflet = 0;

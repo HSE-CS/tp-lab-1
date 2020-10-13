@@ -1,15 +1,14 @@
 #include "task4.h"
 #include <iostream>
 #include <cstring>
-#include <algorithm>
 
 using namespace std;
 
 char* sum(char* x, char* y) 
 {
+	int len = max(strlen(x), strlen(y));
 	int len1 = strlen(x);
 	int len2 = strlen(y);
-	int len = max(strlen(x), strlen(y));
 	int overflow = 0;
 	char* buf = new char[len + 1];
 	char* arr2 = new char[len];
