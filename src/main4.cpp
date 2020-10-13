@@ -6,9 +6,9 @@ using namespace std;
 
 int main() 
 {
-	char *x = "099999999";
-	char *y = "000000001";
-	char *expected = "100000000";
+	char* x = "123456789";
+	char* y = "000000001";
+	char* expected = "123456790";
 	char *z = sum(x, y);
 	cout << z << endl;
 	z[8] = '\0';
@@ -22,9 +22,5 @@ int main()
 	if ((*sum(x, y)) == (*expected))
 	{
 		cout << "yes, func sum is working" << endl;
-	}
-	else
-	{
-		cout << "something went wrong" << endl;
 	}
 }
