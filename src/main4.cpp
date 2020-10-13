@@ -6,7 +6,13 @@ using namespace std;
 
 int main(){
 
-    cout << sum((char*)"33933", (char*)"33");
+     char* sum1 = sum((char*)"784", (char*)"1");
+
+     int i=0;
+     while (sum1[i] != '\0') {
+         cout << sum1[i];
+         i++;
+     }
 
 
     return 0;
