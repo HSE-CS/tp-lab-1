@@ -13,7 +13,7 @@ using namespace std;
 int number_of_digits(char *a);
 char sum_helper_1(char a, char b, char e);
 char sum_helper_2(char a, char b);
-char* main_sum_helper(char *a,char *b);
+char* sum(char *a,char *b);
 char* err_repairer(char *result);
 
 
