@@ -6,9 +6,13 @@
 using namespace std; 
 
 unsigned long long sumPrime(unsigned int hbound){
-    unsigned long long s=0;
-    for(unsigned int x=hbound;x>1;x--){
-        if (checkPrime(x)) s+=x;
+     unsigned long long sum = 2;
+    for(int i = 3; i < hbound; i++)
+    {
+        if(checkPrime(i))
+        {
+            sum += i;
+        }
     }
-    return s;
+    return sum;
 }
