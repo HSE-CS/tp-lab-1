@@ -21,7 +21,8 @@ unsigned long long nPrime(unsigned n){
 }
 
 
-unsigned long long nextPrime(unsigned long long value){
-  if (checkPrime(value+1)) return value+1;
-  else nextPrime(value+1);
+unsigned long long nextPrime(unsigned long long value) {
+    unsigned long long n = value + 1;
+    while (!checkPrime(n)) n++;
+    return n;
 }
