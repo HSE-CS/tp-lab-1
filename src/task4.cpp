@@ -42,12 +42,16 @@ char * sum(char *x, char *y) {
     }
 
     if(resInt[0] != 0) {
-        for(int i = 0; i <= max(x_len, y_len);i++)
+        int i = 0;
+        for(; i <= max(x_len, y_len);i++)
             res[i] = resInt[i] + '0';
+        res[i+1] ='\0';
     }
     else {
-        for(int i = 1; i <= max(x_len, y_len);i++)
+        int i = 1;
+        for(; i <= max(x_len, y_len);i++)
             res[i-1] = resInt[i] + '0';
+        res[i+1] ='\0';
     }
         
 
