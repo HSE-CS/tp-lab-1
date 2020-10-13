@@ -6,6 +6,8 @@
 #include <cmath>
 #include <algorithm>
 #include <cstring>
+#include <string>
+#include <iterator>
 
 using namespace std;
 
