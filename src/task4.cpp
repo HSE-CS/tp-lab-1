@@ -14,6 +14,6 @@ char* sum(char* x, char* y)
 	long long int n3 = n1 + n2;
 	char* c;
 	c = (char*)malloc(sizeof(char) * 100);
-	_itoa(n3,c,10);
+	itoa(n3,c,10);
 	return c;
 }
