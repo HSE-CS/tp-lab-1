@@ -1,47 +1,48 @@
 #include "task4.h"
-#define _CRT_SECURE_NO_WARNINGS
+#include <cmath>
 #include <stdio.h>
-#include <math.h>
-#include <string.h>
-#include <malloc.h>
-
+#include <algorithm>
+#include <cstdlib>
+#include <stdlib.h>
+#include <ctime>
+#define _CRT_SECURE_NO_WARNINGS
 
 char* sum(char* x, char* y)
 {
     if (strlen(x) == strlen(y))
     {
-        char* res = (char*)malloc(sizeof(char)*fmax(strlen(x) + 1, (strlen(y) + 1)));
-        int save = 0;
+        char* res = new char[max(strlen(x) + 1, (strlen(y) + 1))];
+        int s = 0;
         for (int of = strlen(x) - 1; of >= 0; of--)
         {
             int a = (int)(x[of] - '0');
             int b = (int)(y[of] - '0');
-            if (save)
+            if (s)
             {
                 a++;
-                save = 0;
+                s = 0;
             }
             if (a + b > 9)
             {
                 res[of + 1] = (char)(((a + b) % 10) + '0');
-                save++;
+                s++;
             }
             else
                 res[of + 1] = (char)((a + b) % 10 + '0');
         }
-        if (save == 1)
+        if (s == 1)
         {
             res[0] = '1';
         }
         else
         {
-            char* res2 = (char*)malloc(sizeof(char)*max(strlen(x) + 1, (strlen(y) + 1)));
+            char* res2 = new char[max(strlen(x) + 1, (strlen(y) + 1))];
             for (int of = strlen(res) - 1; of >= 0; of--)
             {
                 res2[of] = res[of + 1];
             }
-            free(res);
-            res2[max(strlen(x), strlen(y))] = '\0';
+            delete[] res;
+            res2[max(strlen(x), (strlen(y)))] = '\0';
             return res2;
         }
         res[max(strlen(x) + 1, (strlen(y) + 1))] = '\0';
@@ -52,15 +53,15 @@ char* sum(char* x, char* y)
 
         if (strlen(x) < strlen(y))
         {
-            char* temp =(char*)malloc(sizeof(char)*strlen(y));
+            char* temp = new char[strlen(y)];
             strcpy(temp, y);
             y = x;
             x = temp;
         }
 
-        char* res = (char*)malloc(sizeof(char)*fmax(strlen(x) + 1, (strlen(y) + 1)));
+        char* res = new char[max(strlen(x) + 1, (strlen(y) + 1))];
         int leny = strlen(y) - 1;
-        char* newstr = (char*)malloc(sizeof(char)*fmax(strlen(x), (strlen(y))) + 1);
+        char* newstr = new char[max(strlen(x), (strlen(y))) + 1];
         for (int g = strlen(x) - 1; g >= 0; g--)
         {
 
@@ -76,7 +77,6 @@ char* sum(char* x, char* y)
         }
         newstr[max(strlen(x), (strlen(y)))] = '\0';
         int save = 0;
-
         for (int of = strlen(x) - 1; of >= 0; of--)
         {
             int a = (int)x[of] - '0';
@@ -100,8 +100,8 @@ char* sum(char* x, char* y)
             {
                 if (save)
                 {
-                 a++;
-                 save = 0;
+                    a++;
+                    save = 0;
                 }
                 if (a > 9)
                 {
@@ -112,19 +112,19 @@ char* sum(char* x, char* y)
                     res[of + 1] = (char)((a)+'0');
             }
         }
-        free(newstr);
+        delete[] newstr;
         if (save == 1)
         {
             res[0] = '1';
         }
         else
         {
-            char* res2 = (char*)malloc(sizeof(char)*fmax(strlen(x) + 1, (strlen(y) + 1)));
+            char* res2 = new char[max(strlen(x) + 1, (strlen(y) + 1))];
             for (int of = strlen(res) - 1; of >= 0; of--)
             {
                 res2[of] = res[of + 1];
             }
-            free(res);
+            delete[] res;
             res2[max(strlen(x), (strlen(y)))] = '\0';
             return res2;
         }
@@ -132,4 +132,3 @@ char* sum(char* x, char* y)
         return res;
     }
 }
-
