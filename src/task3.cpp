@@ -14,8 +14,6 @@ unsigned long long sumPrime(unsigned int hbound)
 	{
 		sum+=i;
 		i= nextPrime(i);
-		printf("%d\n", i);
 	}
 	return sum;
-	return 17;
 }
