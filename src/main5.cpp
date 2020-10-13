@@ -7,7 +7,7 @@ using namespace std;
 int main() 
 {
 	int N = 0;
-	char* buf = "111,22,3";
+	char* buf = "111,135,999";
 	char** result = nullptr;
 	split(&result, &N, buf, ',');
 	cout << result[0] << endl << result[1] << endl << result[2] << endl<<N<< endl;
@@ -17,13 +17,13 @@ int main()
 	}
 	else 
 		cout << "no" << endl;
-	if (strcmp(result[1], "22") == 0)
+	if (strcmp(result[1], "135") == 0)
 	{
 		cout << "yes" << endl;
 	}
 	else
 		cout << "no" << endl;
-	if (strcmp(result[2], "3") == 0)
+	if (strcmp(result[2], "999") == 0)
 	{
 		cout << "yes" << endl;
 	}

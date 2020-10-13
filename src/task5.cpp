@@ -6,7 +6,7 @@ using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) 
 {
-	int k = 3;
+	unsigned int k = 3;
 	char** arr1 = new char* [k];
 	for (int i = 0; i < k; i++) 
 	{
@@ -21,6 +21,7 @@ void split(char*** result, int* N, char* buf, char ch)
 			arr1[(*N)][numoflet] = '\0';
 			(*N)++;
 			numoflet = 0;
+
 			continue;
 		}
 		if (i == strlen(buf) - 1) 
