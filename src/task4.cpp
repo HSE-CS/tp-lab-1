@@ -26,7 +26,7 @@ char *sum(const char *x, const char *y){
         y_pos -= 1;
     }
     if (carry == 0){
-        memcpy(z, z+1, max_len+1);
+        memmove(z, z+1, max_len+1);
         z[max_len] = '\0';
     } else {
         z[0] = carry+0x30;
