@@ -40,7 +40,7 @@ TEST(lab1,task2_5)
    unsigned long long res=nPrime(500);
    EXPECT_EQ(3571,res);
 }
-/*TEST(lab1,task2_6)
+TEST(lab1,task2_6)
 {
    unsigned long long res=nextPrime(1031);
    EXPECT_EQ(1033,res);
@@ -49,7 +49,7 @@ TEST(lab1,task2_7)
 {
    unsigned long long res=nextPrime(3559);
    EXPECT_EQ(3571,res);
-}*/
+}
 TEST(lab1,task2_8)
 {
    unsigned long long res=nextPrime(2);

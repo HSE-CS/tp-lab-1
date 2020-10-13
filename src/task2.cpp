@@ -9,7 +9,7 @@ bool checkPrime(unsigned int value){
 
 
 unsigned long long nPrime(unsigned n){
-    int num = 1;
+    unsigned long long num = 1;
     int cnt = 0;
     while(cnt < n)
     {
