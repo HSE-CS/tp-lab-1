@@ -6,22 +6,20 @@ using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) 
 {
-	unsigned int k = 3;
-	char** arr = new char* [k];
-	for (int i = 0; i < k; i++) 
+	char** arr = new char* [3];
+	for (int i = 0; i < 3; ++i) 
 	{
-		arr[i] = new char[k];
+		arr[i] = new char[3];
 	}
 	(*result) = arr;
 	int numoflet = 0;
-	for (int i = 0; i < strlen(buf); i++)
+	for (int i = 0; i < strlen(buf); i++) 
 	{
-		if (buf[i] == ch) 
+		if (buf[i] == ch)
 		{
 			arr[(*N)][numoflet] = '\0';
-			numoflet = 0;
 			(*N)++;
-
+			numoflet = 0;
 			continue;
 		}
 		if (i == strlen(buf) - 1) 
@@ -30,6 +28,7 @@ void split(char*** result, int* N, char* buf, char ch)
 		}
 		arr[(*N)][numoflet] = buf[i];
 		numoflet++;
+
 	}
 	(*N)++;
 }
