@@ -1,13 +1,14 @@
 #include "task4.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() 
 {
-	char *x = "099999";
-	char *y = "000001";
-	char *expected = "100000";
+	char *x = "123456789";
+	char *y = "000000001";
+	char *expected = "123456790";
 	char *z = sum(x, y);
 	cout << z << endl;
 	z[8] = '\0';
