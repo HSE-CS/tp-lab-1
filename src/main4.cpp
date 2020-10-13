@@ -27,5 +27,4 @@ int main()
 	{
 		cout << "something went wrong" << endl;
 	}
-	return 0;
 }

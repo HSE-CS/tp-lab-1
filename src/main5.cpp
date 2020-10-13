@@ -31,5 +31,4 @@ int main()
 		delete[] result[i];
 	}
 	delete[] result;
-	return 0;
 }

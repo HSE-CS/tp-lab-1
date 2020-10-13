@@ -11,5 +11,4 @@ int main()
 	cout << "prime number " << nPrime(2) << endl;
 	cout << "next prime number " << nextPrime(5) << endl;
 	cout << "next prime number " << nextPrime(15) << endl;
-	return 0;
 }
