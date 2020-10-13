@@ -21,9 +21,10 @@ unsigned long nok(unsigned int a, unsigned int b){
 }
 
 unsigned long findValue(unsigned int min,unsigned max){
-    unsigned int t=nok(min,min+1);
-    for (int i=min+1; i<max;i++){
-        t=nok(t,i+1);
+    unsigned int otvet = min;
+    for(unsigned int i=1;i<(max-min); i++){
+        unsigned int peremennai = min+i;
+        otvet=nok(otvet,peremennai);
     }
-    return t;
+    return otvet;
 }
