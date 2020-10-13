@@ -6,7 +6,6 @@ using namespace std;
 char * sum(char *x, char *y) {
     int x_len = (int)strlen(x);
     int y_len = (int)strlen(y);
-    char *res = new char[max(x_len, y_len) + 2];
     int *resInt = new int[max(x_len, y_len) + 2];
     
     
@@ -41,7 +40,9 @@ char * sum(char *x, char *y) {
         resInt[offset ] = (a + b + c) / 10;
     }
 
+    char *res;
     if(resInt[0] != 0) {
+        res = new char[max(x_len, y_len) + 1];
         int i = 0;
         for(; i <= max(x_len, y_len);i++)
             res[i] = resInt[i] + '0';
@@ -49,12 +50,12 @@ char * sum(char *x, char *y) {
     }
     else {
         int i = 1;
+        res = new char[max(x_len, y_len) + 2];
         for(; i <= max(x_len, y_len);i++)
             res[i-1] = resInt[i] + '0';
         res[i+1] ='\0';
     }
         
-
     
     delete [] resInt;
     delete [] strf;
