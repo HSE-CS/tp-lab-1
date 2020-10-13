@@ -8,7 +8,7 @@ unsigned long findValue(unsigned int min, unsigned max){
     unsigned k = max;
     while(true){
         int check = {0};
-        for (int i = min; i <= max; i++) if ( 0 == k % i) check++;
+        for (int i = min; i <= max; i++) if (0 == k % i) check++;
         if (max - min + 1 == check) return k;
         else k++;
     }
