@@ -1,8 +1,7 @@
 #ifndef TASK5_H
 #define TASK5_H
 
-//- разбиение строки buf на подстроки и запись
-//результата в result, с присвоением по адресу N количества полученных подстрок.
+//dividing the string buf into result array of N substrings, separated by delimiters ch
 void split(char*** result, int* N, char* buf, char ch);
 
 #endif

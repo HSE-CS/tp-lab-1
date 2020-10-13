@@ -1,15 +1,14 @@
 #ifndef TASK2_H
 #define TASK2_H
 
-//- проверка числа на простоту.
+// prime number check
 bool checkPrime(unsigned int value);
-//- нахождение n - ого простого числа(в ряду).
+//finds n-st prime number
 unsigned long long nPrime(unsigned n);
-//-нахождение ближайшего следующего простого числа
+// finds next prime number
 unsigned long long nextPrime(unsigned long long value);
 
-//Дополнительно реализовал
-//Решето Эратосфена
+//Utils
 int* sieveOfEratosphenes(int size);
 
 #endif

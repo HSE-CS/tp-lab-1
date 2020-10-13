@@ -2,6 +2,7 @@
 #include "task2.h"
 using namespace std;
 
+// sum of prime numbers before hbound(excluding it)
 unsigned long long sumPrime(unsigned int hbound) {
 	unsigned long long prime_sum(0);
 	int* simple_table = sieveOfEratosphenes(hbound);

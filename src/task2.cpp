@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-//- проверка числа на простоту.
+// prime number check
 bool checkPrime(unsigned int value) { 
 	for (long long divizor = 2; divizor <= sqrt(value); divizor++)
 	{
@@ -11,7 +11,6 @@ bool checkPrime(unsigned int value) {
 	return true;
 }
 
-//–ешето Ёратосфена
 int* sieveOfEratosphenes(int size) {
     int* simple_table = new int[size] {0};
     int number = 0;
@@ -31,7 +30,7 @@ int* sieveOfEratosphenes(int size) {
     return simple_table;
 }
 
-//- нахождение n - ого простого числа(в р€ду).
+//finds n-st prime number
 unsigned long long nPrime(unsigned n){ 
     unsigned long long simple_num(0);
     int* simple_table = sieveOfEratosphenes(10000000);
@@ -45,7 +44,7 @@ unsigned long long nPrime(unsigned n){
     return simple_num;
 }
 
-//-нахождение ближайшего следующего простого числа
+// finds next prime number
 unsigned long long nextPrime(unsigned long long value){
     unsigned long long simple_num(0);
     int* simple_table = sieveOfEratosphenes(10000000);

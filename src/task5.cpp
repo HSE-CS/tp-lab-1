@@ -2,6 +2,7 @@
 #include <cstring>
 using namespace std;
 
+//dividing the string buf into result array of N substrings, separated by delimiters ch
 void split(char*** result, int* N, char* buf, char ch) {
 	int amount(0);
 	int sizes[20]{ 0 };

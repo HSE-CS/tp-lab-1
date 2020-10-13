@@ -1,7 +1,7 @@
 #ifndef TASK3_H
 #define TASK3_H
 
-//- сумма всех простых чисел до hbound(не включая его)
+// sum of prime numbers before hbound(excluding it)
 unsigned long long sumPrime(unsigned int hbound);
 
 #endif
