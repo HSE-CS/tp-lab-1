@@ -24,7 +24,7 @@ unsigned long long nPrime(unsigned n)
 
             pos++;
         }
-        if(pos == n) return i;
+        if(pos == n+1) return i;
 
     }
 
