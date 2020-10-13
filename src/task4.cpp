@@ -9,10 +9,11 @@
 
 char* sum(char* x, char* y)
 {
-	int n1 = atoi(x);
-	int n2 = atoi(y);
+	long int n1 = atoi(x);
+	long int n2 = atoi(y);
 	long long int n3 = n1 + n2;
-	char c[10];
-	char* res = c;
-	return res;
+	char c[100] = { 0 };
+	_itoa(n3,c,10);
+	//printf("%s\n", c);
+	return c;
 }
