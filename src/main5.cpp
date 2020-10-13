@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	char** substr_array = new char* [20];
+	/*char** substr_array = new char* [20];
 	for (size_t i = 0; i < 20; i++)
 	{
 		substr_array[i] = new char[30]{ 0 };
@@ -16,5 +16,5 @@ int main() {
 	for (size_t i = 0; i < count; i++)
 	{
 		cout << substr_array[i] << endl;
-	}
+	}*/
 }
