@@ -1,4 +1,4 @@
-unsigned long findValue(unsigned int min,unsigned max)
+unsigned long findValue(unsigned int min,unsigned max)// /(_-_)\ брейкданс
 {
     int temp;
     for(int i = 1; ; i++) {

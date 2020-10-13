@@ -34,52 +34,52 @@ char sum_helper_2(char a, char b) {
     }
 }
 
-char* main_sum_helper(char *a,char *b) {
-    int num1 = number_of_digits(a), num2 = number_of_digits(b);
-    char *sum = (char*)calloc(max(num1,num2)+2,sizeof(char));
+char * sum(char *x, char *y) {
+    int num1 = number_of_digits(x), num2 = number_of_digits(y);
+    char *sumQ = (char*)calloc(max(num1, num2) + 2, sizeof(char));
     if(num1!=num2) {
         int difference = max(num1,num2) - min(num1,num2);
         if(num1>num2) {
             for(int i = 0;i<difference;i++) {
-                sum[i] = a[i];
+                sumQ[i] = x[i];
             }
             for(int i = difference;i<num1;i++) {
-                sum[i-1] = sum_helper_1(a[i],b[i-difference],sum[i-1]);
-                sum[i] = sum_helper_2(a[i],b[i-difference]);
+                sumQ[i - 1] = sum_helper_1(x[i], y[i - difference], sumQ[i - 1]);
+                sumQ[i] = sum_helper_2(x[i], y[i - difference]);
             }
         } else {
             for(int i = 0;i<difference;i++) {
-                sum[i] = b[i];
+                sumQ[i] = y[i];
             }
             for(int i = difference;i<num2;i++) {
-                sum[i-1] = sum_helper_1(a[i-difference],b[i],sum[i-1]);
-                sum[i] = sum_helper_2(a[i-difference],b[i]);
+                sumQ[i - 1] = sum_helper_1(x[i - difference], y[i], sumQ[i - 1]);
+                sumQ[i] = sum_helper_2(x[i - difference], y[i]);
             }
         }
-        if (sum[0] == 48) {
+        if (sumQ[0] == 48) {
             for (int i = 0; i < num1 + num2 + 1; i++) {
-                sum[i] = sum[i + 1];
+                sumQ[i] = sumQ[i + 1];
             }
         }
-        for(int i = 0; i < strlen(sum); i++) {
-            sum = err_repairer(sum);
+        for(int i = 0; i < strlen(sumQ); i++) {
+            sumQ = err_repairer(sumQ);
         }
-        if(sum[0] == '0') {
-            sum[0] = '1';
-            sum[strlen(sum)] = '0';
+        if(sumQ[0] == '0') {
+            sumQ[0] = '1';
+            sumQ[strlen(sumQ)] = '0';
         }
-        return sum;
+        return sumQ;
     } else {
         for(int i = 0;i<max(num1,num2);i++) {
-            sum[i] = sum_helper_1(a[i],b[i],sum[i]);
-            sum[i+1] = sum_helper_2(a[i],b[i]);
+            sumQ[i] = sum_helper_1(x[i], y[i], sumQ[i]);
+            sumQ[i + 1] = sum_helper_2(x[i], y[i]);
         }
-        if (sum[0] == 48) {
+        if (sumQ[0] == 48) {
             for (int i = 0; i < num1 + num2 + 1; i++) {
-                sum[i] = sum[i + 1];
+                sumQ[i] = sumQ[i + 1];
             }
         }
-        return sum;
+        return sumQ;
     }
 }
 char* err_repairer(char *result) {

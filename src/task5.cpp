@@ -3,7 +3,7 @@
 void split(char ***result, int *N, char *buf, char ch)
 {
 
-    int len = strlen(buf), count = 1;
+    int len = strlen(buf),  count = 1;
     for (int i = 0; i < len; i++) if (buf[i] == ch) count++;
     *N = count;
     count = 0;

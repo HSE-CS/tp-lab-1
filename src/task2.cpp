@@ -12,14 +12,17 @@ bool checkPrime(unsigned int value) {
 unsigned long long nPrime(unsigned n)
 {
     unsigned long k = 0;
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; ; i++)
     {
         if(checkPrime(i))
         {
             k++;
         }
+        if(k == n)
+        {
+            return i;
+        }
     }
-    return k;
 }
 unsigned long long nextPrime(unsigned long long value)
 {

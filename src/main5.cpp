@@ -1,5 +1,6 @@
 #include "task5.h"
 #include <iostream>
+using namespace std;
 int main()
 {
     //char **ptrarray = new char* [];
@@ -7,9 +8,6 @@ int main()
     int N=0;
     char **result=nullptr;
     split(&result, &N, buf, ',');
-    for(int i = 0; i < strlen(*result); i++)
-    {
-        printf("%s", *result);
-    }
+    cout << result[2];
     return 0;
 }
