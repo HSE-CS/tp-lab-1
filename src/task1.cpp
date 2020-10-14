@@ -3,8 +3,6 @@
 
 using namespace std;
 
-unsigned int min = 1;
-unsigned max = 1;
 
 unsigned long findValue(unsigned int min, unsigned max) {
     while (max <=20)
