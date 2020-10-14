@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include "task5.h"
-#include <queue>
+#include <cstring>
 
 using namespace std;
 
