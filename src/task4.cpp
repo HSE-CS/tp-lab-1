@@ -1,6 +1,7 @@
 #include "task4.h"
 #include <algorithm>
 #include <string>
+#include <string.h>
 
 
 char* sum(char* x, char* y) {
