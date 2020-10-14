@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include "task4.h"
 #include <algorithm>
 #include <string>
@@ -5,47 +6,110 @@
 
 
 char* sum(char* x, char* y) {
-    unsigned int lenX = strlen(x);
-    unsigned int lenY = strlen(y);
-    unsigned int maxLength = std::max(lenX, lenY);
-    char* buf = new char[maxLength + 1];
-    char* t = new char[maxLength];
-    bool overflow = false;
-    if (lenX > lenY) {
-        for (unsigned int i = 0; i < lenX - lenY; i++) {
-            t[i] = '0';
+
+    int lengX = strlen(x), lengY = strlen(y);
+
+    if (lengX == lengY){
+        char* res = new char[std::max(lengX + 1, lengY + 1)];
+        int s = 0;
+        for (int of = lengX - 1; of >= 0; of--){
+            int a = (int)(x[of] - '0');
+            int b = (int)(y[of] - '0');
+            if (s)
+            {
+                a++;
+                s = 0;
+            }
+            if (a + b > 9)
+            {
+                res[of + 1] = (char)(((a + b) % 10) + '0');
+                s++;
+            }
+            else
+                res[of + 1] = (char)((a + b) % 10 + '0');
         }
-        for (unsigned int j = lenX - lenY; j < lenY; j++) {
-            t[j] = y[j];
+        if (s == 1){
+            res[0] = '1';
         }
-        y = t;
+        else{
+            char* res2 = new char[std::max(lengX + 1, lengY + 1)];
+            for (int of = strlen(res) - 1; of >= 0; of--){
+                res2[of] = res[of + 1];
+            }
+            delete[] res;
+            res2[std::max(lengX, lengY)] = '\0';
+            return res2;
+        }
+        res[std::max(lengX + 1, (lengY + 1))] = '\0';
+        return res;
     }
-    if (lenY > lenX) {
-        for (unsigned int i = 0; i < lenY - lenX; i++) {
-            t[i] = '0';
+    else{
+
+        if (lengX < lengY){
+            char* temp = new char[lengY];
+            strcpy(temp, y);
+            y = x;
+            x = temp;
         }
-        for (unsigned int j = lenY - lenX; j < lenX; j++) {
-            t[j] = x[j];
-        }
-        x = t;
-    }
-    delete[] t;
-    for (int i = maxLength - 1; i >= 0; i--) {
-        buf[i] = (char)(x[i] + y[i] + overflow - '0');
-        overflow = false;
-        if (buf[i] > '9') {
-            buf[i] = (char)(buf[i] - 10);
-            overflow = true;
-            if (0 == i) {
-                for (unsigned int k = maxLength; k >= 0; k--) {
-                    buf[k] = buf[k - 1];
-                }
-                buf[0] = '1';
+
+        char* res = new char[std::max(lengX + 1, (lengY + 1))];
+        int leny = lengY - 1;
+        char* newstr = new char[std::max(lengX, (lengY)) + 1];
+        for (int g = lengX - 1; g >= 0; g--){
+
+            if (leny >= 0){
+                newstr[g] = y[leny];
+                leny--;
+            }
+            else{
+                newstr[g] = ' ';
             }
         }
-        if (0 == i && 0 == overflow) {
-            buf[maxLength] = '\0';
+        newstr[std::max(lengX, (lengY))] = '\0';
+        int save = 0;
+        for (int of = lengX - 1; of >= 0; of--){
+            int a = (int)x[of] - '0';
+            if (newstr[of] != ' '){
+                int b = (int)newstr[of] - '0';
+                if (save){
+                    a++;
+                    save = 0;
+                }
+                if (a + b > 9){
+                    res[of + 1] = (char)(((a + b) % 10) + '0');
+                    save++;
+                }
+                else
+                    res[of + 1] = (char)((a + b) + '0');
+            }
+            else{
+                if (save){
+                    a++;
+                    save = 0;
+                }
+                if (a > 9){
+                    res[of + 1] = (char)(((a) % 10) + '0');
+                    save++;
+                }
+                else
+                    res[of + 1] = (char)((a)+'0');
+            }
         }
+        delete[] newstr;
+        if (save == 1){
+            res[0] = '1';
+        }
+        else{
+            char* res2 = new char[std::max(lengX + 1, (lengY + 1))];
+            for (int of = strlen(res) - 1; of >= 0; of--){
+                res2[of] = res[of + 1];
+            }
+            delete[] res;
+            res2[std::max(lengX, (lengY))] = '\0';
+            return res2;
+        }
+        res[std::max(lengX + 1, (lengY + 1))] = '\0';
+        return res;
     }
-    return buf;
+
 }
