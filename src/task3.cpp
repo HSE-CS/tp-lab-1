@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool checkPrime(unsigned int value)
+bool checkPrime3(unsigned int value)
 {
 	for (unsigned int i = 2; i <= sqrt(value); i++)
 		if (value % i == 0)
@@ -21,7 +21,7 @@ unsigned long long sumPrime(unsigned int hbound)
 	unsigned int num = 2;
 	while (num < hbound)
 	{
-		if (checkPrime(num))
+		if (checkPrime3(num))
 			sum += num;
 		num += 1;
 	}
