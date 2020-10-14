@@ -4,7 +4,7 @@ int main() {
 
 	char** result = new char*;
 	int _count = 0;
-	char* buf = new char[] {"123,456,789"};
+	char buf[25] {"123,456,789"};
 	char ch = ',';
 
 	split(&result, &_count, buf, ch);
