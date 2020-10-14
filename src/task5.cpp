@@ -29,6 +29,5 @@ void split(char*** result, int* N, char* buf, char ch)
 			(*N) += 1;
 		}
 	}
-	*N += 1;
 	delete[]temp;
 }
