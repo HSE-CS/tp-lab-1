@@ -1,34 +1,61 @@
 #include <iostream>
+#include <cmath>
+#include <stdio.h>
+#include <cstdlib>
 #include <cstring>
+#include <string.h>
+#include <iterator>
 #include "task5.h"
 
 using namespace std;
 
-void split(char*** result, int* N, char* buf, char ch) 
+void split(char*** result, int* N, char* buf, char ch)
 {
-	int k = 3;
-	char** spl = new char* [k];
-	for (int i = 0; i < k; i++) 
+	char lettercheck;
+	int num = 0, counter = 1;
+	int len = strlen(buf);
+	for (int i = 0; i < len; i++)
 	{
-		spl[i] = new char[k];
+		if (i == 1)
+			lettercheck = buf[i];
+		if ((buf[i] == ch) && (buf[i] != lettercheck))
+			counter++;
 	}
-	(*result) = spl;
-	int numoflet = 0;
-	for (int i = 0; i < strlen(buf); i++) 
+	*N = counter;
+	if (counter != 0)
 	{
-		if (buf[i] == ch)
+		*result = new char* [counter];
+		int j = 0;
+		for (int i = 0; i < counter; i++)
 		{
-			spl[(*N)][numoflet] = '\0';
-			(*N)++;
-			numoflet = 0;
-			continue;
+			while (j < len)
+			{
+				int k = j;
+				int counter2 = 0;
+				while (buf[k] != ch)
+				{
+					k++;
+					counter2++;
+				}
+				(*result)[i] = new char[counter2];
+				int ns = 0;
+				for (int v = j; v < k; v++)
+				{
+					(*result)[i][ns] = buf[v];
+					ns++;
+				}
+				(*result)[i][counter2] = '\0';
+				while ((buf[k] == ch) && (k < len))
+					k++;
+				j = k;
+				if (j == len)
+					break;
+				i++;
+				if (i == counter)
+					break;
+			}
+			if (i == counter)
+				break;
 		}
-		if (i == strlen(buf) - 1) 
-		{
-			spl[(*N)][numoflet + 1] = '\0';
-		}
-		spl[(*N)][numoflet] = buf[i];
-		numoflet++;
 	}
-	(*N)++;
 }
