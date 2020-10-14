@@ -32,10 +32,5 @@ unsigned long long nextPrime(unsigned long long value)
     {
         if(checkPrime(i)) return i;
     }
-    /*int pos = nPrime(value);
-    if(value == 1) return 2;
-    if(value == 2) return 3;
-    for (int i = pos+1; i < value*value; i++) {
-        if(checkPrime(i)) return i;
-    }*/
+
 }
