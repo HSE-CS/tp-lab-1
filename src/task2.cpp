@@ -26,7 +26,7 @@ bool checkPrime(unsigned long long value) {
 }
 
 unsigned long long nPrime(unsigned n) {
-	int i = 1;
+	int i = 0;
 	unsigned long long num = 1;
 	int flag = 1;
 	while (i != n) {
@@ -44,8 +44,7 @@ unsigned long long nPrime(unsigned n) {
 	return num;
 }
 unsigned long long nextPrime(unsigned long long value) {
-	if (value == 2)
-		return value;
+	++value;
 	while (!checkPrime(value))
 		++value;
 	return value;
