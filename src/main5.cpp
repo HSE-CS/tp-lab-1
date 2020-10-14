@@ -1,6 +1,6 @@
 #include <iostream>
 #include "task5.h"
-#define BUF 5000
+#define BUF 100000
 
 using namespace std;
 
