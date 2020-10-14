@@ -1,7 +1,20 @@
+#pragma once
 #include <iostream>
 #include "task2.h"
+#include "task3.h"
 
 bool checkPrime(unsigned int value) {
+	if (value == 2)
+		return true;
+	for (unsigned int j = 2; j < value; ++j) {
+		if (value % j == 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
+bool checkPrime(unsigned long long value) {
 	if (value == 2)
 		return true;
 	for (int j = 2; j < value; ++j) {
@@ -13,7 +26,7 @@ bool checkPrime(unsigned int value) {
 }
 
 unsigned long long nPrime(unsigned n) {
-	int i = 0;
+	int i = 1;
 	unsigned long long num = 1;
 	int flag = 1;
 	while (i != n) {
