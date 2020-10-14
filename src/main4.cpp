@@ -25,4 +25,5 @@ int main()
 	{
 		cout << "yes, func is working" << endl;
 	}*/
+	return 0;
 }

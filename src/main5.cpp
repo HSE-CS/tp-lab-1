@@ -11,4 +11,5 @@ using namespace std;
 int main()
 {
 	cout << "started" << endl;
+	return 0;
 }
