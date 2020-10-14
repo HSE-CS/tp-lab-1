@@ -1,9 +1,9 @@
-#include <iostream>
-#include "task1.h"
+#include "task2.h"
 
 int main() {
-	int min = { 1 };
-	int max = { 20 };
-	std::cout << findValue(min, max);
+	unsigned long n = 4;
+	std::cout << checkPrime(n) << "\n";
+	std::cout << nPrime(n) << "\n";
+	std::cout << nextPrime(n) << "\n";
 	return 0;
 }

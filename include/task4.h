@@ -1,6 +1,6 @@
-#ifndef CPLAB1_TASK1_H
-#define CPLAB1_TASK1_H
+#ifndef CPLAB1_TASK4_H
+#define CPLAB1_TASK4_H
 
-unsigned long findValue(unsigned int min,unsigned max);
+char* sum(char* x, char* y);
 
-#endif 
+#endif

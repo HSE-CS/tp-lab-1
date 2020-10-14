@@ -1,9 +1,8 @@
-#include <iostream>
-#include "task1.h"
+#include "task3.h"
+#include "task2.h"
 
 int main() {
-	int min = { 1 };
-	int max = { 20 };
-	std::cout << findValue(min, max);
+	int bound = 10;
+	std::cout << sumPrime(bound);
 	return 0;
 }

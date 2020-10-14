@@ -1,9 +1,9 @@
-#include <iostream>
-#include "task1.h"
+#include <cstring>
+#include "task4.h"
 
 int main() {
-	int min = { 1 };
-	int max = { 20 };
-	std::cout << findValue(min, max);
+	char* x = strdup("12345");
+	char* y = strdup("22");
+	std::cout << sum(x, y);
 	return 0;
 }

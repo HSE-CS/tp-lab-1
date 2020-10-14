@@ -1,23 +1,36 @@
-#include <iostream>
-#include "task1.h"
+#include <math.h>
 
-unsigned long findValue(unsigned int min, unsigned max) {
-	int flag = 0;
+bool checkPrime(unsigned int value) {
+	if (value >= 2) {
+		for (long long i = 2; i < value; i++) {
+			if (value % i == 0) {
+				return false;
+			}
+		}
+	}
+	else {
+		return false;
+	}
+}
+
+unsigned long long nPrime(unsigned n) {
 	int count = 0;
-	int i = min;
-	for (int n = 0; n <= 100000; n++) {
-		i = min;
-		while ((flag == 0) && (i <= max)) {
-			if (n % i == 0) {
-				i++;
+	int num = 0;
+		for (int i = 2; i < 1000000; i++) {
+			if (checkPrime(i)) {
+				count++;
 			}
-			else {
-				flag++;
+			if (count == n) {
+				num = i;
+				break;
 			}
 		}
-		if (i == max) {
-			return n;
-			break;
-		}
+	return num;
+}
+
+unsigned long long nextPrime(unsigned long long value) {
+	int num = value;
+	while (!checkPrime(num)) {
+		num++;
 	}
 }
