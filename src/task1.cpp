@@ -3,28 +3,19 @@
 
 using namespace std;
 
-bool cycle(unsigned int min, unsigned max, unsigned int check) 
+unsigned long findValue(unsigned int min, unsigned max)
 {
-	for (unsigned int i = min; i <= max; ++i) 
+	int number = 1;
+	while (true)
 	{
-		if (check % i != 0) 
+		for (int i = min; i <= max; i++)
 		{
-			return false;
+			if (number % i != 0)
+				break;
+			if (number % i == 0)
+				if (i == max)
+					return number;
 		}
-		if (i == max) 
-		{
-			return true;
-		}
+		number++;
 	}
-}
-
-
-unsigned long findValue(unsigned int min, unsigned max) 
-{
-	unsigned int check = max;
-	while (!cycle(min, max, check)) 
-	{
-		++check;
-	};
-	return check;
 }

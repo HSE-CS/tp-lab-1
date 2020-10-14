@@ -18,9 +18,9 @@ int main()
 	{
 		cout << z[i] << endl;
 	}
-	cout << "size " << sizeof(z) << endl;
+	cout << "size of z" << sizeof(z) << endl;
 	cout << expected << endl;
-	cout << "size " << sizeof(sum(x, y)) << endl;
+	cout << "size of sum" << sizeof(sum(x, y)) << endl;
 	if ((*sum(x, y)) == (*expected))
 	{
 		cout << "yes, func is working" << endl;
