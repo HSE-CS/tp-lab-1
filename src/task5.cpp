@@ -3,24 +3,26 @@
 #include "task5.h"
 #include <cstring>
 #include <cstdlib>
-#define BUF 1000
 
 using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
+	string a = buf;
 	char raz[] = { ' ', '\0' };
-	char* s = (char*)calloc(strlen(buf)+1, sizeof(char));
+	char* s = (char*)calloc(a.length(), sizeof(char));
 	s = strtok(buf, raz);
-	*result = (char**)calloc((strlen(buf) + BUF), sizeof(char*));
+	cout << a.length() << endl;
+	*result = (char**)calloc(a.length() + 1, sizeof(char*));
 	int i = 0;
 	while (s) {
-		(*result)[i] = (char*)calloc(strlen(s) + 2, sizeof(char));
+		(*result)[i] = (char*)calloc(strlen(s) + 1, sizeof(char));
 		(*result)[i] = s;
 		cout << (*result)[i] << endl;
 		s = strtok(NULL, raz);
 		++i;
 	}
 	*N = i;
+	free(s);
 }
 
 
