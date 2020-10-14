@@ -5,10 +5,12 @@ using namespace std;
 
 int main() 
 {
-	char *x = "111111111";
+	cout << "started" << endl;
+	/*char *x = "111111111";
 	char *y = "000000001";
 	char *expected = "111111112";
 	char *z = sum(x, y);
+	cout<<"z:"<<endl;
 	z[8] = '\0';
 	for (int i = 0; i < sizeof(z); ++i) 
 	{
@@ -20,5 +22,5 @@ int main()
 	if ((*sum(x, y)) == (*expected))
 	{
 		cout << "yes, func is working" << endl;
-	}
+	}/*
 }
