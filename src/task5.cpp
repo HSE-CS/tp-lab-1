@@ -3,39 +3,25 @@
 #include "task5.h"
 #include <cstring>
 #include <cstdlib>
+#define BUF 5000
 
 using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
 	string a = buf;
-	string buffer;
-	int k = 0;
-	(*result) = (char**)calloc(a.length(), sizeof(char*));
-	int razdel = 0;
-	for (int i = 0; i < a.length(); ++i) {
-		if (a[i] == ch) {
-			buffer = a.substr(razdel, i);
-			razdel = i + 1;
-			(*result)[k] = (char*)calloc(buffer.length(), sizeof(char));
-			++k;
-			//cout << (*result)[k] << endl;
-		}
-	}
-	*N = k;
-	/*char raz[] = { ' ', '\0' };
-	char* s = (char*)calloc(a.length(), sizeof(char));
-	cout << a.length() << endl;
-	*result = (char**)calloc(a.length() + 1, sizeof(char*));
+	char raz[] = { ch, '\0' };
+	char* s = (char*)calloc(a.length()+1, sizeof(char));
+	s = strtok(buf, raz);
+	*result = (char**)calloc((a.length() + 2), sizeof(char*));
 	int i = 0;
 	while (s) {
-		(*result)[i] = (char*)calloc(strlen(s) + 1, sizeof(char));
+		(*result)[i] = (char*)calloc(strlen(s) + 20, sizeof(char));
 		(*result)[i] = s;
-		cout << (*result)[i] << endl;
+		//cout << (*result)[i] << endl;
 		s = strtok(NULL, raz);
 		++i;
 	}
 	*N = i;
-	free(s);*/
 }
 
 
