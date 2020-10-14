@@ -33,7 +33,7 @@ unsigned long long nextPrime(unsigned long long value)
 	value = value + 1;
 	while (true)
 	{
-		if (checkPrime(i) == true)
+		if (checkPrime(i))
 			return i;
 		else i++;
 	}
