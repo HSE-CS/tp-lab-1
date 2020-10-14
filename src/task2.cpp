@@ -39,7 +39,7 @@ unsigned long long nPrime(unsigned n)
 
 unsigned long long nextPrime(unsigned long long value)
 {
-	unsigned long long num = value;
+	unsigned long long num = value+1;
 	while(!checkPrimeLong(num))
 	{
 		num += 1;
