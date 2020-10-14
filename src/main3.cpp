@@ -5,5 +5,5 @@ using namespace std;
 
 int main() 
 {
-	cout <<"summ=" <<sumPrime(2000000) << endl;
+	cout << sumPrime(2000000) << endl;
 }
