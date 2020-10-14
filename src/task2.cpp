@@ -17,7 +17,7 @@ bool checkPrime(unsigned int value) {
 bool checkPrime(unsigned long long value) {
 	if (value == 2)
 		return true;
-	for (int j = 2; j < value; ++j) {
+	for (int j = 2; j < value/2 + 1; ++j) {
 		if (value % j == 0) {
 			return false;
 		}
