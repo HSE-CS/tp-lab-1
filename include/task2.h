@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <ctime>
-#include <cstlib>
+#include <cstdlib>
+#include <algorithm>
 #ifndef TASK2_H
 #define TASK2_H
 
