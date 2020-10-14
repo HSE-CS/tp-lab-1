@@ -4,6 +4,10 @@
 using namespace std;
 
 unsigned long findValue(unsigned int min, unsigned max) {
+	if(min < 2520) {
+		int i = 2520;
+		return i;
+	}
 	int flag = 1;
 	for (int i = min; i < max; i++) {
 		flag = 1;
