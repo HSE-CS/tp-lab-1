@@ -8,9 +8,22 @@ using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
 	string a = buf;
-	char raz[] = { ' ', '\0' };
+	string buffer;
+	int k = 0;
+	(*result) = (char**)calloc(a.length(), sizeof(char*));
+	int razdel = 0;
+	for (int i = 0; i < a.length(); ++i) {
+		if (a[i] == ch) {
+			buffer = a.substr(razdel, i);
+			razdel = i + 1;
+			(*result)[k] = (char*)calloc(buffer.length(), sizeof(char));
+			++k;
+			//cout << (*result)[k] << endl;
+		}
+	}
+	*N = k;
+	/*char raz[] = { ' ', '\0' };
 	char* s = (char*)calloc(a.length(), sizeof(char));
-	s = strtok(buf, raz);
 	cout << a.length() << endl;
 	*result = (char**)calloc(a.length() + 1, sizeof(char*));
 	int i = 0;
@@ -22,7 +35,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 		++i;
 	}
 	*N = i;
-	free(s);
+	free(s);*/
 }
 
 
