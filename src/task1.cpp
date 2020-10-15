@@ -5,13 +5,18 @@ using namespace std;
 
 
 unsigned long findValue(unsigned int min, unsigned max) {
-    while (max <=20)
+    unsigned v=max;
+
+    while (true)
     {
-        if (min % max == 0) {
-            max++;
+        for (int i = max; i >= min; i--) {
+
+             if (i == min)
+                 return v;
+             if (v % i != 0)
+                 break;
         }
-        else { min++; max = 1; }
+        v = v + max;
     }
-    cout << min << endl;
 
 }

@@ -30,7 +30,7 @@ unsigned long long nPrime(unsigned int n) {
 
 
 unsigned long long nextPrime(unsigned long long value) {
-    value++;
+
     for (int i = value+1; ; i++) {
         if (checkPrime(i) == true) {
             return i;
