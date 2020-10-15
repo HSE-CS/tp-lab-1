@@ -26,14 +26,9 @@ unsigned long long nPrime(unsigned n){
 }
 
 unsigned long long nextPrime(unsigned long long value){
-    unsigned long long left = value-1;
     unsigned long long right = value+1;
-    while (!checkPrime(left) and !checkPrime(right)) {
-        left--;
+    while ( !checkPrime(right)) {
         right++;
     }
-    if(checkPrime(left))
-        return left;
-    else
-        return right;
+    return right;
 }
