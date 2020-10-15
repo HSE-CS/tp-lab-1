@@ -8,6 +8,10 @@ using namespace std;
 void split(char*** result, int* N, char* buf, char ch) {
 
 	int count = 0;
+    int m = 0;
+    int n = 0;
+    int w = 0;
+    int v = 0;
 
 	for (int i = 0; i < strlen(buf); i++) {
 		if (buf[i] == ch)
@@ -15,5 +19,43 @@ void split(char*** result, int* N, char* buf, char ch) {
 	}
 	*N = count + 1;
 
-	
+    int* size = new int[*N];
+
+
+    for (int i = 0; i < strlen(buf); i++) {
+
+        n++;
+
+        if (buf[i] == ch) {
+            m++;
+            size[m] = i;
+            n = 0;
+        }
+        }
+
+
+    size[m]++;
+
+    *result = new char* [*N];
+
+    for (int i = 0; i < (*N); i++) {
+        (*result)[i] = new char[size[i]];
+    }
+
+
+    for (int i = 0; i < strlen(buf); i++) {
+        if (buf[i] == ch) {
+            w++;
+            (*result)[w][v] = '\0';
+            v = 0;
+        }
+
+        else {
+            (*result)[w][v] = buf[i];
+            v++;
+        }
+    }
+
+    (*result)[w][v] = '\0';
 }
+	
