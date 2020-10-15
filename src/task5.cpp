@@ -3,17 +3,20 @@
 void split(char ***result, int *N, char *buf, char ch) {
 
     const int len = 1000;
-    const int lenB = 100;
     int j = 0;
     int poz = 0;
+    (*N) = 0;
 
-    *result = new char *[len];
-    *result[0] = new char[lenB];
+    *result = new char* [len];
+
+    for (int i = 0; i < len; i++){
+        (*result)[i] = new char[len];
+    }
 
     for (int i = 0; i < strlen(buf); i++) {
         if (buf[i] == ch) {
-            j++;
             (*result)[j][poz] = '\0';
+            j++;
             poz = 0;
             continue;
         }
