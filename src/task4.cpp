@@ -1,4 +1,4 @@
-#include "task4.h"
+#include "../include/task4.h"
 
 char * sum(char *x, char *y){
     int size_x = strlen(x);
@@ -6,7 +6,7 @@ char * sum(char *x, char *y){
     int size = max(size_x, size_y);
 
     if ((x[0] - '0') + (y[0] - '0') > 9){
-        size++;
+        size += 2;
     }
 
     char *sum = new char [size];
@@ -31,9 +31,12 @@ char * sum(char *x, char *y){
         } 
     }
 
+    cout << sum << endl;
+
     if (del){
         sum[0]=del+'0';
     }
+    sum[size] = '\0';
     
     return sum;
 }
