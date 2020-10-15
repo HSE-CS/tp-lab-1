@@ -2,13 +2,12 @@
 
 bool checkPrime(unsigned int value)
 {
-	int k = 0;
-	for ( int i = 1; i <= value; i++)
+	for (unsigned int i = 2; i <= value / 2; i++)
 	{
-		if (value % i == 0) k++;
-}
-	if (k == 2) return true;
-	else return false;
+		if (value % i == 0)
+			return false;
+	}
+	return true;
 }
 unsigned long long nPrime(unsigned n)
 {
