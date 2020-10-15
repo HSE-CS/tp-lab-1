@@ -6,7 +6,7 @@ char * sum(char *x, char *y){
     int size = max(size_x, size_y);
 
     if ((x[0] - '0') + (y[0] - '0') > 9){
-        size += 2;
+        size++;
     }
 
     char *sum = new char [size];
@@ -30,8 +30,6 @@ char * sum(char *x, char *y){
             del = (y[i] + del - 48) / 10;
         } 
     }
-
-    cout << sum << endl;
 
     if (del){
         sum[0]=del+'0';
