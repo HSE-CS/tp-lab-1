@@ -1,7 +1,9 @@
 #include"task5.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include<string>
+#include<string.h>
+//#include<string>
+//#include<cstring.h>
 #include <iostream>
 
 using namespace std;
@@ -30,11 +32,13 @@ void split(char*** result, int* N, char* buf, char ch)
 		if (buf[i] != ch) k++;
 		else {
 			size[t] = k+1;
-			(*(result))[t] = new char[size[t]]{ '\0' };
+			(*(result))[t] = new char[size[t]];
+				(*(result))[t][size[t]-1] = '\0';
 			k = 0;
 			t++;
 		}
-		(*(result))[t] = new char[k + 1]{ '\0' };
+		(*(result))[t] = new char[k + 1];
+		(*(result))[t][k] = '\0';
 
 
 	}
