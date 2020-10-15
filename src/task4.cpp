@@ -1,9 +1,6 @@
-
-
-
-
 #include"task4.h"
-#include<string>
+#include<string.h>
+#include<iostream>
 using namespace std;
 
 int charToInt(char x) {
