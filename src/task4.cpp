@@ -46,7 +46,7 @@ char * sum(char *x, char *y) {
         int i = 0;
         for(; i <= max(x_len, y_len);i++)
             res[i] = resInt[i] + '0';
-        res[i-1] ='\0';
+        res[i] ='\0';
     }
     else {
         int i = 1;
