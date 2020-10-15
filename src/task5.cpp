@@ -6,6 +6,7 @@ void split(char ***result, int *N, char *buf, char ch) {
     int j = 0;
     int poz = 0;
     (*N) = 0;
+    int bbf = strlen(buf);
 
     *result = new char* [len];
 
@@ -13,7 +14,7 @@ void split(char ***result, int *N, char *buf, char ch) {
         (*result)[i] = new char[len];
     }
 
-    for (int i = 0; i < strlen(buf); i++) {
+    for (int i = 0; i < bbf; i++) {
         if (buf[i] == ch) {
             (*result)[j][poz] = '\0';
             j++;
