@@ -23,30 +23,31 @@ char* sum(char* x, char* y)
     int ostatok=0;
     int razn = max_len - min_len;
     
-    for (i = 0; i<min_len; i++) {
-        res1[i] = ((x[len_x-i-1] - '0' + y[len_y-i-1] - '0' + ostatok) % 10) + '0';
-        ostatok = (x[len_x - i - 1] - '0' + y[len_y - i - 1] - '0' + ostatok) / 10;
+    for (int i = 0; i<min_len; i++) {
+        res1[i] = ((x[x_len-i-1] - '0' + y[y_len-i-1] - '0' + ostatok) % 10) + '0';
+        ostatok = (x[x_len - i - 1] - '0' + y[y_len - i - 1] - '0' + ostatok) / 10;
         }
 
-    if (max_len == len_x) {
-        for (i = min_len; i < max_len; i++) {
-            res1[i] = ((x[len_x - i - 1] - '0' + ostatok) % 10) + '0';
-            ostatok = (x[len_x - i - 1] - '0' + ostatok) / 10;
+    if (max_len == x_len) {
+        for (int i = min_len; i < max_len; i++) {
+            res1[i] = ((x[x_len - i - 1] - '0' + ostatok) % 10) + '0';
+            ostatok = (x[x_len - i - 1] - '0' + ostatok) / 10;
         }
+    }
 
     else {
-        for (i = min_len; i < max_len; i++) {
-            res1[i] = ((y[len_x - i - 1] - '0' + ostatok) % 10) + '0';
-            ostatok = (y[len_x - i - 1] - '0' + ostatok) / 10;
+        for (int i = min_len; i < max_len; i++) {
+            res1[i] = ((y[x_len - i - 1] - '0' + ostatok) % 10) + '0';
+            ostatok = (y[x_len - i - 1] - '0' + ostatok) / 10;
         }
 
     }
 
     if (ostatok != 0) {
-        res1[max_len] = ostatok + '0'
+        res1[max_len] = ostatok + '0';
     }
 
-    for (i = max_len; i >= 0; i--) {
+    for (int i = max_len; i >= 0; i--) {
         res[max_len - i - 1] = res1[i];
     }
 
@@ -54,4 +55,3 @@ char* sum(char* x, char* y)
     }
 
     
-}
