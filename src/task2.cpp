@@ -16,7 +16,7 @@ unsigned long long nPrime(unsigned n)
 
 	int k = 0;
 	unsigned long long number = 0;
-		for (int i = 1; k != n; i++)
+		for (int i = 2; k != n; i++)
 		{
 			if (checkPrime(i))
 			{
