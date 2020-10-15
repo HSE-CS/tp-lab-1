@@ -46,14 +46,14 @@ char * sum(char *x, char *y) {
         int i = 0;
         for(; i <= max(x_len, y_len);i++)
             res[i] = resInt[i] + '0';
-        res[i] ='\0';
+        res[i-1] ='\0';
     }
     else {
         int i = 1;
         res = new char[max(x_len, y_len) + 2];
         for(; i <= max(x_len, y_len);i++)
             res[i-1] = resInt[i] + '0';
-        res[i] ='\0';
+        res[i-1] ='\0';
     }
         
     
