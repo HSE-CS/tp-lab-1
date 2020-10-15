@@ -18,6 +18,7 @@ void split(char ***result, int *N, char *buf, char ch){
         count++;
         for (int j = 0; buf[count] != ch && buf[count] != '\0'; j++){
             (*result)[i][j] = buf[count];
+            (*result)[i][j+1] = '\0';
             count++;
         }
     }

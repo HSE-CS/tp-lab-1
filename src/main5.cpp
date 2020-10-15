@@ -6,5 +6,7 @@ int main(){
     char **result = nullptr;
     split(&result, &N, buf, ',');
     cout << N;
+    cout << result[0] << endl;
+    cout << result[1] << endl;
     return 0;
 }
