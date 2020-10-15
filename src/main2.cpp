@@ -4,17 +4,17 @@ using namespace std;
 
 
 int main() {
-    int i =32;
+    int i =41;
     cout << checkPrime(i) << endl;
     cout << nPrime(i) << endl;
     cout << nextPrime(i) << endl;
 
-    i =54;
+    i =51;
     cout << checkPrime(i) << endl;
     cout << nPrime(i) << endl;
     cout << nextPrime(i) << endl;
 
-    i =101;
+    i =56;
     cout << checkPrime(i) << endl;
     cout << nPrime(i) << endl;
     cout << nextPrime(i) << endl;

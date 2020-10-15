@@ -25,8 +25,22 @@ unsigned long long nPrime(unsigned n){
 }
 
 unsigned long long nextPrime(unsigned long long value){
-    while (!checkPrime(value)){
-        value +=1;
+    int i=0;
+    int j=0;
+    int IV = value;
+    int YV = value;
+
+    while (!checkPrime(IV)){
+        IV +=1;
+        i++;
     }
-    return value;
+    while (!checkPrime(YV)){
+        YV -=1;
+        j++;
+    }
+
+    if (i < j)
+        return IV;
+    else
+        return YV;
 }
