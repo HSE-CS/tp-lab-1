@@ -53,6 +53,7 @@ char *sum(char *x, char *y) {
         }
         counterZ++;
     }
-
+    char* a = "\0";
+    strcat(resultStr, a);
     return resultStr;
 }
