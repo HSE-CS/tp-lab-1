@@ -10,7 +10,7 @@ bool checkPrime(unsigned int value) {
 		return false;
 	}
 	else {
-		for (j = 2; j < value; j++) {
+		for (j = 2; j*j <= value; j++) {
 			if (value % j == 0) {
 				return false;
 			}
