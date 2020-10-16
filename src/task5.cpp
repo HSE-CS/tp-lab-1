@@ -13,16 +13,18 @@ void split(char*** result, int* N, char* buf, char ch) {
     int w = 0;
     int v = 0;
 
+    *N = 0;
+
 	for (int i = 0; i < strlen(buf); i++) {
 		if (buf[i] == ch)
 			count++;
 	}
 	*N = count + 1;
 
-    int* size = new int[*N];
+    int* size = new int[*N]{ 0 };
 
 
-    for (int i = 0; i < strlen(buf); i++) {
+    for (int i = 0; i < strlen(buf-1); i++) {
 
         n++;
 
@@ -45,9 +47,10 @@ void split(char*** result, int* N, char* buf, char ch) {
 
     for (int i = 0; i < strlen(buf); i++) {
         if (buf[i] == ch) {
-            w++;
+            
             (*result)[w][v] = '\0';
             v = 0;
+            w++;
         }
 
         else {

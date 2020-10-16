@@ -12,6 +12,11 @@ int main() {
     char** result = nullptr;
     split(&result, &N, buf, ',');
 
+    cout << result[0] << endl;
+    cout << result[1] << endl;
+    cout << result[2] << endl;
+    cout << N;
+
 
     return 0;
 }
