@@ -1,6 +1,18 @@
 #include "task5.h"
 #include <string.h>
 
+char* substing(char* buf, int start, int len)
+{
+	char* sub = 0;
+	sub = new char[len + 1];
+	for (int i = 0; i < len; i++)
+	{
+		sub[i] = buf[start + i];
+	}
+	sub[len] = '\0';
+	return sub;
+}
+
 void split(char*** result, int* N, char* buf, char ch)
 {
 	int length = strlen(buf);
@@ -31,16 +43,6 @@ void split(char*** result, int* N, char* buf, char ch)
 	(*result) = res;
 }
 
-char* substing(char* buf, int start, int len)
-{
-	char* sub = 0;
-	sub = new char[len+1];
-	for (int i = 0; i < len; i++)
-	{
-		sub[i] = buf[start + i];
-	}
-	sub[len] = '\0';
-	return sub;
-}
+
 
 
