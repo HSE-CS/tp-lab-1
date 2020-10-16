@@ -9,7 +9,7 @@
 #include "task5.h"
 #include <string.h>
 
-void split(char*** result, int* N, char* buf)
+void split(char*** result, int* N, char* buf, char ch)
 {
     int length = strlen(buf);
     *N = countStrings(length);
