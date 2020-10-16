@@ -5,5 +5,5 @@ unsigned long long sumPrime(unsigned int hbound) {
         if (checkPrime(i))
             a = a + i;
     }
-    return a;
+    return a-1;
 }
