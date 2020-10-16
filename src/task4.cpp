@@ -37,8 +37,8 @@ char* sum(char* x, char* y)
 
     else {
         for (int i = min_len; i < max_len; i++) {
-            res1[i] = ((y[x_len - i - 1] - '0' + ostatok) % 10) + '0';
-            ostatok = (y[x_len - i - 1] - '0' + ostatok) / 10;
+            res1[i] = ((y[y_len - i - 1] - '0' + ostatok) % 10) + '0';
+            ostatok = (y[y_len - i - 1] - '0' + ostatok) / 10;
         }
 
     }
