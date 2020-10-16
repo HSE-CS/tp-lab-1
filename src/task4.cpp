@@ -6,16 +6,21 @@ char* sum(char* x, char* y)
 	char* resault{ 0 };
 	int lenx{ int(strlen(x)) }, leny{ int(strlen(y)) }, remember{ 0 };
 	if (lenx >= leny) {
-		char* fake_y = (char*)calloc(lenx+1, sizeof(char)); // fake_y = 000...00+y (length fake_y = length x)
-		for (int i = 0; i < lenx; i++)
-		{
-			if (i >= leny)
-				fake_y[i] = '0';
-			else
-				fake_y[i] = y[i];
+		char* fake_y = new char[lenx+1]; // fake_y = 000...00+y (length fake_y = length x)
+		if (fake_y) {
+			for (int i = 0; i < lenx + 1; i++)
+			{
+				if (i >= leny)
+					fake_y[i] = '0';
+				else
+					fake_y[i] = y[i];
+			}
 		}
-		
-		resault = (char*)calloc(lenx+1, sizeof(char)) ;
+
+		resault = new char [lenx+1] ;
+		for (int i = 0; i < lenx + 1; i++) {
+			resault[i] = 0;
+		}
 		for (int i = lenx-1; i > -1 ; i--)
 		{
 			char a{ x[i] }, b{ fake_y[i] };
@@ -25,13 +30,11 @@ char* sum(char* x, char* y)
 		}
 		if (remember == 1)
 			resault[lenx + 1] = 1;
-		else
-			resault++;
 		free(fake_y);
 	}
 	else {
-		char* fake_x = (char*)calloc(leny+1, sizeof(char)); // fake_x = 000...00+x (length fake_x = length y)
-		for (int i = 0; i < leny; i++)
+		char* fake_x = new char [leny+1]; // fake_x = 000...00+x (length fake_x = length y)
+		for (int i = 0; i < leny+1; i++)
 		{
 			if (i >= lenx)
 				fake_x[i] = '0';
@@ -39,7 +42,10 @@ char* sum(char* x, char* y)
 				fake_x[i] = x[i];
 		}
 
-		resault = (char*)calloc(leny + 1, sizeof(char));
+		resault = new char [leny+1];
+		for (int i = 0; i < leny + 1; i++)
+			resault[i] = 0;
+
 		for (int i = lenx - 1; i > -1; i--)
 		{
 			char a{ fake_x[i] }, b{ y[i] };
@@ -49,8 +55,6 @@ char* sum(char* x, char* y)
 		}
 		if (remember == 1)
 			resault[lenx + 1] = 1;
-		else
-			resault++;
 		free(fake_x);
 	}
 	return resault;
