@@ -26,6 +26,6 @@ void split(char ***result, int *N, char *buf, char ch) {
         }
         (*result)[j][poz] = buf[i];
         poz++;
-        (*N)++;
     }
+    (*N)++;
 }
