@@ -1,3 +1,4 @@
+#include"task5.h"
 #include<cstring>
 
 void split(char*** result, int* N, char* buf, char ch)
