@@ -13,7 +13,11 @@
 
 void split(char*** result, int* N, char* buf, char ch) {
 
+<<<<<<< HEAD
 	int len = (int)strlen(buf);
+=======
+	int len = strlen(buf);
+>>>>>>> 1eb981128b1129e747a408bd42f17b312dba348a
 	*N = 1;
 	int s = 0;
 	int k = 0;

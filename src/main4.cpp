@@ -16,7 +16,11 @@ int main() {
 	char* ans;
 	long length = 0;
 
+<<<<<<< HEAD
 	length = (long)strlen(sum(n1, n2));
+=======
+	length = strlen(sum(n1, n2));
+>>>>>>> 1eb981128b1129e747a408bd42f17b312dba348a
 	ans = (char*)malloc(length * sizeof(char));
 	ans = sum(n1, n2);
 
