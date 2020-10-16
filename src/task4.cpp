@@ -51,4 +51,4 @@ char* sum(char* x, char* y) {
 		ans[len - 1 - i] = z;
 	}
 	return ans;
-}s
+}
