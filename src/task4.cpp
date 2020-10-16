@@ -32,7 +32,7 @@ char* r(char* array)
 	return arr;
 }
 
-char* s(char* x, char* y)
+char* sum(char* x, char* y)
 {
 	int	length_x = strlen(x);
 	int	length_y = strlen(y);
