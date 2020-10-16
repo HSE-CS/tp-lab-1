@@ -1,5 +1,5 @@
 #include"task4.h"
-#include<string>
+#include<string.h>
 using namespace std;
 char* add_0(char* arr, int x)
 {
