@@ -48,7 +48,7 @@ char* sum(char* x, char* y)
     }
 
     for (int i = max_len; i >= 0; i--) {
-        res[max_len - i - 1] = res1[i];
+        res[max_len - i] = res1[i];
     }
 
     return res;
