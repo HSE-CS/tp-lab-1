@@ -33,7 +33,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 		}
 		++k;
 		word[l] = '\0';
-
+		res[i] = word;
 		++i;
 	}
 	*result = res;
