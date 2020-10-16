@@ -14,10 +14,11 @@ bool checkPrime(unsigned int value)
 
 unsigned long long nPrime(unsigned n)
 {
-    unsigned counter = 0;
+    unsigned counter = 1;
     unsigned int prime_num = 2;
     while (counter < n)
     {
+        ++prime_num;
         if (checkPrime(prime_num))
             ++counter;
     }
