@@ -1,9 +1,8 @@
-#include <iostream>
-#include "task2.h"
 #include "task3.h"
+#include "task2.h"
 
-int main()
-{
-	std::cout << sumPrime(2000000);
+int main() {
+
+	std::cout << sumPrime(17) << std::endl;
 	return 0;
 }
