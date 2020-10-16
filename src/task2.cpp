@@ -25,10 +25,10 @@ unsigned long long nPrime(unsigned n){
 }
 
 unsigned long long nextPrime(unsigned long long value){
-    int i=0;
-    int j=0;
-    int left = value - 1;
-    int right = value + 1;
+    unsigned long long i = 0;
+    unsigned long long j = 0;
+    unsigned long long left = value - 1;
+    unsigned long long right = value + 1;
 
     while (!checkPrime(left)){
         left -=1;
@@ -39,7 +39,7 @@ unsigned long long nextPrime(unsigned long long value){
         j++;
     }
 
-    if (i <= j)
+    if (i < j)
         return left;
     else
         return right;
