@@ -3,16 +3,16 @@
 #include "task2.h"
 //- проверка числа на простоту.
 bool checkPrime(unsigned int value) {
-    int k = 0;
-    for (unsigned int i = 2; i < value;  i++) {
-        if (value % i == 0) {
-            k++;
+    if (value > 1) {
+        for (long long i = 2; i <= sqrt(value); i++) {
+            if (value % i == 0) {
+                return false;
+            }
         }
+        return true;
+
     }
-    if (k > 0) {
-        return 0;
-    }
-    else return 1;
+    else return false;
 }
 //- нахождение n - ого простого числа(в ряду).			
 unsigned long long nPrime(unsigned n) {
