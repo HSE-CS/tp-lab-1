@@ -2,16 +2,14 @@
 
 unsigned long findValue(unsigned int min, unsigned max)
 {
-    unsigned long value = max - 1;
-    bool flag = true;
-    while (flag)
+    unsigned int value = max - 1;
+    while (1)
     {
         value++;
-        for (unsigned i = min; i <= max; ++i)
+        for (int i = min; i <= max; ++i)
             if (value % i)
                 break;
             else if (i == max)
-                flag = false;
+                return value;
     }
-    return value;
 };
