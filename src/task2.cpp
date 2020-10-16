@@ -24,9 +24,9 @@ unsigned long long nPrime(unsigned int n) {
 }
 
 unsigned long long nextPrime(unsigned long long n) {
-	for (unsigned int i = n++;; i++)
-		if (checkPrime(i)) {
-			return n;
-		}
+	n++;
+	while (!checkPrime(n))
+		n++;
+	return n;
 	return 1;
 }
