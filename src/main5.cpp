@@ -1,4 +1,5 @@
 #include "task5.h"
+#include <string.h>
 
 int main() {
 	char*** result = 0;
