@@ -1,5 +1,5 @@
 #include "task2.h"
-
+#include <iostream>
 int main() {
     cout << checkPrime(1) << endl;
     cout << checkPrime(2) << endl;
