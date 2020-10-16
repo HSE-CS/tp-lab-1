@@ -5,7 +5,7 @@ unsigned long long sumPrime(unsigned int hbound)
 {
     unsigned long long sumPrime = 0;
     unsigned long long next_prime = 2;
-    while (nextPrime < hbound)
+    while ((unsigned int)nextPrime < hbound)
     {
         sumPrime += next_prime;
         next_prime = nextPrime(next_prime);
