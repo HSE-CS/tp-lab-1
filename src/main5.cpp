@@ -1,6 +1,6 @@
 #include "task5.h"
 
-int main() {
+/*int main() {
 	char*** result = 0;
 	result = (char***)malloc(sizeof(char**));
 	int n{ 0 }, *N = &n;
@@ -20,4 +20,4 @@ int main() {
 		cout << endl;
 	}
 	return 0;
-}
+}*/
