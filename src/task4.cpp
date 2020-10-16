@@ -2,6 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <algorithm>
 #include <iostream>
+#include <cstring>
 #include "task4.h"
 using namespace std;
 char* sum(char* x, char* y) {
