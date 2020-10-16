@@ -30,6 +30,7 @@ int word_end(char *buf, char ch, int index){
 
 void split(char ***result, int *N, char *buf, char ch){
     int count_words = (count_sep(buf, ch) + 1);
+    (*N) = count_words;
     (*result) = (char**)malloc(count_words * sizeof(char*));
     int index = 0;
     for(int word_index = 0; word_index < count_words; word_index++){

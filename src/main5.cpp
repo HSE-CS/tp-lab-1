@@ -6,12 +6,12 @@ int main(){
 
     char **result = nullptr;
     int N = 0;
-    char *buf = (char*)"   hello world     ok";
+    char *buf = (char*)"hello world     ok";
     char ch = ' ';
 
     split(&result, &N, buf, ch);
 
-    printf("%s:%s:%s", result[0], result[1], result[2]);
+    printf("%d \n %s:%s:%s", N, result[0], result[1], result[2]);
 
     //cout << result[0] << ":" << result[1] ":" << result[2] << endl;
 
