@@ -20,7 +20,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 	int t = 0;
 	int x = 0;
 	
-	len = strlen(buf);
+	len = (int)strlen(buf);
 
 	for (int i = 0; i < len; i++) {
 
