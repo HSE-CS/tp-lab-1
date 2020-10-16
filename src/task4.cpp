@@ -65,8 +65,6 @@ if (len == 0) {
 	
 return ans;
 
-free(n1);
-free(n2);
 free(ans);
 
 }
