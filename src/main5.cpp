@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include "task5.hpp"
+#include <string.h>
 
 int main() {
     char*** result = 0;

@@ -7,7 +7,7 @@
 //
 
 #include "task5.hpp"
-#include <string>
+#include <string.h>
 
 void split(char*** result, int* N, char* buf)
 {
@@ -15,16 +15,14 @@ void split(char*** result, int* N, char* buf)
     *N = countStrings(length);
     char** res{ 0 };
     res = new char* [*N];
-    //result = (char***)malloc(sizeof(char**));
     for (int i = 0; i < *N; i++) {
         res[i] = 0;
     }
     if (res) {
-        //*result = (char**)malloc(*N * sizeof(char*));
-        for (int k = 0; k < *N;) { // sozdaem stroki
-            for (int i = 0; i < length; i++) { // start podstroki
-                for (int j = i; j < length; j++) {  //  end podstroki
-                    int len = j - i + 1;  //dlina podstroki
+        for (int k = 0; k < *N;) {
+            for (int i = 0; i < length; i++) {
+                for (int j = i; j < length; j++) {
+                    int len = j - i + 1;  
                     char* temp{ 0 };
                     temp = new char[len];
                         for (int l = 0; l < len; l++) {
