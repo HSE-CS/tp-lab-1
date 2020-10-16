@@ -8,7 +8,7 @@ int main() {
 	char buf[] { "Hello" };
 	char ch{ 0 };
 	
-	split(result, N, buf);
+	split(result, N, buf, ch);
 
 	for (int i = 0; i < n; i++)
 	{
