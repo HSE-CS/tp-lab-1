@@ -1,13 +1,11 @@
 #include "task5.h"
 
-/*int main() {
+int main() {
 	char*** result = 0;
 	result = (char***)malloc(sizeof(char**));
 	int n{ 0 }, *N = &n;
-	char buf[1000] { 0 };
+	char buf[] { "Hello" };
 	char ch{ 0 };
-	cout << "Enter your string" << endl;
-	cin >> buf;
 	
 	split(result, N, buf);
 
@@ -20,4 +18,4 @@
 		cout << endl;
 	}
 	return 0;
-}*/
+}
