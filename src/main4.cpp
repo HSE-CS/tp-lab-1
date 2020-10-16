@@ -2,8 +2,8 @@
 #include <string.h>
 
 int main() {
-	char x[]{ "12345678901234567" };
-	char y[]{ "12345678901234567" };
+	char x[]{ "1234567890" };
+	char y[]{ "1234567890" };
 	char *res = sum(x, y);
 	for (int i = 0; i < strlen(res); i++)
 	{
