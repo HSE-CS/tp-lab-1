@@ -11,7 +11,7 @@
 
 using namespace std;
 	int main()
-	{
+	
 		/*string s = "99999999999999999999";
 		char* ans = new char[s.size()];
 		strcpy(ans, s.c_str());
@@ -22,7 +22,5 @@ using namespace std;
 		cout << sum(ans,ans2)<<'\n';
 		cout<< "100000000000000000000";*/
 
-		return 0;
-	}
 	return 0;
 }
