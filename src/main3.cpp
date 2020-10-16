@@ -3,6 +3,9 @@
 
 int main() {
 
-	std::cout << sumPrime(17) << std::endl;
+    int main() {
+        std::cout << sumPrime(20);
+        return 0;
+    }
 	return 0;
 }
