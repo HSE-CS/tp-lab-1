@@ -1,10 +1,10 @@
 #include "task2.h"
 #include <iostream>
-
+#include <math.h>
 using namespace std;
 
 bool checkPrime(unsigned int value) {
-    for (long long i = 2; i <= sqrt(value); i++)
+    for (int i = 2; i <= sqrt(value); i++)
         if (value % i == 0)
             return false;
          return true;
