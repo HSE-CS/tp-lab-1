@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtask2_lib.a  CMakeFiles/task2_lib.dir/src/task2.cpp.o
+/usr/bin/ranlib libtask2_lib.a

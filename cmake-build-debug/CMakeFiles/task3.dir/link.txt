@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -Wall -g  -rdynamic CMakeFiles/task3.dir/src/main3.cpp.o  -o task3  libtask3_lib.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -Wall -g  -rdynamic CMakeFiles/task5.dir/src/main5.cpp.o  -o task5  libtask5_lib.a 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -Wall -g  -rdynamic CMakeFiles/task4.dir/src/main4.cpp.o  -o task4  libtask4_lib.a 

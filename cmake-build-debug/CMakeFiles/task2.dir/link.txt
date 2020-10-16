@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -Wall -g  -rdynamic CMakeFiles/task2.dir/src/main2.cpp.o  -o task2  libtask2_lib.a 
