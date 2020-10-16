@@ -10,58 +10,51 @@ using namespace std;
 
 bool checkPrime(unsigned int value) {
 
-	if ((value == 0) || (value == 1))
-		return false;
-
-	for (unsigned int i = 2; i * i <= value; i++) {
-
-		if (value % i == 0)
-			return false;
-
-	}
-		
-	return true;
-
+	bool flag = true;
+  for(int i = 2; i * i <= value; i++) {
+	  
+    if (value % i == 0)
+      flag = false;
+	  
+  }
+	
+  return flag;
+	
 }
 
 unsigned long long nPrime(unsigned n) {
 	
-	bool r[SIZE];
-	int k = 0;
+  unsigned long long k = 0;
+	unsigned long long i = 1;
+	bool flag = true;
+	while (k != n) {
+    		flag = true;
+		i++;
+		for (unsigned long long j = 2; j * j <= i; j++)
+		  if (i % j == 0) {
+			  
+       			flag = false;
+			break;
+			  
+		  }
 
-	r[0] = false;
-	r[1] = false;
-
-	for (unsigned long long i = 2; i < SIZE; i++) {
-
-		r[i] = true;
-
-	}
-
-	for (unsigned long long i = 2; i * i < SIZE; i++) {
-
-		if (r[i] == 1) {
+    		if (flag == true) {
 			
-			k += 1;
-			if (k == n)
-				return i;
-
-			for (unsigned long long j = i * i; j < SIZE; j += i)
-				r[j] = 0;
+      			k++;
 			
-		}
-
+    		}
+		
 	}
-
-	return 0;
-
+	
+  return i;
+	
 }
 
 unsigned long long nextPrime(unsigned long long value) {
-
-	while (!checkPrime(value))
-		value += 1;
-
-	return value;
+	
+  value++;
+  while (!checkPrime(value))
+    value++;
+  return value;
 
 }
