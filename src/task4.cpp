@@ -25,7 +25,8 @@ char *sum(char *x, char *y)
         sum[i] = buf % 10 + '0';
         buf /= 10;
     }
-    if (sum[0] == 0)
-        return sum + 1;
-    return sum;
+    unsigned i = 0;
+    while (!sum[i])
+        ++i;
+    return sum + i;
 };
