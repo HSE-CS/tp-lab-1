@@ -6,35 +6,21 @@
 #include "task3.h"
 using namespace std;
 
-#define SIZE 20000
-
 unsigned long long sumPrime(unsigned int hbound) {
-
-    unsigned long long r[SIZE] = { 0 };
-    unsigned long long sum = 0;
-
-    r[0] = 0;
-    r[1] = 0;
-
-    for (unsigned long long i = 2; i < hbound; i++) {
-
-        r[i] = 1;
-
-    }
-
-    for (unsigned long long i = 2; i < hbound; i++) {
-
-        if (r[i] == 1) {
-
-            sum += i;
-            for (unsigned long long j = i * i; j < hbound; j += i)
-                r[j] = 0;
-
-        }
-
-    }
-
-    return sum;
+    
+  unsigned long long c = 2;
+  unsigned long long sum = 2;
+    
+  c = nextPrime(c);
+  
+  while(c < hbound) {
+      
+    sum += c;
+    c = nextPrime(c);
+      
+  }
+    
+  return sum;
 
 }
 
