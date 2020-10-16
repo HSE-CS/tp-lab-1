@@ -1,24 +1,14 @@
+#include "task2.h"
+#include "task3.h"
 #include <algorithm>
 #include <iostream>
-#include "task3.h"
 
 unsigned long long sumPrime(unsigned int hbound) {
-    long long sum = 0;
-    long long result = 1;
-
-        while (result<hbound) {
-            int k = 0;
-            result++;
-            for (long long i = 2; i < result; i++) {
-                if (result % i == 0) {
-                    k++;
-                }
-            }
-            if (k == 0) {
-                sum = sum + result;
-                
-            }
+    unsigned long long sum = 0;
+    for (unsigned long long i = 1; i < hbound; i++) {
+        if (checkPrime(i)) {
+            sum += i;
         }
-   
+    }
     return sum;
 }
