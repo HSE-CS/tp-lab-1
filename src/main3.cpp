@@ -3,7 +3,6 @@
 #include "task2.h"
 
 int main() {
-    int value = { 20 };
-    std::cout << sumPrime(value);
+    std::cout << sumPrime(2000000);
     return 0;
 }
