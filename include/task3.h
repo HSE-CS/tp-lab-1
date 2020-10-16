@@ -1,5 +1,5 @@
-#ifndef LAB1_H
-#define LAB1_H
+#ifndef lab3_H
+#define lab3_H
 
 unsigned long long sumPrime(unsigned int hbound);
 #endif

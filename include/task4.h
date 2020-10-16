@@ -1,5 +1,5 @@
-#ifndef LAB1_H
-#define LAB1_H
+#ifndef lab4_H
+#define lab4_H
 
 char* sum(char* x, char* y); // сумма чисел x и y
 

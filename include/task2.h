@@ -1,8 +1,8 @@
-#ifndef LAB1_H
-#define LAB1_H
+#ifndef lab2_H
+#define lab2_H
 
-bool checkPrime(unsigned int value); //проверка числа на простоту
-unsigned long long nPrime(unsigned n); //нахождение n-ого простого числа (в ряду)
-unsigned long long nextPrime(unsigned long long value); //нахождение ближайшего следующего простого числа к value
+bool checkPrime(unsigned int value); 
+unsigned long long nPrime(unsigned n); 
+unsigned long long nextPrime(unsigned long long value); 
 
 #endif
