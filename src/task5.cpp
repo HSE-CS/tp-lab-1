@@ -13,16 +13,13 @@ using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
 
-	int len = 0;
 	*N = 1;
 	int s = 0;
 	int k = 0;
 	int t = 0;
 	int x = 0;
-	
-	len = strlen(buf);
 
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < strlen(buf); i++) {
 
 		if (buf[i] == ch)
 			(*N)++;
@@ -33,7 +30,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 	int* size = (int*)malloc(s * sizeof(int));
 	(*result) = (char**)malloc(s * sizeof(char*));
 
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < strlen(buf); i++) {
 
 		if (buf[i] != ch)
 			k++;
@@ -54,7 +51,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 
 	t = 0;
 
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i < strlen(buf); i++) {
 
 		if (buf[i] != ch)
 			(*result)[t][x++] = buf[i];
