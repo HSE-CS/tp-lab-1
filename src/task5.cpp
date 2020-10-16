@@ -20,6 +20,7 @@ void split(char ***result, int *N, char *buf, char ch) {
         if (buf[i] == ch) {
             (*result)[j][poz] = '\0';
             j++;
+            (*N)++;
             poz = 0;
             continue;
         }
