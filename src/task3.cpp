@@ -1,9 +1,10 @@
 #include "task3.h"
+#include "task2.h"
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
 
-bool checkPrime_from3(unsigned int value)
+bool checkPrime(unsigned int value)
 {
 	if (value > 1)
 	{
@@ -20,7 +21,7 @@ unsigned long long sumPrime(unsigned int hbound)
 	unsigned long long sum = 0;
 	unsigned long long int i = 2;
 	for (i;i < hbound;++i){
-		if (checkPrime_from3(i) == 1) {
+		if (checkPrime(i) == 1) {
 			//cout << i << '\n';
 			sum += i;
 		}
