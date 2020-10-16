@@ -7,13 +7,14 @@
 //
 
 #include "task4.hpp"
+#include <string.h>
 
 char* sum(char* x, char* y)
 {
     char* resault{ 0 };
     int lenx{ int(strlen(x)) }, leny{ int(strlen(y)) }, remember{ 0 };
     if (lenx >= leny) {
-        char* fake_y = (char*)calloc(lenx+1, sizeof(char)); // fake_y = 000...00+y (length fake_y = length x)
+        char* fake_y = (char*)calloc(lenx+1, sizeof(char));
         for (int i = 0; i < lenx; i++)
         {
             if (i >= leny)
@@ -37,7 +38,7 @@ char* sum(char* x, char* y)
         free(fake_y);
     }
     else {
-        char* fake_x = (char*)calloc(leny+1, sizeof(char)); // fake_x = 000...00+x (length fake_x = length y)
+        char* fake_x = (char*)calloc(leny+1, sizeof(char)); 
         for (int i = 0; i < leny; i++)
         {
             if (i >= lenx)
