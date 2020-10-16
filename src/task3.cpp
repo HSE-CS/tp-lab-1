@@ -1,14 +1,18 @@
-#include "task3.h"
-#include "TASK2.h"
+#include <algorithm>
 #include <iostream>
+#include <cstdlib>
+#include "task2.h"
+#include "task3.h"
+using namespace std;
 
 unsigned long long sumPrime(unsigned int hbound) {
-    unsigned int i = 1;
-    unsigned long long prime_sum = 0;
-    unsigned int c_prime = 2;
-    while (c_prime < hbound) {
-        prime_sum += c_prime;
-        c_prime = nextPrime(c_prime);
+    unsigned long long sum = 2;
+    for (int i = 3; i < hbound; i++)
+    {
+        if (checkPrime(i))
+        {
+            sum += i;
+        }
     }
-    return prime_sum;
+    return sum;
 }

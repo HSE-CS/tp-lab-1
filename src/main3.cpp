@@ -1,7 +1,13 @@
-﻿#include "task3.h"
+﻿#include <algorithm>
 #include <iostream>
+#include <cstdlib>
+#include "task3.h"
+
+using namespace std;
+
+
 
 int main() {
-    std::cout << sumPrime(2000000) << '\n';
-    return 0;
+	cout << sumPrime(2000000);
+	return 0;
 }
