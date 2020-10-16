@@ -2,7 +2,7 @@
 #define TASK4
 
 #include <iostream>
-#include <string>
+#include <string.h>
 #include <stdlib.h>
 using namespace std;
 char* sum(char* x, char* y);

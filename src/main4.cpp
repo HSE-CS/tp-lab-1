@@ -1,4 +1,6 @@
 #include "task4.h"
+#include <string.h>
+
 int main() {
 	char x[]{ "12345678901234567" };
 	char y[]{ "12345678901234567" };
