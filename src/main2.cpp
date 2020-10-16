@@ -4,17 +4,7 @@ using namespace std;
 
 
 int main() {
-    int i =41;
-    cout << checkPrime(i) << endl;
-    cout << nPrime(i) << endl;
-    cout << nextPrime(i) << endl;
-
-    i =51;
-    cout << checkPrime(i) << endl;
-    cout << nPrime(i) << endl;
-    cout << nextPrime(i) << endl;
-
-    i =56;
+    int i = 1033;
     cout << checkPrime(i) << endl;
     cout << nPrime(i) << endl;
     cout << nextPrime(i) << endl;
