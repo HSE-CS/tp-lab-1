@@ -3,11 +3,12 @@
 #include <cmath>
 #include <iostream>
 
+
 using namespace std;
 
 int main() {
 
-    count << sum("9999", "111");
+    cout << sum("99999999999999999999", "1");
 
     return 0;
 }
