@@ -7,27 +7,15 @@
 #include <ctime>
 #include "task4.h"
 
-#define SIZE 1000
-
 int main() {
 
-	char n1[SIZE] = "568486";
-	char n2[SIZE] = "9625154";
-	char* ans;
-	long length = 0;
+	char *n1 = "568486";
+	char *n2 = "9625154";
+	char* ans = sum(n1, n2);
 
-	length = (long)strlen(sum(n1, n2));
-	length = strlen(sum(n1, n2));
-	ans = (char*)malloc(length * sizeof(char));
-	ans = sum(n1, n2);
+	for (int i = 0; ans[i] != '\0'; i++)
 
-	for (long i = 0; i < length; i++)
-
-		if ((ans[i] >= '0') && (ans[i] <= '9'))
-
-			printf("%c", ans[i]);
-
-	free(ans);
+		printf("%s", ans[i]);
 
 	return 0;
 }
