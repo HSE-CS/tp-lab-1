@@ -1,4 +1,9 @@
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <cstring>
 #include "task5.h"
+
 void split(char*** result, int* N, char* buf, char ch)
 {
 	int cnt = 0;
