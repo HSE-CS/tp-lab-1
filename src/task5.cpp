@@ -12,7 +12,7 @@ void split(char ***result, int *N, char *buf, char ch) {
 
     char** resultStr = new char* [stringCount];
     for (int i = 0; i < stringCount; ++i) {
-        resultStr[i] = new char[10];
+        resultStr[i] = new char[3];
     }
     *result = resultStr;
     int counter = 0;
