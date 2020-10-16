@@ -7,6 +7,7 @@
 //
 
 #include "task5.hpp"
+#include <string>
 
 void split(char*** result, int* N, char* buf)
 {
