@@ -1,7 +1,9 @@
 #include <cstring>
+#include <algorithm> 
+
 
 char *sum(char *x, char *y) {
-    int maxLength = max(strlen(x), strlen(y));
+    int maxLength = std::max(strlen(x), strlen(y));
     int resultLength;
     if(x[0]+y[0]-'0'-'0'>9){
         resultLength = maxLength+1;
