@@ -1,4 +1,4 @@
-//Реализовать функцию сложения двух сверхдлинных чисел, заданных в виде строк
+//ГђГҐГ Г«ГЁГ§Г®ГўГ ГІГј ГґГіГ­ГЄГ¶ГЁГѕ Г±Г«Г®Г¦ГҐГ­ГЁГї Г¤ГўГіГµ Г±ГўГҐГ°ГµГ¤Г«ГЁГ­Г­Г»Гµ Г·ГЁГ±ГҐГ«, Г§Г Г¤Г Г­Г­Г»Гµ Гў ГўГЁГ¤ГҐ Г±ГІГ°Г®ГЄ
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <algorithm>
@@ -16,11 +16,8 @@ int main() {
 	char* ans;
 	long length = 0;
 
-<<<<<<< HEAD
 	length = (long)strlen(sum(n1, n2));
-=======
 	length = strlen(sum(n1, n2));
->>>>>>> 1eb981128b1129e747a408bd42f17b312dba348a
 	ans = (char*)malloc(length * sizeof(char));
 	ans = sum(n1, n2);
 
