@@ -1,7 +1,7 @@
 #include <cstdlib>
-#include <algorithm>
 #include <cstring>
 #include <malloc.h>
+#include <algorithm>
 #ifndef TASK4_H
 #define TASK4_H
 
