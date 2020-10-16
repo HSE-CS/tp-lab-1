@@ -13,7 +13,6 @@
 using namespace std;
 
 unsigned long long sumPrime(unsigned int hbound);
-unsigned long long nextPrime(unsigned long long value);
-bool checkPrime(unsigned int value);
+
 
 #endif
