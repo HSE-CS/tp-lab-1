@@ -24,10 +24,10 @@ char* sum(char* x, char* y)
     }
 
 
-    char* res = new char[max_len + 1];
-    res[max_len] = '\0';
-    char* res1 = new char[max_len + 1];
-    res1[max_len] = '\0';
+    char* res = new char[max_len + 1]{ 0 };
+    char* res1 = new char[max_len + 1]{ 0 };
+   
+
 
 
     int ostatok=0;
@@ -44,12 +44,36 @@ char* sum(char* x, char* y)
             res1[i] = ((x[x_len - i - 1] - '0' + ostatok) % 10) + '0';
             ostatok = (x[x_len - i - 1] - '0' + ostatok) / 10;
         }
+
+
+        if (ostatok != 0) {
+            res1[max_len] = ostatok + '0';
+        }
+        res1[max_len + 1] = '\0';
+
+        for (int i = max_len + 1; i >= 0; i--) {
+            res[max_len - i - 1] = res1[i];
+        }
+        res[max_len + 1] = '\0';
+
+
     }
     else if (max_len == x_len) {
         for (int i = min_len; i < max_len; i++) {
             res1[i] = ((x[x_len - i - 1] - '0' + ostatok) % 10) + '0';
             ostatok = (x[x_len - i - 1] - '0' + ostatok) / 10;
         }
+
+        if (ostatok != 0) {
+            res1[max_len] = ostatok + '0';
+        }
+        res1[max_len + 1] = '\0';
+
+        for (int i = max_len + 1; i >= 0; i--) {
+            res[max_len - i] = res1[i];
+        }
+        res[max_len + 1] = '\0';
+
     }
 
     else if  (max_len==y_len) {
@@ -57,15 +81,20 @@ char* sum(char* x, char* y)
             res1[i] = ((y[y_len - i - 1] - '0' + ostatok) % 10) + '0';
             ostatok = (y[y_len - i - 1] - '0' + ostatok) / 10;
         }
+
+        if (ostatok != 0) {
+            res1[max_len] = ostatok + '0';
+        }
+        res1[max_len + 1] = '\0';
+
+        for (int i = max_len + 1; i >= 0; i--) {
+            res[max_len - i] = res1[i];
+        }
+        res[max_len + 1] = '\0';
     }
 
-    if (ostatok != 0) {
-        res1[max_len] = ostatok + '0';
-    }
+    
 
-    for (int i = max_len; i >= 0; i--) {
-        res[max_len - i] = res1[i];
-    }
 
     return res;
     }

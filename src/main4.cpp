@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
 
-    cout << sum("99999999999999999999", "1");
+    cout << sum("123456789", "000000001");
 
     return 0;
 }
