@@ -11,7 +11,7 @@ char *sum(char *x, char *y)
         max_len = y_len;
     char *sum = (char *)calloc(max_len + 2, sizeof(char));
     sum[max_len + 1] = '\0';
-    char buf = 0;
+    int buf = 0;
     for (int i = max_len; i > -1; --i)
     {
         --x_len;
