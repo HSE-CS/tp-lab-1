@@ -1,10 +1,13 @@
+
 #include <iostream>
 #include <cstring>
 #include "task4.h"
 
 int main() {
-    char* x = strdup("234567");
-    char* y = strdup("1");
-    std::cout << sum(x, y);
-    return 0;
+	char x[] = "385";
+	char* xx = x;
+	char y[] = "962145";
+	char* yy = y;
+	std::cout << sum(xx, yy);
+	return 0;
 }

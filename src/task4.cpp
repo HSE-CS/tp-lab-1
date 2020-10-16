@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+
 #include "task4.h"
 #include <cstring>
 #include <algorithm>
@@ -6,20 +6,24 @@ using namespace std;
 
 
 char* sum(char* x, char* y) {
-	unsigned int lenX = strlen(x);
-	unsigned int lenY = strlen(y);
-	unsigned int maxLength = max(lenX, lenY);
+	unsigned int x_len = strlen(x);
+	unsigned int y_len = strlen(y);
+	unsigned int maxLength = 0;
+	if (x_len > y_len) {
+		maxLength = x_len;
+	}
+	else maxLength = y_len;
 	int v_ume = 0;
-	if (lenX > lenY) {
-		char* buf = new char[lenX - lenY];
-		for (unsigned int i = { 0 }; i < lenX - lenY; i++) buf[i] = '0';
-		buf[lenX - lenY] = { 0 };
+	if (x_len > y_len) {
+		char* buf = new char[x_len - y_len];
+		for (unsigned int i = { 0 }; i < x_len - y_len; i++) buf[i] = '0';
+		buf[x_len - y_len] = { 0 };
 		y = strcat(buf, y);
 	}
-	else if (lenY > lenX) {
+	else if (y_len > x_len) {
 		char* buf = new char[maxLength + 1];
-		for (unsigned int i = { 0 }; i < lenY - lenX; i++) buf[i] = '0';
-		buf[lenY - lenX] = { 0 };
+		for (unsigned int i = { 0 }; i < y_len - x_len; i++) buf[i] = '0';
+		buf[y_len - x_len] = { 0 };
 		x = strcat(buf, x);
 	}
 	char* res = new char[maxLength + 2];
@@ -38,30 +42,4 @@ char* sum(char* x, char* y) {
 	}
 	if (res[0] == '0') return res + 1;
 	return res;
-}
-			(*result)[*N] = new char[len + 1];
-			strncpy((*result)[*N], buf + i - len, len);
-			(*result)[*N][len] = '\0';
-			len = 0;
-
-			if (strcmp((*result)[*N], "") == 0)
-			{
-				delete[](*result)[*N];
-				(*N)--;
-			}
-			(*N)++;
-		}
-	}
-
-	(*result)[*N] = new char[len + 1];
-	strncpy((*result)[*N], buf + strlen(buf) - len, len);
-	(*result)[*N][len] = '\0';
-	len = 0;
-
-	if (strcmp((*result)[*N], "") == 0)
-	{
-		delete[](*result)[*N];
-		(*N)--;
-	}
-	(*N)++;
 }
