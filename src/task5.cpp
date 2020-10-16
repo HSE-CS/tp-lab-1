@@ -12,20 +12,26 @@ void split(char*** result, int* N, char* buf, char ch)
     char preds;
     int numword = 0;
     int n = 1;
+
     for (int i = 0; i < s; i++)
     {
-        if (i == 1)
-            preds = buf[i];
-        if (buf[i] == ch && buf[i] != preds)
+        if (buf[i] == ch)
             n++;
     }
     *N = n;
     if (n != 0)
     {
-        *result = new char* [n];
+        *result = (char**)malloc(n*sizeof(char*));
         int j = 0;
+ 
         for (int i = 0; i < n; i++)
         {
+            if (n == 1 && buf[0] != ch)
+            {
+                (*result)[0] = (char*)malloc(s * sizeof(char));
+                strcpy((*result)[0], buf);
+                break;
+            }
             while (j < s)
             {
                 int k = j;
@@ -34,8 +40,50 @@ void split(char*** result, int* N, char* buf, char ch)
                 {
                     k++;
                     numc++;
+                    if (k >= s)
+                        break;
                 }
-                (*result)[i] = new char[numc];
+                if (k == 0)
+                {
+                    (*result)[i] = (char*)malloc(2 * sizeof(char));
+                    (*result)[i][0] = ' ';
+                    (*result)[i][1] = '\0';
+                    i++;
+                    j++;
+                    continue;
+                }
+                if (k >= 1 && buf[k] == ch && buf[k - 1] != ch && j == k)
+                {
+                    j++;
+                    if (j == s)
+                    {
+                        (*result)[i] = (char*)malloc(2 * sizeof(char));
+                        (*result)[i][0] = ' ';
+                        (*result)[i][1] = '\0';
+                        i++;
+                        j++;
+                    }
+                    continue;
+                }
+                if (k >= 1 && buf[k] == buf[k - 1])
+                {
+                    //Emty string? 
+                    (*result)[i] = (char*)malloc(2 * sizeof(char));
+                    (*result)[i][0] = ' ';
+                    (*result)[i][1] = '\0';
+                    i++;
+                    j++;
+                    if (j == s)
+                    {
+                        (*result)[i] = (char*)malloc(2 * sizeof(char));
+                        (*result)[i][0] = ' ';
+                        (*result)[i][1] = '\0';
+                        i++;
+                        j++;
+                    }
+                    continue;
+                }
+                (*result)[i] = (char*)malloc(numc + 1 * sizeof(char));
                 int ns = 0;
                 for (int v = j; v < k; v++)
                 {
@@ -43,17 +91,11 @@ void split(char*** result, int* N, char* buf, char ch)
                     ns++;
                 }
                 (*result)[i][numc] = '\0';
-                while (buf[k] == ch && k < s)
+                if (j == k)
                     k++;
-                j = k;
-                if (j == s)
-                    break;
+                else j = k;
                 i++;
-                if (i == n)
-                    break;
             }
-            if (i == n)
-                break;
         }
     }
 }
