@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
-	cout<< sumPrime(2000000);
+	/*cout << sumPrime(10) << '\n';
+	cout << sumPrime(2000000);*/
 	return 0;
 }
