@@ -3,7 +3,12 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
+#include <stdlib.h>
 #include <malloc.h>
+#include <string.h>
 #include "task4.h"
 using namespace std;
 
