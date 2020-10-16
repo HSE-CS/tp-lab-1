@@ -14,7 +14,7 @@ bool checkPrime(unsigned int value) {
     }
     else return false;
 }
-//- нахождение n - ого простого числа(в ряду).			
+//- нахождение n - ого простого числа(в ряду)		
 unsigned long long nPrime(unsigned n) {
     unsigned int count = 0;
     bool found = false;
