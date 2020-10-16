@@ -2,11 +2,9 @@
 
 bool checkPrime(unsigned int value)
 {
-    if (value == 2)
-        return true;
-    for (unsigned int i = 2; i < value / 2; i++)
+    for (unsigned int i = 2; i < sqrt(value); i++)
     {
-        if (value % i)
+        if (value % i == 0)
             return false;
     }
     return true;
