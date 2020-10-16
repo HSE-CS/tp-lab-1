@@ -16,11 +16,11 @@ char *sum(char *x, char *y)
     {
         --x_len;
         --y_len;
-        if (x_len && y_len)
+        if (x_len > -1 && y_len > -1)
             buf = buf + x[x_len] - '0' + y[y_len] - '0';
-        else if (x_len)
+        else if (x_len > -1)
             buf = buf + x[x_len] - '0';
-        else if (y_len)
+        else if (y_len > -1)
             buf = buf + y[y_len] - '0';
         sum[i] = buf % 10 + '0';
         buf /= 10;
