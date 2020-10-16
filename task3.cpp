@@ -1,9 +1,16 @@
 #include <iostream>
-#include <cmath>
-#include "task2.h"
 #include "task3.h"
+#include <cmath>
 
 using namespace std;
+
+bool checkPrime(unsigned int value)
+{
+	for (unsigned int i = 2; i <= sqrt(value); i++)
+		if (value % i == 0)
+			return false;
+	return true;
+}
 
 unsigned long long sumPrime(unsigned int hbound) 
 {
