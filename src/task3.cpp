@@ -7,7 +7,7 @@ bool checkPrime_from3(unsigned int value)
 {
 	if (value > 1)
 	{
-		for (int i = 2; i < pow(value,0.5); i++)
+		for (int i = 2; i <= pow(value,0.5); i++)
 			if (value % i == 0)
 				return false;
 		return true;
