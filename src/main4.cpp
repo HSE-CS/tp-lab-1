@@ -10,24 +10,6 @@
 #include <cstring>
 
 using namespace std;
-
-
-int main()
-{
-#define _CRT_SECURE_NO_WARNINGS
-#pragma warning(disable : 4996)
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <cstdlib>
-#include <ctime>
-#include "task1.h"
-#include <string>
-#include <cstring>
-
-	using namespace std;
-
-
 	int main()
 	{
 		/*string s = "99999999999999999999";
