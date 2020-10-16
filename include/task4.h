@@ -1,2 +1,2 @@
 #pragma once
-char* s(char* x, char* y);
+char* sum(char* x, char* y);
