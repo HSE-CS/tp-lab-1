@@ -1,19 +1,17 @@
-long nod(long a, long b) {
-
-    while (a != b) {
-        if (a > b) {
-            long tmp = a;
-            a = b;
-            b = tmp;
-        }
-        b = b - a;
-    }
-    return a;
+int gcd(int a, int b) {
+	int t;
+	while (b != 0) {
+		t = b;
+		b = a % b;
+		a = t;
+	}
+	return a;
 }
-int unsigned long findValue(unsigned int min, unsigned max) {
-    int long p = 1;
-    for (int i = min; i < max + 1; i++) {
-        p = i * p;
-    }
-    return p/nod(min,max);
+unsigned long findValue(unsigned int min, unsigned max) {
+	int nok = 1;
+	for (int i = min; i < max; i++) {
+		//int nod = gcd(nok, i + 1);
+		nok = (nok * i) / gcd(nok, i);
+	}
+	return nok;
 }

@@ -3,8 +3,9 @@ bool checkPrime(unsigned int value) {
     {
         if (value % j == 0)
             return false;
-        return true;
+       
     }
+    return true;
 }
 unsigned long long nPrime(unsigned n) {
     int long a = 0;
