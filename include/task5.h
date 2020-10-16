@@ -1,16 +1,6 @@
-#ifndef TASK4_H
-#define TASK4_H
-
-#include <string>
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <cstdlib>
-#include <ctime>
-#include <cstring>
-#include <iterator>
-using namespace std;
+#ifndef TASK1_TASK5_H
+#define TASK1_TASK5_H
 
 void split(char ***result, int *N, char *buf, char ch);
 
-#endif 
+#endif //TASK1_TASK5_H
