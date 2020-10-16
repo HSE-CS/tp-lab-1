@@ -1,15 +1,14 @@
 #define _CRT_SECURE_NO_WARNINGS
-//#include <algorithm>
-//#include <iostream>
-//#include <cstdlib>
-//#include <ctime>
+#include <algorithm>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
 #include <malloc.h>
 #include "task5.h"
-using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
 
