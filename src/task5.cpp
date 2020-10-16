@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include "task5.h"
-//using namespace std;
+using namespace std;
 
 void split(char*** result, int* N, char* buf, char ch) {
 
@@ -20,7 +20,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 	int t = 0;
 	int x = 0;
 	
-	len = (int)strlen(buf);
+	len = strlen(buf);
 
 	for (int i = 0; i < len; i++) {
 
