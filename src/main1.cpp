@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int main(){
+int main1(){
 	cout << findValue(1,20) << '\n';
 	return 0;
 }

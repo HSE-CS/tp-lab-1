@@ -1,11 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <string>
+#include <cstring>
+#include <algorithm>
 #include "task4.h"
 
 using namespace std;
 
-int main4() {
-
-	cout << sum("25000","1000") << "\n";
+int main() {
+	cout << sum("999","1") << "\n";
 	return 0;
 }
