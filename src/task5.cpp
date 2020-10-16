@@ -13,12 +13,14 @@
 
 void split(char*** result, int* N, char* buf, char ch) {
 
-	int len = strlen(buf);
+	int len = 0;
 	*N = 1;
 	int s = 0;
 	int k = 0;
 	int t = 0;
 	int x = 0;
+	
+	len = strlen(buf);
 
 	for (int i = 0; i < len; i++) {
 
