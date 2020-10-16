@@ -18,9 +18,13 @@ void split(char ***result, int *N, char *buf, char ch) {
     int counter = 0;
     for (int i = 0; i < strlen(buf); ++i) {
         if (buf[i] == ch) {
+            resultStr[*N][counter] = '\0';
             (*N)++;
             counter = 0;
             continue;
+        }
+        if(i == strlen(buf)-1){
+            resultStr[*N][counter+1] = '\0';
         }
         resultStr[*N][counter] = buf[i];
         counter++;
