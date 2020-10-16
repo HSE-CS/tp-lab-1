@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#include "task4.hpp"
+#include "task4.h"
 #include <string.h>
 
 char* sum(char* x, char* y)

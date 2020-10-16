@@ -1,19 +1,20 @@
 //
-//  task1.hpp
+//  task5.hpp
 //  programming-technologies
 //
 //  Created by Даниил Иванов on 12.10.2020.
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#ifndef task1_hpp
-#define task1_hpp
+#ifndef task5_h
+#define task5_h
 
 #include <stdio.h>
 #include <iostream>
+#include <string>
+#include <stdlib.h>
 using namespace std;
+void split(char*** result, int* N, char* buf);
+int countStrings(int length);
 
-unsigned long findValue(unsigned int min, unsigned int max);
-
-
-#endif /* task1_hpp */
+#endif /* task5_hpp */

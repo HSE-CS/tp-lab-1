@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#include "task5.hpp"
+#include "task5.h"
 #include <string.h>
 
 void split(char*** result, int* N, char* buf)

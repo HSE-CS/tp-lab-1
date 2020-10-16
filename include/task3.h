@@ -6,11 +6,11 @@
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#ifndef task3_hpp
-#define task3_hpp
+#ifndef task3_h
+#define task3_h
 
 #include <stdio.h>
-#include "task2.hpp"
+#include "task2.h"
 
 unsigned long long sumPrime(unsigned int hbound);
 

@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "task5.hpp"
+#include "task5.h"
 #include <string.h>
 
 int main() {

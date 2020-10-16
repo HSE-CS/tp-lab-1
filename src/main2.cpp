@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "task2.hpp"
+#include "task2.h"
 
 int main() {
     unsigned int num{ 5 };

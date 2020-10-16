@@ -7,7 +7,7 @@
 //
 
 #include <stdio.h>
-#include "task3.hpp"
+#include "task3.h"
 
 int main() {
     int num{ 5 };

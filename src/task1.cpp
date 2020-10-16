@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#include "task1.hpp"
+#include "task1.h"
 
 
 unsigned long findValue(unsigned int min, unsigned int max)

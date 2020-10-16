@@ -1,21 +1,21 @@
 //
-//  task2.hpp
+//  task4.hpp
 //  programming-technologies
 //
 //  Created by Даниил Иванов on 12.10.2020.
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#ifndef task2_hpp
-#define task2_hpp
+#ifndef task4_h
+#define task4_h
 
 #include <stdio.h>
 #include <iostream>
+#include <string>
+#include <stdlib.h>
 using namespace std;
-
-bool checkPrime(unsigned int value);
-unsigned long long nPrime(unsigned n);
-unsigned long long nextPrime(unsigned long long value);
+char* sum(char* x, char* y);
 
 
-#endif /* task2_hpp */
+
+#endif /* task4_hpp */

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Daniil Ivanov. All rights reserved.
 //
 
-#include "task3.hpp"
+#include "task3.h"
 
 unsigned long long sumPrime(unsigned int hbound)
 {
