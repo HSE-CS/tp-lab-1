@@ -95,3 +95,8 @@
 1	496	624569361	CMakeFiles/task4_lib.dir/src/task4.cpp.obj	737e81f6849c82bc
 534	584	624569361	task4_lib.lib	cc3f23a4a2875dfd
 584	820	624569361	task4.exe	b02c692ff40c2b6a
+7	752	624570573	CMakeFiles/task5.dir/src/main5.cpp.obj	ae2a328a87c196cb
+1	818	624570573	CMakeFiles/task4_lib.dir/src/task4.cpp.obj	737e81f6849c82bc
+850	896	624570573	task4_lib.lib	cc3f23a4a2875dfd
+813	1217	624570573	task5.exe	f0dcad82f59267dd
+896	1234	624570573	task4.exe	b02c692ff40c2b6a
