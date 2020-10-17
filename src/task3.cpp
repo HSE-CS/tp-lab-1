@@ -1,5 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
-
+#include <algorithm>
 #include <iostream>
 #include <cstdlib>
 #include "task2.h"
