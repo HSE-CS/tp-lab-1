@@ -8,7 +8,7 @@ void split(char*** result, int* N, char* buf, char ch) {
 	*result = new char* [count + 1];
 	int last = 0;
 	int i = 0;
-	for (; buf[i] != = '\0'; i++) {
+	for (; buf[i] != '\0'; i++) {
 		if (buf[i] == ch) {
 			char* mas = new char[i - last + 1];
 			mas[i - last] = '\0';
