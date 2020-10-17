@@ -6,6 +6,6 @@
 using namespace std;
 
 int main() {
-	cout << sum("999124", "1124");
+	//cout << sum("999124", "1124");
 	return 0;
 }

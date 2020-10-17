@@ -6,8 +6,8 @@
 using namespace std;
 
 int main() {
-	cout << checkPrime(9) << ' ';
-	cout << nPrime(6) << ' ';
-	cout << nextPrime(8) << ' ';
+	//cout << checkPrime(12) << ' ';
+	//cout << nPrime(6) << ' ';
+	//cout << nextPrime(1031) << ' ';
 	return 0;
 }

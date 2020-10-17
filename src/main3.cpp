@@ -6,6 +6,6 @@
 using namespace std;
 
 int main() {
-	cout << sumPrime(12);
+	//cout << sumPrime(12);
 	return 0;
 }
