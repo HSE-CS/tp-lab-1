@@ -3,7 +3,7 @@
 
 int main()
 {
-    char *buf="LKJHGFGH,LKJHGFGHJ,LKJHGFDRFGHJK,LKJHGFHJ,JHGFD,OIUYTFD,OIUYTF";
+    char *buf="sdf,ghj,vxx";
     int N=0;
     char **result=nullptr;
     split(&result, &N, buf, ',');
