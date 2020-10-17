@@ -1,7 +1,7 @@
 #include <iostream>
-#include <cstdlib>
+
 #include "task1.h"
-#include <algorithm>
+
 using namespace std;
 
 int main() {
