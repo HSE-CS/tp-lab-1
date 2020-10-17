@@ -2,7 +2,8 @@
 #include <iostream>
 #include <cstdlib>
 #include "task2.h"
-
+#include <algorithm>
+using namespace std;
 
 int main() {
 	unsigned int v1 = 0;
