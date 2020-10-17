@@ -2,16 +2,16 @@
 #include <iostream>
 #include <cstdlib>
 #include "task3.h"
-
+#include <algorithm>
+using namespace std;
 
 
 int main() {
 	unsigned int hbound = 0;
 	
-	printf("hbound = ");
-	scanf("%u", &hbound);
-	
-	printf("Sum = %llu", sumPrime(hbound));
+	cout<<"hbound = ";
+	cin>>hbound;
+	cout<<sumPrime(hbound);
 
 	
 	return 0;
