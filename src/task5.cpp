@@ -1,4 +1,3 @@
-
 #include <cstring>
 
 void split(char*** result, int* N, char* buf, char ch) {
@@ -14,19 +13,19 @@ void split(char*** result, int* N, char* buf, char ch) {
 	int i = 0;
 	for (; buf[i] != strlen(buf) - 1; i++) {
 		if (buf[i] == ch) {
-			char* mas1 = new char[i - last + 1];
+			char* mas = new char[i - last + 1];
 			for (int j = last; j < i; j++) {
-				mas1[j - last] = buf[j];
+				mas[j - last] = buf[j];
 			}
-			(*result)[(*N)] = mas1;
+			(*result)[(*N)] = mas;
 			*N = *N + 1;
 			last = i + 1;
 		}
 	}
-	char* mas2 = new char[i - last + 1];
+	char* mas = new char[i - last + 1];
 	for (int j = last; j < i; j++) {
-		mas2[j - last] = buf[j];
+		mas[j - last] = buf[j];
 	}
-	(*result)[(*N)] = mas2;
+	(*result)[(*N)] = mas;
 	*N = *N + 1;
 }
