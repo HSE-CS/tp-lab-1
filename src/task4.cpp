@@ -5,7 +5,7 @@
 #include<string.h>
 using namespace std;
 #define SIZE 1000
-char* sum(char* x, char* y) {
+char *sum(char *x, char *y) {
 
 	int n1[SIZE] = { 0 };
 	int n2[SIZE] = { 0 };
