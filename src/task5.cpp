@@ -7,9 +7,9 @@
 #include <malloc.h>
 #include <string.h>
 #include "task5.h"
-//using namespace std;
+using namespace std;
 
-void split(char*** result, int* N, char* buf, char ch) {
+void split(char ***result, int *N, char *buf, char ch) {
 
 	int len = (int)strlen(buf);
 	*N = 1;
