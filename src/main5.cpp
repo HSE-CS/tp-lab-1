@@ -1,11 +1,11 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
-#include <stdlib.h>
+#include <cstdlib>
 #include "task5.h"
-
+#include <iostream>
+#include <algorithm>
+using namespace std;
 int main() {
 
 	char* buf = "hello.world.my.name.is.irina";
