@@ -1,11 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
 #include <malloc.h>
-#include <string.h>
+#include <cstring>
 #include "task5.h"
 using namespace std;
 
