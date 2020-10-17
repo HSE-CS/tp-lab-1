@@ -18,7 +18,7 @@ unsigned long long nPrime(unsigned n) {
     bool found = false;
     unsigned long long num;
     unsigned long long k = {2};
-    while( !found) {
+    while(!found) {
         int divisor = {0};
         for(int i = 2; i < k; i++) if (0 == k % i) divisor++;
         if(0 == divisor) {
