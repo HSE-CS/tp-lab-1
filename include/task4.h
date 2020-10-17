@@ -1,5 +1,5 @@
 #ifndef TASK4_H
 #define TASK4_H
 
-char* sum(char* x, char* y) //- сумма чисел x и y
+char *sum(char *x, char *y) //- Г±ГіГ¬Г¬Г  Г·ГЁГ±ГҐГ« x ГЁ y
 #endif
