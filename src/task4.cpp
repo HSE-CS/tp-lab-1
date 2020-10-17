@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include "task4.h"
 #include<malloc.h>
-
+#include<string.h>
 using namespace std;
 #define SIZE 1000
 char* sum(char* x, char* y) {
