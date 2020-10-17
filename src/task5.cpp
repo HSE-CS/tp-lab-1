@@ -1,4 +1,5 @@
 #include <cstring>
+#include <string.h>
 void split(char*** result, int* N, char* buf, char ch) {
 	int count = 0;
 	for (int i = 0; buf[i] < strlen(buf); i++)
