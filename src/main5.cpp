@@ -1,13 +1,13 @@
-#include "task5.h"
+#include <algorithm>
 #include <iostream>
 #include <cstdlib>
+#include "task5.h"
 
 using namespace std;
 
-int main()
-{
-char x[] = "9999";
-char y[] = "45";
-cout « sum(x, y);
-return 0;
-}
+
+
+int main (){
+
+	return 0;
+} 

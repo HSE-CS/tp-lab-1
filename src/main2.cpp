@@ -1,12 +1,13 @@
-#include "task2.h"
+#include <algorithm>
 #include <iostream>
+#include <cstdlib>
+#include "task2.h"
 
 using namespace std;
 
-int main()
-{
-cout « checkPrime(7) « " ";
-cout « nPrime(6) « " ";
-cout « nextPrime(43);
-return 0;
-}
+
+
+int main (){
+	cout<<nextPrime(1031);
+	return 0;
+} 
