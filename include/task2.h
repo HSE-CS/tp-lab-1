@@ -1,5 +1,5 @@
-#ifndef TASK2_H
-#define TASK2_H
+#ifndef Task2_H
+#define Task2_H
 
 
 bool checkPrime(unsigned int value);

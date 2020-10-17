@@ -1,40 +1,39 @@
 #include "task5.h"
 #include <cstring>
+#include <vector>
 
-void split(char*** result, int* N, char* buf, char ch)
-{
-int size = 0;
-int count = 0;
-for (int i = 0; i < strlen(buf); ++i)
-{
-if (buf[i] == ch)
-(*N)++;
-size++;
-}
+using namespace std;
 
-(*N)++;
+void split(char ***result, int *N, char *buf, char ch) {
+	vector<int> len{};
+	vector<int> posns{0};
+	int i;
 
-(*result) = new char* [*N]();
-for (int i = 0; i < *N; ++i)
-(*result)[i] = new char [size]();
+	for (i = 0; buf[i] != '\0'; i++) {
 
-int i = 0;
-*N = 0;
-while (buf[i] != '\0')
-{
-if (buf[i] == ch)
-{
-(*result)[(*N)][count] = '\0';
-(*N)++;
-count = 0;
-}
-else
-{
-(*result)[(*N)][count] = buf[i];
-count++;
-}
-i++;
-}
-(*result)[(*N)][count] = '\0';
-(*N)++;
+		if ( buf[i] == ch ) {
+
+			if ( !(i - posns.back()) )
+				posns.pop_back();
+
+			posns.push_back(i + 1);
+
+			if ( i - posns[len.size()] > 0 )
+				len.push_back(i - posns[len.size()]);
+		}
+	}
+	if ( i - posns[len.size()] > 0 )
+		len.push_back(i - posns[len.size()]);
+
+	*N = len.size();
+
+	char **new_buf = new char* [*N];
+
+	for (i = 0; i < *N; i++) {
+		new_buf[i] = new char [len[i] + 1];
+		strncpy(new_buf[i], &buf[posns[i]], len[i]);
+		new_buf[i][len[i]] = '\0';
+	}
+
+	*result = new_buf;
 }
