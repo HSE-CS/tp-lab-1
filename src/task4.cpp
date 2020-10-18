@@ -28,16 +28,16 @@ char *sum(char *x, char *y){
     temp[maxLength + 1] = '\0';
     for (unsigned int i = {0}; i <= maxLength; i++){
         if (i == maxLength){
-            temp[0] = '0' + overflow;
+            temp[0] = (char) ('0' + overflow);
             break;
         }
-        temp[maxLength - i] = x[maxLength - i - 1] + y[maxLength - i - 1] + overflow - '0';
+        temp[maxLength - i] = (char) (x[maxLength - i - 1] + y[maxLength - i - 1] + overflow - '0');
         overflow = false;
         if (temp[maxLength - i] > '9'){
             overflow = true;
             temp[maxLength - i] -= 10;
         }
     }
-    if (temp[0] == '0') return temp++;
+    if (temp[0] == '0') return ++temp;
     return temp;
 }
