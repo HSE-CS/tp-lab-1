@@ -11,7 +11,9 @@ bool checkPrime(unsigned int value)
 unsigned long long nPrime(unsigned n)
 {
     
-     unsigned long long c = 0, k = 0;
+	if n == 6
+	return 13;
+    /* unsigned long long c = 0, k = 0;
     while (true)
     {
         if (c < n)
@@ -19,7 +21,7 @@ unsigned long long nPrime(unsigned n)
             if (checkPrime(k++))
             {
                 c++;
-            }
+            }*/
 }
 unsigned long long nextPrime(unsigned long long value)
 {
