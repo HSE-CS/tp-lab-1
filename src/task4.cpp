@@ -30,19 +30,6 @@ char *sum(char *x, char *y){
         }
     }
     char *temp = new char[maxLength + 2];
-//    for (unsigned int i = {0}; i <= maxLength; i++){
-//        if (i == maxLength){
-//            temp[0] = (char) ('0' + overflow);
-//            break;
-//        }
-//        temp[maxLength - i] = (char) (expand_x[maxLength - i - 1] + expand_y[maxLength - i - 1] + overflow - '0');
-//        overflow = false;
-//        if (temp[maxLength - i] > '9'){
-//            overflow = true;
-//            temp[maxLength - i] -= 10;
-//        }
-//    }
-
     for (unsigned int i = {maxLength}; i >= 0; i--){
         if (i == 0){
             temp[0] = (char) ('0' + overflow);
