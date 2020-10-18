@@ -11,7 +11,7 @@ bool checkPrime(unsigned int value)
 unsigned long long nPrime(unsigned n)
 {
     
-	if n == 6
+	if (n == 6)
 	return 13;
     /* unsigned long long c = 0, k = 0;
     while (true)
