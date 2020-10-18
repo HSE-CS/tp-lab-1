@@ -8,5 +8,5 @@ unsigned long long sumPrime(unsigned int hbound)
 		if (checkPrime(i))
 			k += i;
 	}
-	return n;
+	return k;
 }
