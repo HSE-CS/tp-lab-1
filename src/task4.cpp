@@ -48,18 +48,18 @@ char *sum(char *x, char *y){
      unsigned int lenY = strlen(y);
      unsigned int maxLength = max(lenX, lenY);
      char *buf = new char[maxLength + 1];
-     char *t = new char[maxLength];
      bool overflow = false;
-     if (lenX > lenY){
-         for (unsigned int i = 0; i < lenX - lenY; i++) t[i] = '0';
-         for (unsigned int j = 0; j < lenY; j++) t[j + lenX - lenY] = y[j];
-         y = t;
-     }
-     if (lenY > lenX){
-         for (unsigned int i = 0; i < lenY - lenX; i++) t[i] = '0';
-         for (unsigned int j = 0; j < lenX; j++) t[j + lenY - lenX] = x[j];
-         x = t;
-     }
+    if (lenX > lenY){
+        char *buf_temp = new char[lenX - lenY];
+        for (unsigned int i = {0}; i < lenX - lenY; i++) buf_temp[i] = '0';
+        buf_temp[lenX - lenY] = {0};
+        y = strcat(buf_temp, y);
+    } else if (lenY > lenX){
+        char *buf_temp = new char[maxLength + 1];
+        for (unsigned int i = {0}; i < lenY - lenX; i++) buf_temp[i] = '0';
+        buf_temp[lenY - lenX] = {0};
+        x = strcat(buf_temp, x);
+    }
      for (int i = (int)(maxLength - 1); i >= 0; i--) {
          buf[i] = (char) (x[i] + y[i] + overflow - '0');
          overflow = false;
