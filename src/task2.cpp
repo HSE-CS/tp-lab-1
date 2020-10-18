@@ -10,28 +10,29 @@ bool checkPrime(unsigned int value)
 }
 unsigned long long nPrime(unsigned n)
 {
-    int size = n; 
-    int* primes = (int*)malloc(n * sizeof(int));
+    
+    int size = n;
+    unsigned long long* primes = (int*)malloc(n * sizeof(int));
     int* numbers = (int*)malloc(size * sizeof(int));
+   
 
     for (int i = 0; i < size; i++)
-        numbers[i] = i;
+        numbers[i] = i; 
 
-    primes[0] = 2;
-    int i = 0;
+    primes[0] = 2; 
+    int i = 0; 
 
     while (i < n) {
-        int p = primes[i++];
+        int p = primes[i++]; 
 
         for (int j = p * 2; j < size; j += p)
-            numbers[j] = 0;
+            numbers[j] = 0; 
 
         while (numbers[p + 1] == 0)
-            p++;
+            p++; 
 
-        if (p + 1 >= size)
-        {
-       
+        if (p + 1 >= size) { 
+        
             int* tmp = (int*)malloc(size * 2 * sizeof(int));
             for (int k = 0; k < size; k++)
                 tmp[k] = numbers[k];
@@ -42,14 +43,15 @@ unsigned long long nPrime(unsigned n)
             numbers = tmp;
 
             for (int j = size / 2; j < size; j++)
-                numbers[j] = j;
+                numbers[j] = j; 
 
-            i = 0;
+            i = 0; 
         }
         else
-            primes[i] = p + 1;
+            primes[i] = p + 1; 
     }
     return(primes[n - 1]);
+    
 
     free(numbers);
     free(primes);
