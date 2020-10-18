@@ -1,22 +1,19 @@
-#include "task5.h"
 #include <cmath>
 #include <stdio.h>
 #include <algorithm>
 #include <cstdlib>
 #include <ctime>
 
-void split(char*** result, int* N, char* buf, char ch)
+void split(char*** result, int* N, const char* buf, char ch)
 {
-   
+
     char time;
     int num = 0;
     int len = strlen(buf);
     int n = 1;
     for (int i = 0; i < len; i++)
     {
-        if (i == 1)
-            time = buf[i];
-        if (buf[i] == ch && buf[i] != time)
+        if (buf[i] == ch) 
             n++;
     }
     *N = n;
@@ -57,3 +54,4 @@ void split(char*** result, int* N, char* buf, char ch)
         }
     }
 }
+
