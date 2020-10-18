@@ -34,11 +34,11 @@ void split(char*** result, int* N, char* buf, char ch)
                     num1++;
                 }
                 (*result)[i] = new char[num1];
-                int ns = 0;
+                int n1 = 0;
                 for (int v = j; v < k; v++)
                 {
-                    (*result)[i][ns] = buf[v];
-                    ns++;
+                    (*result)[i][n1] = buf[v];
+                    n1++;
                 }
                 (*result)[i][num1] = '\0';
                 while (buf[k] == ch && k < len)
