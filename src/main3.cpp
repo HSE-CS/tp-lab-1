@@ -4,6 +4,5 @@
 
 int main()
 {
-	//std::cout<<sumPrime (100) << "\n";
 	return 0;
 }

@@ -3,6 +3,5 @@
 
 int main()
 {
-	//std::cout << sum("17092000","24122001")<<"\n";
 	return 0;
 }
