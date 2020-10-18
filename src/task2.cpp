@@ -23,14 +23,12 @@ unsigned long long nPrime(unsigned n)
 			 
 		}
         else
-            primes[i] = p + 1;
+            
         {
             break;
         }
     }
-    return(primes[n - 1]);
-    free(numbers);
-    free(primes);
+   
     return --k;
 }
 unsigned long long nextPrime(unsigned long long value)
